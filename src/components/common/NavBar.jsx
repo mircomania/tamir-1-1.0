@@ -1,0 +1,53 @@
+import { NavLink } from 'react-router-dom';
+
+import LogoNavbar from '../../assets/images/logo tamir navbar 1.webp';
+import LogoFacebook1 from '../../assets/images/logo fb 1.webp';
+import LogoYoutube1 from '../../assets/images/logo yt 1.webp';
+import LogoInstagram1 from '../../assets/images/logo ig 1.webp';
+
+import { navLinks } from '../utils/NavBarMenu';
+
+import { BurgerMenu } from './BurgerMenu';
+
+export const NavBar = () => {
+    return (
+        <header>
+            <nav className="navbar" aria-label="Menú de navegación principal">
+                {/* Logo */}
+                <div className="logo-container">
+                    <NavLink to="/" aria-label="Ir a la página principal">
+                        <img src={LogoNavbar} alt="Logotipo de Tamir" className="logo-navbar" />
+                    </NavLink>
+                </div>
+
+                <ul className="menu-nav light-text-montserrat">
+                    {navLinks.map((item, index) => (
+                        <li key={item.id}>
+                            <NavLink to={item.to} title={item.title} className={({ isActive }) => (isActive ? 'active' : '')}>
+                                {item.label}
+                            </NavLink>
+                            {index < navLinks.length - 1 && <span className="linea-separadora">|</span>}
+                        </li>
+                    ))}
+                </ul>
+
+                <div className="redes-container-navbar">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <img src={LogoInstagram1} alt="Instagram" />
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <img src={LogoYoutube1} alt="Youtube" />
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <img src={LogoFacebook1} alt="Facebook" />
+                    </a>
+                </div>
+
+                {/* Menú Hamburguesa */}
+                <BurgerMenu />
+            </nav>
+        </header>
+    );
+};
