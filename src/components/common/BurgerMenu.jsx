@@ -43,7 +43,7 @@ export const BurgerMenu = () => {
                         <img src={LogoBurger} alt="Logotipo de Tamir" loading="lazy" decoding="async" />
                     </div>
 
-                    <div className="redes-container-mobile">
+                    <div className="redes-container">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <img src={LogoInstagram2} alt="Instagram" loading="lazy" decoding="async" />
                         </a>

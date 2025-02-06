@@ -151,29 +151,25 @@
 }
 
 .logo-mobile-menu,
-.redes-container-mobile,
-.redes-container-footer {
+.redes-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.redes-container-mobile,
-.redes-container-navbar,
-.redes-container-footer {
+.redes-container,
+.redes-container-navbar {
     gap: 9px;
 }
 
-.redes-container-mobile img,
-.redes-container-footer img,
+.redes-container img,
 .redes-container-navbar img {
     width: 32px;
     user-select: none;
     pointer-events: none;
 }
 
-.redes-container-mobile a:hover,
-.redes-container-footer a:hover,
+.redes-container a:hover,
 .redes-container-navbar a:hover {
     scale: 0.9;
 }
@@ -209,11 +205,6 @@
     font-weight: bold;
 }
 
-.redes-container-mobile a {
-    color: var(--text-color);
-    transition: transform 0.2s ease-in-out, color 0.2s;
-}
-
 .menu-nav li a:hover::after {
     content: '';
     position: absolute;
@@ -224,6 +215,41 @@
     background: var(--primary-color);
     opacity: 0.5;
     transition: width 0.3s ease;
+}
+
+/* -------------------------------------------------------------------------- LANDING PAGE */
+
+.landing-container {
+    overflow: hidden;
+}
+
+/* ---------------------------------------------- SECTION 1 LP */
+
+.section-1-lp-container {
+    height: 100vh;
+    background-color: #b12f47;
+    background-image: url('/src/assets/images/fondolanding/fondo landing cel 1.webp');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    padding-top: 70px;
+}
+
+.section-1-titulo {
+    padding-left: 15px;
+}
+
+.section-1-titulo h1,
+.section-1-titulo h2 {
+    color: var(--text-color);
+}
+
+.section-1-titulo h1 {
+    font-size: 45px;
+}
+
+.section-1-titulo h2 {
+    font-size: 16px;
 }
 
 /* -------------------------------------------------------------------------- FOOTER */
@@ -288,6 +314,12 @@
     .mobile-nav-menu li {
         padding-right: 40px;
     }
+
+    /* ---------------------------------------------- SECTION 1 LP */
+
+    .section-1-lp-container {
+        background-image: url('/src/assets/images/fondolanding/fondo landing cel 2.webp');
+    }
 }
 
 @media (min-width: 768px) {
@@ -323,6 +355,13 @@
     .burger-menu {
         display: none;
     }
+
+    /* ---------------------------------------------- SECTION 1 LP */
+
+    .section-1-lp-container {
+        background-image: url('/src/assets/images/fondolanding/fondo landing cel 3.webp');
+        padding-top: 80px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -339,6 +378,13 @@
 
     .linea-separadora {
         margin-left: 15px;
+    }
+
+    /* ---------------------------------------------- SECTION 1 LP */
+
+    .section-1-lp-container {
+        background-image: url('/src/assets/images/fondolanding/fondo landing cel 4.webp');
+        padding-top: 90px;
     }
 }
 
@@ -360,6 +406,12 @@
     .redes-container-navbar {
         padding-right: 85px;
     }
+
+    /* ---------------------------------------------- SECTION 1 LP */
+
+    .section-1-lp-container {
+        background-image: url('/src/assets/images/fondolanding/fondo landing web 1.webp');
+    }
 }
 
 @media (min-width: 1400px) {
@@ -367,6 +419,13 @@
 
     .logo-navbar {
         height: 90px;
+    }
+
+    /* ---------------------------------------------- SECTION 1 LP */
+
+    .section-1-lp-container {
+        background-image: url('/src/assets/images/fondolanding/fondo landing web 2.webp');
+        padding-top: 100px;
     }
 }
 
@@ -389,5 +448,12 @@
 
     .redes-container-navbar {
         padding-right: 120px;
+    }
+
+    /* ---------------------------------------------- SECTION 1 LP */
+
+    .section-1-lp-container {
+        background-image: url('/src/assets/images/fondolanding/fondo landing web 3.webp');
+        padding-top: 110px;
     }
 }

@@ -18,7 +18,7 @@ export const Footer = () => {
                     </div>
 
                     {/* Redes Sociales */}
-                    <div className="redes-container-footer">
+                    <div className="redes-container">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <img src={LogoInstagram1} alt="Instagram" loading="lazy" decoding="async" />
                         </a>
