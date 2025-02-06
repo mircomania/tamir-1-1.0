@@ -14,6 +14,30 @@
     --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
+body {
+    background-color: var(--background-color);
+}
+
+/* -------------------------------------------------------------------------- ANIMACIONES */
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* -------------------------------------------------------------------------- FUENTES */
 
 .bold-text-montserrat {
@@ -226,30 +250,81 @@
 /* ---------------------------------------------- SECTION 1 LP */
 
 .section-1-lp-container {
+    position: relative;
     height: 100vh;
-    background-color: #b12f47;
-    background-image: url('/src/assets/images/fondolanding/fondo landing cel 1.webp');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: cover;
+    background-image: linear-gradient(to bottom, var(--background-color), white);
     padding-top: 70px;
+    overflow: hidden;
 }
 
-.section-1-titulo {
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeInOut 15s infinite;
+}
+
+.bg-1 {
+    background-image: url('/src/assets/images/fondolanding/fondo landing cel 1.webp');
+    animation-delay: 0s;
+}
+.bg-2 {
+    background-image: url('/src/assets/images/fondolanding/fondo landing cel 1.2.webp');
+    animation-delay: 5s;
+}
+.bg-3 {
+    background-image: url('/src/assets/images/fondolanding/fondo landing cel 1.3.webp');
+    animation-delay: 10s;
+}
+
+.section-1-lp-titulo,
+.section-1-lp-boton {
+    position: relative;
+    z-index: 1;
     padding-left: 15px;
+    padding-top: 20px;
 }
 
-.section-1-titulo h1,
-.section-1-titulo h2 {
+.section-1-lp-titulo h1,
+.section-1-lp-titulo h2 {
     color: var(--text-color);
 }
 
-.section-1-titulo h1 {
+.section-1-lp-titulo h1 {
     font-size: 45px;
 }
 
-.section-1-titulo h2 {
+.section-1-lp-titulo h2 {
     font-size: 16px;
+}
+
+.boton-1 {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    background: none;
+    border-color: var(--text-color);
+    color: var(--text-color);
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.5;
+    border-radius: 20px;
+    padding: 10px 60px;
+    font-size: 16px;
+}
+
+.boton-1:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.boton-1:active {
+    transform: scale(0.9);
 }
 
 /* -------------------------------------------------------------------------- FOOTER */
