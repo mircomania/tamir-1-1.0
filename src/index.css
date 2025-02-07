@@ -250,11 +250,9 @@ body {
 /* ---------------------------------------------- SECTION 1 LP */
 
 .section-1-lp-container {
-    position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(to bottom, var(--background-color), white);
     padding-top: 70px;
-    overflow: hidden;
 }
 
 .bg {
@@ -294,6 +292,7 @@ body {
 .section-1-lp-titulo h1,
 .section-1-lp-titulo h2 {
     color: var(--text-color);
+    user-select: none;
 }
 
 .section-1-lp-titulo h1 {
@@ -314,7 +313,7 @@ body {
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
     line-height: 1.5;
     border-radius: 20px;
-    padding: 10px 60px;
+    padding: 10px 40px;
     font-size: 16px;
 }
 
@@ -325,6 +324,80 @@ body {
 
 .boton-1:active {
     transform: scale(0.9);
+}
+
+/* ---------------------------------------------- SECTION 2 LP */
+
+.section-2-lp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(248, 186, 186), var(--background-color));
+}
+
+.section-2-lp-titulo {
+    padding: 20px 0;
+    width: 340px;
+    color: var(--text-color);
+    user-select: none;
+}
+
+.section-2-lp-titulo h2 {
+    font-size: 29px;
+    padding-bottom: 5px;
+}
+
+.section-2-lp-titulo p {
+    font-size: 18px;
+}
+
+.categoria-section-2-lp {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.categoria-overlay {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+}
+
+.categoria-section-2-lp a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+.categoria-section-2-lp img {
+    width: 100%;
+    display: block;
+    border: 5px solid var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    pointer-events: none;
+}
+
+.categoria-section-2-lp:hover {
+    transform: scale(0.95);
+}
+
+.section-2-lp-final {
+    width: 350px;
+    color: var(--text-color);
+    padding-bottom: 40px;
+}
+
+.section-2-lp-final p {
+    padding: 20px 0;
+    user-select: none;
 }
 
 /* -------------------------------------------------------------------------- FOOTER */

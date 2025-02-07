@@ -15,8 +15,8 @@ export const Section1Lp = () => {
             </div>
 
             <div className="section-1-lp-boton">
-                <NavLink to="/contacto" aria-label="Ir a la página de Contacto">
-                    <button className="boton-1 bold-text-montserrat">AGENDAR</button>
+                <NavLink to="/contacto" aria-label="Ir a la página de contacto para agendar una sesión de fotos">
+                    <button className="boton-1 bold-text-montserrat">AGENDAR SESIÓN</button>
                 </NavLink>
             </div>
         </section>
