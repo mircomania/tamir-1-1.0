@@ -4,10 +4,10 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import LogoBurger from '../../assets/images/logo tamir mobile 1.webp';
-import LogoFacebook2 from '../../assets/images/logo fb 2.webp';
-import LogoYoutube2 from '../../assets/images/logo yt 2.webp';
-import LogoInstagram2 from '../../assets/images/logo ig 2.webp';
+import LogoBurger from '../../assets/images/logos/logo-tamir-mobile-1.webp';
+import LogoFacebook2 from '../../assets/images/logos/logo-fb-2.webp';
+import LogoYoutube2 from '../../assets/images/logos/logo-yt-2.webp';
+import LogoInstagram2 from '../../assets/images/logos/logo-ig-2.webp';
 
 import { navLinks } from '../utils/NavBarMenu';
 

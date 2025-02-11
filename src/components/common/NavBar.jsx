@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
-import LogoNavbar from '../../assets/images/logo tamir navbar 1.webp';
-import LogoFacebook1 from '../../assets/images/logo fb 1.webp';
-import LogoYoutube1 from '../../assets/images/logo yt 1.webp';
-import LogoInstagram1 from '../../assets/images/logo ig 1.webp';
+import LogoNavbar from '../../assets/images/logos/logo-tamir-navbar-1.webp';
+import LogoFacebook1 from '../../assets/images/logos/logo-fb-1.webp';
+import LogoYoutube1 from '../../assets/images/logos/logo-yt-1.webp';
+import LogoInstagram1 from '../../assets/images/logos/logo-ig-1.webp';
 
 import { navLinks } from '../utils/NavBarMenu';
 
