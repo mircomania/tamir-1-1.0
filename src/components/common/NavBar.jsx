@@ -32,7 +32,7 @@ export const NavBar = () => {
                 </ul>
 
                 <div className="redes-container-navbar">
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a href="https://www.instagram.com/tamirfotografias/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                         <img src={LogoInstagram1} alt="Instagram" />
                     </a>
 
