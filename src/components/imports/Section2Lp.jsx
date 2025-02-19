@@ -90,7 +90,7 @@ export const Section2Lp = () => {
                     ¡Inspírate con nuestra galería! <br /> Haz clic para ver todas las sesiones de fotos
                 </p>
 
-                <div className="section-2-lp-boton">
+                <div>
                     <NavLink to="/galeria" aria-label="Ver todas las sesiones de fotos en nuestra galería">
                         <button className="boton-1 bold-text-montserrat">VER GALERÍA </button>
                     </NavLink>
