@@ -5,7 +5,7 @@ import LogoFacebook1 from '../../assets/images/logos/logo-fb-1.webp';
 import LogoYoutube1 from '../../assets/images/logos/logo-yt-1.webp';
 import LogoInstagram1 from '../../assets/images/logos/logo-ig-1.webp';
 
-import { navLinks } from '../utils/NavBarMenu';
+import { navLinks } from '../utils/navBarMenu';
 
 import { BurgerMenu } from './BurgerMenu';
 

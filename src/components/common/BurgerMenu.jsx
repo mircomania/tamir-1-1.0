@@ -9,7 +9,7 @@ import LogoFacebook2 from '../../assets/images/logos/logo-fb-2.webp';
 import LogoYoutube2 from '../../assets/images/logos/logo-yt-2.webp';
 import LogoInstagram2 from '../../assets/images/logos/logo-ig-2.webp';
 
-import { navLinks } from '../utils/NavBarMenu';
+import { navLinks } from '../utils/navBarMenu';
 
 export const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
