@@ -35,8 +35,6 @@ export const Section3Lp = () => {
             <div className="section-3-lp-final">
                 <p className="light-text-montserrat">Conoce nuestros servicios y encuentra la opción ideal para tus mejores momentos.</p>
 
-                <p className="light-text-montserrat">Sesiones de fotos para embarazadas, bebés, niños y familias con calidad profesional.</p>
-
                 <NavLink to="/servicios" aria-label="Ver todos los servicios de Fotografía Profesional">
                     <button className="boton-1 bold-text-montserrat">VER SERVICIOS</button>
                 </NavLink>

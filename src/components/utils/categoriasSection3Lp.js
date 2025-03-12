@@ -1,4 +1,5 @@
 import img1c1Section3Lp from '../../assets/images/landing/section3/test-section-3-lp.webp';
+import img2c1Section3Lp from '../../assets/images/landing/section3/test-section-3-lp-2.webp';
 
 export const categoriasSection3 = [
     {
@@ -8,10 +9,10 @@ export const categoriasSection3 = [
         alt: 'Sesión de fotos Newborn: captura momentos adorables e inolvidables.',
         imagenes: {
             default: img1c1Section3Lp,
-            sm: img1c1Section3Lp,
-            md: img1c1Section3Lp,
-            lg: img1c1Section3Lp,
-            xl: img1c1Section3Lp,
+            sm: img2c1Section3Lp,
+            md: img2c1Section3Lp,
+            lg: img2c1Section3Lp,
+            xl: img2c1Section3Lp,
         },
     },
     {
@@ -21,10 +22,10 @@ export const categoriasSection3 = [
         alt: 'Sesión de fotos Niños: un recuerdo inolvidable de la maternidad.',
         imagenes: {
             default: img1c1Section3Lp,
-            sm: img1c1Section3Lp,
-            md: img1c1Section3Lp,
-            lg: img1c1Section3Lp,
-            xl: img1c1Section3Lp,
+            sm: img2c1Section3Lp,
+            md: img2c1Section3Lp,
+            lg: img2c1Section3Lp,
+            xl: img2c1Section3Lp,
         },
     },
     {
@@ -34,10 +35,10 @@ export const categoriasSection3 = [
         alt: 'Sesión de fotos Embarazo: un recuerdo inolvidable de la maternidad.',
         imagenes: {
             default: img1c1Section3Lp,
-            sm: img1c1Section3Lp,
-            md: img1c1Section3Lp,
-            lg: img1c1Section3Lp,
-            xl: img1c1Section3Lp,
+            sm: img2c1Section3Lp,
+            md: img2c1Section3Lp,
+            lg: img2c1Section3Lp,
+            xl: img2c1Section3Lp,
         },
     },
     {
@@ -47,10 +48,10 @@ export const categoriasSection3 = [
         alt: 'Sesión de fotos Familia: retratos llenos de amor y conexión.',
         imagenes: {
             default: img1c1Section3Lp,
-            sm: img1c1Section3Lp,
-            md: img1c1Section3Lp,
-            lg: img1c1Section3Lp,
-            xl: img1c1Section3Lp,
+            sm: img2c1Section3Lp,
+            md: img2c1Section3Lp,
+            lg: img2c1Section3Lp,
+            xl: img2c1Section3Lp,
         },
     },
 ];

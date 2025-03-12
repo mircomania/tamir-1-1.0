@@ -15,7 +15,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgb(248, 186, 186), var(--background-color));
+    background-color: var(--background-color);
 }
 
 /* -------------------------------------------------------------------------- ANIMACIONES */
@@ -270,6 +270,7 @@ body {
 
 .section-1-lp-titulo h1,
 .section-1-lp-titulo h2,
+.section-4-lp-titulo h2,
 .section-2-lp-titulo,
 .section-3-lp-titulo,
 .section-2-lp-final p,
@@ -317,7 +318,8 @@ body {
 /* ---------------------------------------------- SECTION 2 LP */
 
 .section-2-lp-container,
-.section-3-lp-container {
+.section-3-lp-container,
+.section-4-lp-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -325,12 +327,14 @@ body {
     text-align: center;
 }
 
-.section-2-lp-container {
+.section-2-lp-container,
+.section-4-lp-container {
     background-image: linear-gradient(to bottom, rgb(248, 186, 186), var(--background-color));
 }
 
 .section-2-lp-titulo,
-.section-3-lp-titulo {
+.section-3-lp-titulo,
+.section-4-lp-titulo {
     padding: 20px 0;
     width: 360px;
 }
@@ -352,7 +356,7 @@ body {
     position: relative;
     display: inline-block;
     width: 320px;
-    margin-top: 30px;
+    margin-bottom: 20px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -387,11 +391,11 @@ body {
 .section-2-lp-final,
 .section-3-lp-final {
     width: 360px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .section-2-lp-final p {
-    padding: 20px 0;
+    padding-bottom: 20px;
 }
 
 .section-2-lp-container hr,
@@ -417,17 +421,12 @@ body {
     font-size: 16px;
 }
 
-.section-3-lp-final p {
-    padding-bottom: 20px;
-}
-
 .section-3-lp-categorias {
     display: flex;
     flex-wrap: wrap;
     gap: 30px 10px;
     justify-content: center;
     width: 360px;
-    padding: 30px 0;
 }
 
 .categoria-section-3-lp {
@@ -450,6 +449,84 @@ body {
 .categoria-section-3-lp a {
     text-decoration: none;
     color: var(--text-color);
+}
+
+.section-3-lp-final p {
+    padding: 20px 0;
+}
+
+/* ---------------------------------------------- SECTION 4 LP */
+
+.section-4-lp-titulo h2 {
+    font-size: 24px;
+}
+
+/* -------------------------------------------------------------------------- FORM */
+
+.form {
+    width: 320px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+
+.campos-obligatorios {
+    text-align: end;
+    padding-bottom: 10px;
+}
+
+.campo-precalificar-form select,
+.campo-precalificar-form input,
+.campo-precalificar-form textarea {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.campo-precalificar-form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    background-color: var(--background-color);
+    box-shadow: 2px 2px 10px 2px var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    font-size: 16px;
+    resize: none;
+}
+
+.form-control:focus {
+    outline: none;
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.text-danger {
+    color: red;
+    padding: 0;
+    margin: 0;
+    margin-top: -16px;
+}
+
+.content-envio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.spinner-container {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -------------------------------------------------------------------------- FOOTER */
@@ -543,18 +620,20 @@ body {
 
     /* ---------------------------------------------- SECTION 2 LP */
 
-    .section-2-lp-titulo {
-        padding: 40px 0;
+    .section-2-lp-titulo,
+    .section-3-lp-titulo {
         padding-bottom: 20px;
-        width: 550px;
+        width: 420px;
     }
 
-    .section-2-lp-titulo h2 {
-        font-size: 40px;
+    .section-2-lp-titulo h2,
+    .section-3-lp-titulo h2 {
+        font-size: 30px;
     }
 
-    .section-2-lp-titulo h3 {
-        font-size: 22px;
+    .section-2-lp-titulo h3,
+    .section-3-lp-titulo h3 {
+        font-size: 20px;
     }
 
     .categoria-section-2-lp {
@@ -570,14 +649,21 @@ body {
         font-size: 35px;
     }
 
-    .section-2-lp-final {
+    .section-2-lp-final,
+    .section-3-lp-final {
         width: 550px;
-        padding-bottom: 50px;
     }
 
-    .section-2-lp-final p {
-        font-size: 22px;
-        padding: 30px 0;
+    .section-2-lp-final p,
+    .section-3-lp-final p {
+        font-size: 20px;
+    }
+
+    /* ---------------------------------------------- SECTION 3 LP */
+
+    .section-3-lp-categorias {
+        gap: 20px 0px;
+        width: 600px;
     }
 }
 
@@ -654,13 +740,10 @@ body {
 
     /* ---------------------------------------------- SECTION 2 LP */
 
-    .section-2-lp-titulo {
+    .section-2-lp-titulo,
+    .section-3-lp-titulo {
         padding: 20px 0;
-        width: 750px;
-    }
-
-    .section-2-lp-titulo h2 {
-        font-size: 35px;
+        width: 500px;
     }
 
     .section-2-lp-categorias {
@@ -673,7 +756,7 @@ body {
 
     .categoria-section-2-lp {
         width: 100px;
-        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .categoria-overlay {
@@ -689,9 +772,20 @@ body {
         height: 200px;
     }
 
-    .section-2-lp-final p {
+    .section-2-lp-final p,
+    .section-3-lp-final p {
         font-size: 20px;
         padding: 20px 0;
+    }
+
+    /* ---------------------------------------------- SECTION 3 LP */
+
+    .section-3-lp-categorias {
+        width: 550px;
+    }
+
+    .categoria-section-3-lp img {
+        width: 200px;
     }
 }
 
@@ -749,16 +843,24 @@ body {
 
     /* ---------------------------------------------- SECTION 2 LP */
 
-    .section-2-lp-titulo {
+    .section-2-lp-titulo,
+    .section-3-lp-titulo {
         width: 900px;
     }
 
-    .section-2-lp-titulo h2 {
-        font-size: 40px;
+    .section-2-lp-titulo h2,
+    .section-3-lp-titulo h2 {
+        font-size: 35px;
     }
 
     .section-2-lp-categorias {
         gap: 100px;
+    }
+
+    /* ---------------------------------------------- SECTION 3 LP */
+
+    .section-3-lp-categorias {
+        width: 650px;
     }
 }
 
@@ -815,16 +917,24 @@ body {
 
     /* ---------------------------------------------- SECTION 2 LP */
 
-    .section-2-lp-titulo {
+    .section-2-lp-titulo,
+    .section-3-lp-titulo {
         width: 1200px;
     }
 
-    .section-2-lp-titulo h2 {
-        font-size: 45px;
+    .section-2-lp-titulo h2,
+    .section-3-lp-titulo h2 {
+        font-size: 40px;
     }
 
-    .section-2-lp-titulo h3 {
-        font-size: 24px;
+    .section-2-lp-titulo h3,
+    .section-3-lp-titulo h3 {
+        font-size: 22px;
+    }
+
+    .section-2-lp-final,
+    .section-3-lp-final {
+        padding-bottom: 30px;
     }
 
     .section-2-lp-categorias {
@@ -843,8 +953,14 @@ body {
         height: 220px;
     }
 
-    .section-2-lp-final p {
-        font-size: 22px;
+    /* ---------------------------------------------- SECTION 3 LP */
+
+    .section-3-lp-categorias {
+        width: 1000px;
+    }
+
+    .categoria-section-3-lp img {
+        width: 130px;
     }
 }
 
@@ -888,12 +1004,9 @@ body {
 
     /* ---------------------------------------------- SECTION 2 LP */
 
-    .section-2-lp-titulo h2 {
-        font-size: 55px;
-    }
-
-    .section-2-lp-titulo h3 {
-        font-size: 26px;
+    .section-2-lp-titulo h2,
+    .section-3-lp-titulo h2 {
+        font-size: 45px;
     }
 
     .section-2-lp-categorias {
@@ -916,9 +1029,22 @@ body {
         height: 300px;
     }
 
-    .section-2-lp-final p {
-        font-size: 24px;
-        padding: 30px 0;
+    /* ---------------------------------------------- SECTION 3 LP */
+
+    .section-3-lp-categorias {
+        width: 1400px;
+    }
+
+    .categoria-section-3-lp img {
+        width: 220px;
+    }
+
+    .section-3-lp-categorias h3 {
+        font-size: 25px;
+    }
+
+    .section-3-lp-categorias p {
+        font-size: 20px;
     }
 }
 
@@ -982,15 +1108,20 @@ body {
 
     /* ---------------------------------------------- SECTION 2 LP */
 
-    .section-2-lp-titulo {
+    .section-2-lp-titulo,
+    .section-3-lp-titulo,
+    .section-2-lp-final,
+    .section-3-lp-final {
         width: 1700px;
     }
 
-    .section-2-lp-titulo h2 {
-        font-size: 70px;
+    .section-2-lp-titulo h2,
+    .section-3-lp-titulo h2 {
+        font-size: 65px;
     }
 
-    .section-2-lp-titulo h3 {
+    .section-2-lp-titulo h3,
+    .section-3-lp-titulo h3 {
         font-size: 30px;
     }
 
@@ -1007,11 +1138,19 @@ body {
         height: 350px;
     }
 
-    .section-2-lp-final {
-        width: 1700px;
+    .section-2-lp-final,
+    .section-3-lp-final {
+        width: 800px;
     }
 
-    .section-2-lp-final p {
+    .section-2-lp-final p,
+    .section-3-lp-final p {
         font-size: 28px;
+    }
+
+    /* ---------------------------------------------- SECTION 3 LP */
+
+    .section-3-lp-categorias {
+        width: 1800px;
     }
 }
