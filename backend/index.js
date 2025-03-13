@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Variables de entorno
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
-const SHEET_NAME = process.env.SHEET_NAME || 'Sheet1';
+const SHEET_NAME = process.env.SHEET_NAME || 'LEADS';
 
 // Configurar autenticación con la cuenta de servicio
 const auth = new google.auth.GoogleAuth({
@@ -38,6 +38,7 @@ app.post('/submit', async (req, res) => {
                 sesion,
                 mensaje,
                 new Date().toLocaleString(), // Fecha y hora de envío
+                'En espera', // Estado inicial
             ],
         ];
 

@@ -29,7 +29,7 @@ export const Form = () => {
 
             {/* NOMBRE */}
             <div className="campo-precalificar-form">
-                <label htmlFor="nombre" className="bold-text-montserrat" aria-label="Nombre del usuario">
+                <label htmlFor="nombre" className="light-text-montserrat" aria-label="Nombre del usuario">
                     *Nombre Completo:
                 </label>
                 <input type="text" className="form-control" id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} />
@@ -42,7 +42,7 @@ export const Form = () => {
 
             {/* TELEFONO */}
             <div className="campo-precalificar-form">
-                <label htmlFor="telefono" className="bold-text-montserrat" aria-label="Telefono del usuario">
+                <label htmlFor="telefono" className="light-text-montserrat" aria-label="Telefono del usuario">
                     *Teléfono:
                 </label>
                 <input
@@ -63,7 +63,7 @@ export const Form = () => {
 
             {/* EMAIL */}
             <div className="campo-precalificar-form">
-                <label htmlFor="email" className="bold-text-montserrat" aria-label="email del usuario">
+                <label htmlFor="email" className="light-text-montserrat" aria-label="email del usuario">
                     *Correo Electrónico :
                 </label>
                 <input type="text" className="form-control" id="email" name="email" value={formData.email} onChange={handleChange} />
@@ -76,7 +76,7 @@ export const Form = () => {
 
             {/* TIPOS DE SESION */}
             <div className="campo-precalificar-form">
-                <label htmlFor="sesion" className="bold-text-montserrat" aria-label="Tipo de sesión de fotos que quiere el usuario">
+                <label htmlFor="sesion" className="light-text-montserrat" aria-label="Tipo de sesión de fotos que quiere el usuario">
                     *Tipo de sesión:
                 </label>
                 <select className="form-control" id="sesion" name="sesion" value={formData.sesion} onChange={handleChange}>
@@ -95,7 +95,7 @@ export const Form = () => {
 
             {/* MENSAJE */}
             <div className="campo-precalificar-form">
-                <label htmlFor="mensaje" className="bold-text-montserrat" aria-label="Déjanos un mensaje">
+                <label htmlFor="mensaje" className="light-text-montserrat" aria-label="Déjanos un mensaje">
                     ¿Que tienes en mente? (opcional):
                 </label>
                 <textarea className="form-control" name="mensaje" id="mensaje" value={formData.mensaje} onChange={handleChange} rows="5" />

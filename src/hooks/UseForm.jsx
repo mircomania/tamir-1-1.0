@@ -11,12 +11,12 @@ export const useForm = (initialState, submitCallback) => {
     const showAlert = (title, message, icon, color) => {
         Swal.fire({
             title,
-            html: `<div class="light-text"><p>${message}</p></div>`,
+            html: `<div class="light-text-montserrat"><p>${message}</p></div>`,
             icon,
             confirmButtonColor: color,
             scrollbarPadding: false,
             customClass: {
-                title: 'bold-text',
+                title: 'bold-text-montserrat',
             },
             willOpen: () => {
                 document.body.style.overflow = 'auto';
