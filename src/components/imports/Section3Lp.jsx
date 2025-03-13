@@ -17,9 +17,9 @@ export const Section3Lp = () => {
                         <NavLink to={categoria.ruta} aria-label={`Ver todas las caracteristicas de las Sesiones de Fotos de ${categoria.nombre}`}>
                             <picture>
                                 <source srcSet={categoria.imagenes.xl} media="(min-width: 1700px)" />
-                                <source srcSet={categoria.imagenes.lg} media="(min-width: 1400px)" />
                                 <source srcSet={categoria.imagenes.md} media="(min-width: 1200px)" />
                                 <source srcSet={categoria.imagenes.sm} media="(min-width: 768px)" />
+                                <source srcSet={categoria.imagenes.xs} media="(min-width: 576px)" />
                                 <img src={categoria.imagenes.default} alt={categoria.alt} loading="lazy" decoding="async" />
                             </picture>
 
