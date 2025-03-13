@@ -522,13 +522,6 @@ body {
     padding: 20px 0;
 }
 
-.spinner-container {
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* -------------------------------------------------------------------------- FOOTER */
 
 .footer {

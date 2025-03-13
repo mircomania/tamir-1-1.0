@@ -104,14 +104,8 @@ export const Form = () => {
             {/* Contenedor para el botón y spinner */}
             <div className="content-envio">
                 <button type="submit" className="boton-1 bold-text-montserrat" title="Haz clic para enviarnos tus datos" disabled={loading}>
-                    ENVIAR
+                    {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : 'ENVIAR'}
                 </button>
-
-                {loading && (
-                    <div className="spinner-container" aria-live="assertive">
-                        <FontAwesomeIcon icon={faSpinner} spin />
-                    </div>
-                )}
             </div>
         </form>
     );
