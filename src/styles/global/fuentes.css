@@ -1,0 +1,23 @@
+.bold-text-montserrat {
+    font-family: 'Montserrat', serif;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    font-weight: 700;
+}
+
+.light-text-montserrat {
+    font-family: 'Montserrat', serif;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    font-weight: 400;
+}
+
+.dancing-text {
+    font-family: 'Dancing Script', serif;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    font-weight: 400;
+}
+
+.pacifico-text {
+    font-family: 'Pacifico', serif;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+    font-weight: 400;
+}

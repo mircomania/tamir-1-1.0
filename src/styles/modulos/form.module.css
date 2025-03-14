@@ -1,0 +1,56 @@
+.form {
+    color: var(--text-color);
+}
+
+.camposObligatorios {
+    text-align: end;
+    padding-bottom: 10px;
+}
+
+.campoPrecalificarForm select,
+.campoPrecalificarForm input,
+.campoPrecalificarForm textarea {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.campoPrecalificarForm {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.formControl {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    background-color: var(--background-color);
+    box-shadow: 2px 2px 10px 2px var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    font-size: 16px;
+    resize: none;
+}
+
+.formControl:focus {
+    outline: none;
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.textDanger {
+    color: red;
+    padding: 0;
+    margin: 0;
+    margin-top: -16px;
+}
+
+.contentEnvio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}

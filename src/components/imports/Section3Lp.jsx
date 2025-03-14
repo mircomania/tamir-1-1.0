@@ -1,19 +1,21 @@
-import { NavLink } from 'react-router-dom';
+import styles from '../../styles/modulos/section3Lp.module.css';
 
 import { categoriasSection3 } from '../utils/categoriasSection3Lp';
 
+import { NavLink } from 'react-router-dom';
+
 export const Section3Lp = () => {
     return (
-        <section className="section-3-lp-container">
-            <header className="section-3-lp-titulo">
+        <section className={styles.sectionContainer}>
+            <header className={styles.sectionTitulo}>
                 <h2 className="bold-text-montserrat">Servicios de Fotografía Profesional en Santiago</h2>
                 <h3 className="light-text-montserrat">Elige la sesión perfecta para cada ocasión</h3>
             </header>
 
             {/* Categorías */}
-            <div className="section-3-lp-categorias">
+            <div className={styles.sectionCategorias}>
                 {categoriasSection3.map((categoria) => (
-                    <div className="categoria-section-3-lp" key={categoria.nombre}>
+                    <div className={styles.sectionCategoria} key={categoria.nombre}>
                         <NavLink to={categoria.ruta} aria-label={`Ver todas las caracteristicas de las Sesiones de Fotos de ${categoria.nombre}`}>
                             <picture>
                                 <source srcSet={categoria.imagenes.xl} media="(min-width: 1700px)" />
@@ -32,7 +34,7 @@ export const Section3Lp = () => {
                 ))}
             </div>
 
-            <div className="section-3-lp-final">
+            <div className={styles.sectionFinal}>
                 <p className="light-text-montserrat">Conoce nuestros servicios y encuentra la opción ideal para tus mejores momentos.</p>
 
                 <NavLink to="/servicios" aria-label="Ver todos los servicios de Fotografía Profesional">

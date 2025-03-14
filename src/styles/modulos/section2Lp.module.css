@@ -1,0 +1,265 @@
+.sectionContainer {
+    background-image: linear-gradient(to bottom, rgb(248, 186, 186), var(--background-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sectionTitulo {
+    padding: 20px 0;
+    width: 360px;
+}
+
+.sectionTitulo,
+.sectionFinal p {
+    color: var(--text-color);
+    user-select: none;
+}
+
+.sectionTitulo h2 {
+    padding-bottom: 5px;
+    font-size: 29px;
+}
+
+.sectionTitulo h3 {
+    font-size: 18px;
+}
+
+.sectionCategoria {
+    position: relative;
+    display: inline-block;
+    width: 320px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.categoriaOverlay {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    z-index: 1;
+}
+
+.sectionCategoria a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+.sectionCategoria img {
+    width: 100%;
+    display: block;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    pointer-events: none;
+}
+
+.sectionCategoria:hover {
+    transform: scale(0.95);
+}
+
+.sectionFinal {
+    width: 360px;
+    padding-bottom: 20px;
+}
+
+.sectionFinal p {
+    padding-bottom: 20px;
+}
+
+.sectionContainer hr {
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+@media (min-width: 576px) {
+    .sectionTitulo {
+        padding-bottom: 20px;
+        width: 420px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 30px;
+    }
+
+    .sectionTitulo h3 {
+        font-size: 20px;
+    }
+
+    .sectionCategoria {
+        width: 450px;
+    }
+
+    .categoriaOverlay {
+        top: 10%;
+        left: 5%;
+    }
+
+    .sectionCategoria a {
+        font-size: 35px;
+    }
+
+    .sectionFinal {
+        width: 550px;
+    }
+
+    .sectionFinal p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionTitulo {
+        padding: 20px 0;
+        width: 500px;
+    }
+
+    .sectionCategorias {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 80px;
+    }
+
+    .sectionCategoria {
+        width: 150px;
+        margin-bottom: 0px;
+    }
+
+    .categoriaOverlay {
+        top: 80%;
+        left: 7%;
+    }
+
+    .sectionCategoria a {
+        font-size: 20px;
+    }
+
+    .sectionCategoria img {
+        height: 200px;
+    }
+
+    .sectionFinal p {
+        font-size: 20px;
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionTitulo {
+        width: 900px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 35px;
+    }
+
+    .sectionCategorias {
+        gap: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionTitulo {
+        width: 1200px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 40px;
+    }
+
+    .sectionTitulo h3 {
+        font-size: 22px;
+    }
+
+    .sectionFinal {
+        padding-bottom: 30px;
+    }
+
+    .sectionCategorias {
+        gap: 120px;
+    }
+
+    .sectionCategoria {
+        width: 200px;
+    }
+
+    .sectionCategoria a {
+        font-size: 22px;
+    }
+
+    .sectionCategoria img {
+        height: 220px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionTitulo h2 {
+        font-size: 45px;
+    }
+
+    .sectionCategorias {
+        gap: 140px;
+    }
+
+    .sectionCategoria {
+        width: 200px;
+    }
+
+    .categoriaOverlay {
+        top: 82%;
+    }
+
+    .sectionCategoria a {
+        font-size: 28px;
+    }
+
+    .sectionCategoria img {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sectionTitulo,
+    .sectionFinal {
+        width: 1700px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 65px;
+    }
+
+    .sectionTitulo h3 {
+        font-size: 30px;
+    }
+
+    .sectionCategorias {
+        gap: 160px;
+        padding: 30px 0;
+    }
+
+    .sectionCategoria {
+        width: 250px;
+    }
+
+    .sectionCategoria img {
+        height: 350px;
+    }
+
+    .sectionFinal {
+        width: 800px;
+    }
+
+    .sectionFinal p {
+        font-size: 28px;
+    }
+}

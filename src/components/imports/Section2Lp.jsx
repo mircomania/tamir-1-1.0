@@ -1,21 +1,23 @@
-import { NavLink } from 'react-router-dom';
+import styles from '../../styles/modulos/section2Lp.module.css';
 
 import { categoriasSection2 } from '../utils/categoriasSection2Lp';
 
+import { NavLink } from 'react-router-dom';
+
 export const Section2Lp = () => {
     return (
-        <section className="section-2-lp-container">
-            <header className="section-2-lp-titulo">
+        <section className={styles.sectionContainer}>
+            <header className={styles.sectionTitulo}>
                 <h2 className="bold-text-montserrat">Descubre Nuestras Galerías Fotográficas</h2>
                 <h3 className="light-text-montserrat">Capturamos la magia de cada etapa</h3>
             </header>
 
             {/* Categorías */}
-            <div className="section-2-lp-categorias">
+            <div className={styles.sectionCategorias}>
                 {categoriasSection2.map((categoria) => (
-                    <div className="categoria-section-2-lp" key={categoria.nombre}>
+                    <div className={styles.sectionCategoria} key={categoria.nombre}>
                         <NavLink to={categoria.ruta} aria-label={`Ver todas las Sesiones de Fotos de ${categoria.nombre}`}>
-                            <div className="categoria-overlay">
+                            <div className={styles.categoriaOverlay}>
                                 <p className="pacifico-text">{categoria.nombre}</p>
                             </div>
                             <picture>
@@ -30,7 +32,7 @@ export const Section2Lp = () => {
                 ))}
             </div>
 
-            <div className="section-2-lp-final">
+            <div className={styles.sectionFinal}>
                 <p className="light-text-montserrat">
                     ¡Inspírate con nuestra galería! <br /> Haz clic para ver todas las sesiones de fotos
                 </p>

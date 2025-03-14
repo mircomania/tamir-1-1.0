@@ -1,7 +1,9 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import styles from '../../styles/modulos/form.module.css';
 
 import { useForm } from '../../hooks/UseForm';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 export const Form = () => {
     const { formData, errors, loading, handleChange, handleSubmit, sesiones, showAlert } = useForm(
@@ -22,32 +24,32 @@ export const Form = () => {
     );
 
     return (
-        <form onSubmit={handleSubmit} className="form" noValidate>
-            <div className="campos-obligatorios">
+        <form onSubmit={handleSubmit} className={styles.form} noValidate>
+            <div className={styles.camposObligatorios}>
                 <p className="light-text-montserrat">(*) Campos obligatorios</p>
             </div>
 
             {/* NOMBRE */}
-            <div className="campo-precalificar-form">
+            <div className={styles.campoPrecalificarForm}>
                 <label htmlFor="nombre" className="light-text-montserrat" aria-label="Nombre del usuario">
                     *Nombre Completo:
                 </label>
-                <input type="text" className="form-control" id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} />
+                <input type="text" className={styles.formControl} id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} />
                 {errors.nombre && (
-                    <small className="text-danger light-text-montserrat" aria-live="assertive">
+                    <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
                         {errors.nombre}
                     </small>
                 )}
             </div>
 
             {/* TELEFONO */}
-            <div className="campo-precalificar-form">
+            <div className={styles.campoPrecalificarForm}>
                 <label htmlFor="telefono" className="light-text-montserrat" aria-label="Telefono del usuario">
                     *Teléfono:
                 </label>
                 <input
                     type="text"
-                    className="form-control"
+                    className={styles.formControl}
                     id="telefono"
                     name="telefono"
                     value={formData.telefono}
@@ -55,31 +57,31 @@ export const Form = () => {
                     maxLength="13"
                 />
                 {errors.telefono && (
-                    <small className="text-danger light-text-montserrat" aria-live="assertive">
+                    <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
                         {errors.telefono}
                     </small>
                 )}
             </div>
 
             {/* EMAIL */}
-            <div className="campo-precalificar-form">
+            <div className={styles.campoPrecalificarForm}>
                 <label htmlFor="email" className="light-text-montserrat" aria-label="email del usuario">
                     *Correo Electrónico :
                 </label>
-                <input type="text" className="form-control" id="email" name="email" value={formData.email} onChange={handleChange} />
+                <input type="text" className={styles.formControl} id="email" name="email" value={formData.email} onChange={handleChange} />
                 {errors.email && (
-                    <small className="text-danger light-text-montserrat" aria-live="assertive">
+                    <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
                         {errors.email}
                     </small>
                 )}
             </div>
 
             {/* TIPOS DE SESION */}
-            <div className="campo-precalificar-form">
+            <div className={styles.campoPrecalificarForm}>
                 <label htmlFor="sesion" className="light-text-montserrat" aria-label="Tipo de sesión de fotos que quiere el usuario">
                     *Tipo de sesión:
                 </label>
-                <select className="form-control" id="sesion" name="sesion" value={formData.sesion} onChange={handleChange}>
+                <select className={styles.formControl} id="sesion" name="sesion" value={formData.sesion} onChange={handleChange}>
                     {sesiones.map((sesion) => (
                         <option key={sesion} value={sesion}>
                             {sesion}
@@ -87,22 +89,22 @@ export const Form = () => {
                     ))}
                 </select>
                 {errors.sesion && (
-                    <small className="text-danger light-text-montserrat" aria-live="assertive">
+                    <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
                         {errors.sesion}
                     </small>
                 )}
             </div>
 
             {/* MENSAJE */}
-            <div className="campo-precalificar-form">
+            <div className={styles.campoPrecalificarForm}>
                 <label htmlFor="mensaje" className="light-text-montserrat" aria-label="Déjanos un mensaje">
                     ¿Que tienes en mente? (opcional):
                 </label>
-                <textarea className="form-control" name="mensaje" id="mensaje" value={formData.mensaje} onChange={handleChange} rows="5" />
+                <textarea className={styles.formControl} name="mensaje" id="mensaje" value={formData.mensaje} onChange={handleChange} rows="5" />
             </div>
 
             {/* Contenedor para el botón y spinner */}
-            <div className="content-envio">
+            <div className={styles.contentEnvio}>
                 <button type="submit" className="boton-1 bold-text-montserrat" title="Haz clic para enviarnos tus datos" disabled={loading}>
                     {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : 'ENVIAR'}
                 </button>

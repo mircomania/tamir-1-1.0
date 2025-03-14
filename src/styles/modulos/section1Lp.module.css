@@ -1,0 +1,202 @@
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.sectionContainer {
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, var(--background-color), white);
+    padding-top: 70px;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: fadeInOut 15s infinite;
+}
+
+.bg1 {
+    background-image: url('/src/assets/images/landing/section1/fondo1/fondo-1-landing-1.1.webp');
+    animation-delay: 0s;
+}
+.bg2 {
+    background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.1.webp');
+    animation-delay: 5s;
+}
+.bg3 {
+    background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+    animation-delay: 10s;
+}
+
+.sectionTitulo,
+.sectionBoton {
+    position: relative;
+    z-index: 1;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.sectionTitulo h1,
+.sectionTitulo h2 {
+    color: var(--text-color);
+    user-select: none;
+}
+
+.sectionTitulo h1 {
+    font-size: 45px;
+}
+
+.sectionTitulo h2 {
+    font-size: 16px;
+}
+
+@media (min-width: 576px) {
+    .sectionContainer {
+        padding-top: 40px;
+    }
+
+    .bg1 {
+        background-image: url('/src/assets/images/landing/section1/fondo1/fondo-1-landing-1.2.webp');
+    }
+    .bg2 {
+        background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.2.webp');
+    }
+    .bg3 {
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+    }
+
+    .sectionTitulo,
+    .sectionBoton {
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionContainer {
+        padding-top: 70px;
+    }
+
+    .bg1 {
+        background-image: url('/src/assets/images/landing/section1/fondo1/fondo-1-landing-1.3.webp');
+    }
+    .bg2 {
+        background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.3.webp');
+    }
+    .bg3 {
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+    }
+
+    .sectionTitulo,
+    .sectionBoton {
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 80px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionContainer {
+        padding-top: 60px;
+    }
+
+    .bg1 {
+        background-image: url('/src/assets/images/landing/section1/fondo1/fondo-1-landing-1.4.webp');
+    }
+    .bg2 {
+        background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.4.webp');
+    }
+    .bg3 {
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+    }
+
+    .sectionTitulo,
+    .sectionBoton {
+        padding-top: 50px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 90px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .bg1 {
+        background-image: url('/src/assets/images/landing/section1/fondo1/fondo-1-landing-1.5.webp');
+    }
+    .bg2 {
+        background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.5.webp');
+    }
+    .bg3 {
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+    }
+
+    .sectionTitulo,
+    .sectionBoton {
+        padding-left: 80px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 100px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        padding-top: 100px;
+    }
+
+    .bg1 {
+        background-image: url('/src/assets/images/landing/section1/fondo1/fondo-1-landing-1.6.webp');
+    }
+    .bg2 {
+        background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.6.webp');
+    }
+    .bg3 {
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+    }
+
+    .sectionTitulo h1 {
+        font-size: 120px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 28px;
+    }
+}
