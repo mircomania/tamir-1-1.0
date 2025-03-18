@@ -9,7 +9,7 @@ export const Section2Lp = () => {
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>
                 <h2 className="bold-text-montserrat">Descubre Nuestras Galerías Fotográficas</h2>
-                <h3 className="light-text-montserrat">Capturamos la magia de cada etapa</h3>
+                <h3 className="light-text-montserrat-b">Capturamos la magia de cada etapa</h3>
             </header>
 
             {/* Categorías */}
@@ -33,7 +33,7 @@ export const Section2Lp = () => {
             </div>
 
             <div className={styles.sectionFinal}>
-                <p className="light-text-montserrat">
+                <p className="light-text-montserrat-b">
                     ¡Inspírate con nuestra galería! <br /> Haz clic para ver todas las sesiones de fotos
                 </p>
 

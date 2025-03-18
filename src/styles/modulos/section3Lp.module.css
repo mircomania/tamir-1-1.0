@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--background-color), rgb(248, 186, 186));
+    background-image: linear-gradient(to bottom, var(--background-color), rgba(248, 186, 186, 0.7));
 }
 
 .sectionTitulo,
@@ -44,6 +44,7 @@
 .sectionCategoria img {
     width: 120px;
     border: 2px solid var(--text-color);
+    box-shadow: 0px 4px 10px var(--secondary-color);
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }

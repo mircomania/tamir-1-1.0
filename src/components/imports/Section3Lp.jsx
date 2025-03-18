@@ -9,7 +9,7 @@ export const Section3Lp = () => {
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>
                 <h2 className="bold-text-montserrat">Servicios de Fotografía Profesional en Santiago</h2>
-                <h3 className="light-text-montserrat">Elige la sesión perfecta para cada ocasión</h3>
+                <h3 className="light-text-montserrat-b">Elige la sesión perfecta para cada ocasión</h3>
             </header>
 
             {/* Categorías */}
@@ -35,7 +35,7 @@ export const Section3Lp = () => {
             </div>
 
             <div className={styles.sectionFinal}>
-                <p className="light-text-montserrat">Conoce nuestros servicios y encuentra la opción ideal para tus mejores momentos.</p>
+                <p className="light-text-montserrat-b">Conoce nuestros servicios y encuentra la opción ideal para tus mejores momentos.</p>
 
                 <NavLink to="/servicios" aria-label="Ver todos los servicios de Fotografía Profesional">
                     <button className="boton-1 bold-text-montserrat">VER SERVICIOS</button>
