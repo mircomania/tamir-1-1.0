@@ -5,6 +5,13 @@
 .camposObligatorios {
     text-align: end;
     padding-bottom: 10px;
+    user-select: none;
+}
+
+.campoPrecalificarForm {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
 }
 
 .campoPrecalificarForm select,
@@ -14,10 +21,8 @@
     padding-right: 10px;
 }
 
-.campoPrecalificarForm {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
+.campoPrecalificarForm label {
+    user-select: none;
 }
 
 .formControl {

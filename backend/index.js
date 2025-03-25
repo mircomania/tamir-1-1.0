@@ -16,7 +16,7 @@ const SHEET_NAME = process.env.SHEET_NAME || 'LEADS';
 
 // Configurar autenticación con la cuenta de servicio
 const auth = new google.auth.GoogleAuth({
-    keyFile: process.env.GOOGLE_APPLICATION_CREDENTIALS, // Usar variable de entorno
+    keyFile: process.env.GOOGLE_APPLICATION_CREDENTIALS,
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
 });
 
@@ -29,18 +29,8 @@ app.post('/submit', async (req, res) => {
         const client = await auth.getClient();
         const sheets = google.sheets({ version: 'v4', auth: client });
 
-        // Preparar la fila a agregar (puedes agregar una columna de fecha, por ejemplo)
-        const values = [
-            [
-                nombre,
-                telefono,
-                email,
-                sesion,
-                mensaje,
-                new Date().toLocaleString(), // Fecha y hora de envío
-                'En espera', // Estado inicial
-            ],
-        ];
+        // Preparar la fila a agregar
+        const values = [[nombre, telefono, email, sesion, mensaje, new Date().toLocaleString(), 'En espera']];
 
         const resource = {
             values,
@@ -61,7 +51,6 @@ app.post('/submit', async (req, res) => {
     }
 });
 
-// Iniciar el servidor
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);

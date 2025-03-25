@@ -9,7 +9,7 @@ export const categoriasSection3 = [
         nombre: 'Newborn',
         precio: 'desde $99.999',
         ruta: '/servicios/newborn',
-        alt: 'Sesión de fotos Newborn: captura momentos adorables e inolvidables.',
+        alt: 'Servicio de retratos Newborn: Captura sus primeros momentos a tu lado.',
         imagenes: {
             default: img1c1Section3Lp,
             xs: img2c1Section3Lp,
@@ -22,7 +22,7 @@ export const categoriasSection3 = [
         nombre: 'Niños',
         precio: 'desde $99.999',
         ruta: '/servicios/ninos',
-        alt: 'Sesión de fotos Niños: un recuerdo inolvidable de la maternidad.',
+        alt: 'Servicio de retratos Niños: Por que siempre seran nuestros Bebés.',
         imagenes: {
             default: img1c1Section3Lp,
             xs: img2c1Section3Lp,
@@ -35,7 +35,7 @@ export const categoriasSection3 = [
         nombre: 'Embarazo',
         precio: 'desde $99.999',
         ruta: '/servicios/embarazo',
-        alt: 'Sesión de fotos Embarazo: un recuerdo inolvidable de la maternidad.',
+        alt: 'Servicio de retratos Embarazo: Inmortaliza la belleza y emoción de la dulce espera.',
         imagenes: {
             default: img1c1Section3Lp,
             xs: img2c1Section3Lp,
@@ -48,7 +48,7 @@ export const categoriasSection3 = [
         nombre: 'Familia',
         precio: 'desde $99.999',
         ruta: '/servicios/familia',
-        alt: 'Sesión de fotos Familia: retratos llenos de amor y conexión.',
+        alt: 'Servicio de retratos Familia: Conexión, calidez y amor que trasciende',
         imagenes: {
             default: img1c1Section3Lp,
             xs: img2c1Section3Lp,

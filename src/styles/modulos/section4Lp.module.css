@@ -49,8 +49,9 @@
 
     .imgSection4 {
         display: block;
-        width: 250px;
         filter: drop-shadow(0px 0px 100px var(--secondary-color));
+        user-select: none;
+        pointer-events: none;
     }
 
     .form {
@@ -67,13 +68,8 @@
         gap: 50px;
     }
 
-    .imgSection4 {
-        width: 400px;
-    }
-
     .form {
         width: 400px;
-        margin-right: 10px;
     }
 }
 
@@ -97,10 +93,6 @@
         font-size: 45px;
         width: 800px;
     }
-
-    .imgSection4 {
-        width: 450px;
-    }
 }
 
 @media (min-width: 1700px) {
@@ -111,10 +103,6 @@
 
     .sectionContenido {
         gap: 100px;
-    }
-
-    .imgSection4 {
-        width: 550px;
     }
 
     .form {

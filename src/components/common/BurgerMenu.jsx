@@ -20,7 +20,6 @@ export const BurgerMenu = () => {
 
     return (
         <div className="burger-menu">
-            {/* Icono de barras para abrir el menú */}
             <FontAwesomeIcon icon={faBars} className="burger-menu-icon" aria-label="Abrir o cerrar menú" onClick={toggleMenu} />
 
             {/* Contenedor del menú móvil */}

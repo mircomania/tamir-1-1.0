@@ -13,7 +13,6 @@ export const NavBar = () => {
     return (
         <header>
             <nav className="navbar" aria-label="Menú de navegación principal">
-                {/* Logo */}
                 <div className="logo-container">
                     <NavLink to="/" aria-label="Ir a la página principal">
                         <img src={LogoNavbar} alt="Logotipo de Tamir" className="logo-navbar" />
@@ -45,7 +44,6 @@ export const NavBar = () => {
                     </a>
                 </div>
 
-                {/* Menú Hamburguesa */}
                 <BurgerMenu />
             </nav>
         </header>

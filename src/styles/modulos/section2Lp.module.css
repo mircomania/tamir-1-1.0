@@ -9,7 +9,6 @@
 
 .sectionTitulo {
     padding: 20px 0;
-    width: 360px;
 }
 
 .sectionTitulo,
@@ -63,11 +62,7 @@
     transform: scale(0.95);
 }
 
-.sectionFinal {
-    width: 360px;
-    padding-bottom: 20px;
-}
-
+.sectionFinal,
 .sectionFinal p {
     padding-bottom: 20px;
 }
@@ -82,7 +77,6 @@
 
 @media (min-width: 576px) {
     .sectionTitulo {
-        padding-bottom: 20px;
         width: 420px;
     }
 
@@ -118,8 +112,7 @@
 
 @media (min-width: 768px) {
     .sectionTitulo {
-        padding: 20px 0;
-        width: 500px;
+        width: 400px;
     }
 
     .sectionCategorias {
@@ -144,12 +137,7 @@
         font-size: 20px;
     }
 
-    .sectionCategoria img {
-        height: 200px;
-    }
-
     .sectionFinal p {
-        font-size: 20px;
         padding: 20px 0;
     }
 }
@@ -181,10 +169,6 @@
         font-size: 22px;
     }
 
-    .sectionFinal {
-        padding-bottom: 30px;
-    }
-
     .sectionCategorias {
         gap: 120px;
     }
@@ -197,8 +181,8 @@
         font-size: 22px;
     }
 
-    .sectionCategoria img {
-        height: 220px;
+    .sectionFinal {
+        padding-bottom: 30px;
     }
 }
 
@@ -211,20 +195,12 @@
         gap: 140px;
     }
 
-    .sectionCategoria {
-        width: 200px;
-    }
-
     .categoriaOverlay {
         top: 82%;
     }
 
     .sectionCategoria a {
         font-size: 28px;
-    }
-
-    .sectionCategoria img {
-        height: 300px;
     }
 }
 
@@ -249,14 +225,6 @@
 
     .sectionCategoria {
         width: 250px;
-    }
-
-    .sectionCategoria img {
-        height: 350px;
-    }
-
-    .sectionFinal {
-        width: 800px;
     }
 
     .sectionFinal p {

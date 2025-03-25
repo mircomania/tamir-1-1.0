@@ -15,7 +15,6 @@
 
 .sectionTitulo {
     padding: 20px 0;
-    width: 360px;
 }
 
 .sectionTitulo h2 {
@@ -33,6 +32,7 @@
     gap: 30px 10px;
     justify-content: center;
     width: 360px;
+    user-select: none;
 }
 
 .sectionCategoria {
@@ -42,7 +42,6 @@
 }
 
 .sectionCategoria img {
-    width: 120px;
     border: 2px solid var(--text-color);
     box-shadow: 0px 4px 10px var(--secondary-color);
     border-radius: 10px;
@@ -59,7 +58,6 @@
 }
 
 .sectionFinal {
-    width: 360px;
     padding-bottom: 20px;
 }
 
@@ -77,7 +75,6 @@
 
 @media (min-width: 576px) {
     .sectionTitulo {
-        padding-bottom: 20px;
         width: 420px;
     }
 
@@ -94,10 +91,6 @@
         width: 560px;
     }
 
-    .sectionCategoria img {
-        width: 180px;
-    }
-
     .sectionFinal {
         width: 550px;
     }
@@ -109,21 +102,11 @@
 
 @media (min-width: 768px) {
     .sectionTitulo {
-        padding: 20px 0;
         width: 500px;
     }
 
     .sectionCategorias {
         width: 720px;
-    }
-
-    .sectionCategoria img {
-        width: 260px;
-    }
-
-    .sectionFinal p {
-        font-size: 20px;
-        padding: 20px 0;
     }
 }
 
@@ -156,10 +139,6 @@
 
     .sectionCategorias {
         width: 1000px;
-    }
-
-    .sectionCategoria img {
-        width: 350px;
     }
 
     .sectionFinal {
@@ -201,15 +180,7 @@
 
     .sectionCategorias {
         width: 1300px;
-    }
-
-    .sectionCategoria img {
-        width: 450px;
-        height: 150px;
-    }
-
-    .sectionFinal {
-        width: 800px;
+        padding: 30px 0;
     }
 
     .sectionFinal p {

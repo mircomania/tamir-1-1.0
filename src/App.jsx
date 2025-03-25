@@ -7,6 +7,9 @@ import { Footer } from './components/common/Footer';
 import { ScrollToTop } from './hooks/ScrollTop';
 
 const LandingPage = lazy(() => import('./components/pages/LandingPage'));
+const GaleriaPage = lazy(() => import('./components/pages/GaleriaPage'));
+const ServiciosPage = lazy(() => import('./components/pages/ServiciosPage'));
+const ContactoPage = lazy(() => import('./components/pages/ContactoPage'));
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -31,6 +34,9 @@ function App() {
                 <Suspense fallback={<Cargando />}>
                     <Routes>
                         <Route path="/" element={<LandingPage />} />
+                        <Route path="/galeria" element={<GaleriaPage />} />
+                        <Route path="/servicios" element={<ServiciosPage />} />
+                        <Route path="/contacto" element={<ContactoPage />} />
                     </Routes>
                 </Suspense>
             )}

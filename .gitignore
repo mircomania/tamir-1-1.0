@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 .env
+submit.php
 credentials.json
 dist
 dist-ssr

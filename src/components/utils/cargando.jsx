@@ -5,7 +5,7 @@ export const Cargando = () => {
         <section className="cargando-container">
             <img src={camaraCargando} alt="Camara fotografica" className="camara" />
 
-            <p className="light-text-montserrat-b typing">Cargando...</p>
+            <p className="pacifico-text typing">Cargando...</p>
         </section>
     );
 };

@@ -14,7 +14,7 @@ export const categoriasSection2 = [
     {
         nombre: 'Bebés',
         ruta: '/galeria/bebes',
-        alt: 'Sesión de Fotos para Bebés: captura momentos adorables e inolvidables.',
+        alt: 'Sesión de Fotos para Bebés: Captura momentos adorables e inolvidables.',
         imagenes: {
             default: img1c1Section2Lp,
             sm: img2c1Section2Lp,
@@ -26,7 +26,7 @@ export const categoriasSection2 = [
     {
         nombre: 'Embarazo',
         ruta: '/galeria/embarazo',
-        alt: 'Fotografía de Embarazo: un recuerdo inolvidable de la maternidad.',
+        alt: 'Fotografía de Embarazo: Un recuerdo inolvidable de la maternidad.',
         imagenes: {
             default: img1c2Section2Lp,
             sm: img2c1Section2Lp,
@@ -38,7 +38,7 @@ export const categoriasSection2 = [
     {
         nombre: 'Familia',
         ruta: '/galeria/familia',
-        alt: 'Fotografía Familiar: retratos llenos de amor y conexión.',
+        alt: 'Fotografía Familiar: Retratos llenos de amor y conexión.',
         imagenes: {
             default: img1c3Section2Lp,
             sm: img2c1Section2Lp,
