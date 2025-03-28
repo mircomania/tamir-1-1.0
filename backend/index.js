@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Variables de entorno
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
-const SHEET_NAME = process.env.SHEET_NAME || 'LEADS';
+const SHEET_NAME_LEADS = process.env.SHEET_NAME_LEADS || 'LEADS';
 
 // Configurar autenticación con la cuenta de servicio
 const auth = new google.auth.GoogleAuth({
@@ -39,7 +39,7 @@ app.post('/submit', async (req, res) => {
         // Se utiliza "append" para agregar la fila al final
         const result = await sheets.spreadsheets.values.append({
             spreadsheetId: SPREADSHEET_ID,
-            range: `${SHEET_NAME}!A2:A`,
+            range: `${SHEET_NAME_LEADS}!A2:A`,
             valueInputOption: 'USER_ENTERED',
             resource,
         });
@@ -50,6 +50,10 @@ app.post('/submit', async (req, res) => {
         res.status(500).json({ message: 'Hubo un error al enviar los datos a Google Sheets.' });
     }
 });
+
+// Importar y usar la ruta de galería
+const galeriaRoutes = require('./galeria');
+app.use('/api', galeriaRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

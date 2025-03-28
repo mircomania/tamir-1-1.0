@@ -1,6 +1,6 @@
 import styles from '../../styles/modulos/section2Lp.module.css';
 
-import { categoriasSection2 } from '../utils/categoriasSection2Lp';
+import { categoriasSection2Lp } from '../utils/categoriasSection2Lp';
 
 import { NavLink } from 'react-router-dom';
 
@@ -14,9 +14,9 @@ export const Section2Lp = () => {
 
             {/* Categorías */}
             <div className={styles.sectionCategorias}>
-                {categoriasSection2.map((categoria) => (
+                {categoriasSection2Lp.map((categoria) => (
                     <div className={styles.sectionCategoria} key={categoria.nombre}>
-                        <NavLink to={categoria.ruta} aria-label={`Ver todas las Sesiones de Fotos de ${categoria.nombre}`}>
+                        <NavLink to={`/galeria/${categoria.id}`} aria-label={`Ver todas las Sesiones de Fotos de ${categoria.nombre}`}>
                             <div className={styles.categoriaOverlay}>
                                 <p className="pacifico-text">{categoria.nombre}</p>
                             </div>

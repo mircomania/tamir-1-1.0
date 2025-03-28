@@ -1,7 +1,11 @@
+import { Section1Gp } from '../imports/Section1Gp';
+
 const GaleriaPage = () => {
     return (
-        <main>
-            <h1>GALERIA PAGE</h1>
+        <main className="fade-in fondo1">
+            <section>
+                <Section1Gp />
+            </section>
         </main>
     );
 };

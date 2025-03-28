@@ -10,10 +10,10 @@ import img4c1Section2Lp from '../../assets/images/landing/section2/categoria1/fo
 
 import img5c1Section2Lp from '../../assets/images/landing/section2/categoria1/fondo-1-categoria-landing-2.5.webp';
 
-export const categoriasSection2 = [
+export const categoriasSection2Lp = [
     {
         nombre: 'Bebés',
-        ruta: '/galeria/bebes',
+        id: 'newborn',
         alt: 'Sesión de Fotos para Bebés: Captura momentos adorables e inolvidables.',
         imagenes: {
             default: img1c1Section2Lp,
@@ -25,7 +25,7 @@ export const categoriasSection2 = [
     },
     {
         nombre: 'Embarazo',
-        ruta: '/galeria/embarazo',
+        id: 'embarazo',
         alt: 'Fotografía de Embarazo: Un recuerdo inolvidable de la maternidad.',
         imagenes: {
             default: img1c2Section2Lp,
@@ -37,7 +37,7 @@ export const categoriasSection2 = [
     },
     {
         nombre: 'Familia',
-        ruta: '/galeria/familia',
+        id: 'familia',
         alt: 'Fotografía Familiar: Retratos llenos de amor y conexión.',
         imagenes: {
             default: img1c3Section2Lp,
