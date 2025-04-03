@@ -1,10 +1,10 @@
-import styles from '../../styles/modulos/section3Lp.module.css';
+import styles from '../../styles/modulos/sectionLp3.module.css';
 
-import { categoriasSection3Lp } from '../utils/categoriasSection3Lp';
+import { categoriasSectionLp3 } from '../utils/categoriasSectionLp3';
 
 import { NavLink } from 'react-router-dom';
 
-export const Section3Lp = () => {
+export const SectionLp3 = () => {
     return (
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>
@@ -14,7 +14,7 @@ export const Section3Lp = () => {
 
             {/* Categorías */}
             <div className={styles.sectionCategorias}>
-                {categoriasSection3Lp.map((categoria) => (
+                {categoriasSectionLp3.map((categoria) => (
                     <div className={styles.sectionCategoria} key={categoria.nombre}>
                         <NavLink to={categoria.ruta} aria-label={`Ver todas las caracteristicas de las Sesiones de Fotos de ${categoria.nombre}`}>
                             <picture>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 const GaleriaCategoria = () => {
-    // Obtenemos el parámetro de la URL
     const { categoria } = useParams();
 
     const [imagenes, setImagenes] = useState([]);
@@ -41,7 +40,7 @@ const GaleriaCategoria = () => {
                 {imagenes.length > 0 ? (
                     imagenes.map((url, index) => (
                         <img
-                            key={index}
+                            key={id}
                             src={url}
                             alt={`Imagen ${index + 1} de ${categoria}`}
                             loading="lazy"

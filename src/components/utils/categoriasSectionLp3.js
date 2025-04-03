@@ -4,7 +4,7 @@ import img3c1Section3Lp from '../../assets/images/landing/section3/categoria1/fo
 import img4c1Section3Lp from '../../assets/images/landing/section3/categoria1/fondo-1-categoria-landing-3.4.webp';
 import img5c1Section3Lp from '../../assets/images/landing/section3/categoria1/fondo-1-categoria-landing-3.5.webp';
 
-export const categoriasSection3Lp = [
+export const categoriasSectionLp3 = [
     {
         nombre: 'Newborn',
         precio: 'desde $99.999',

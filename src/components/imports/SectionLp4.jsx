@@ -1,4 +1,4 @@
-import styles from '../../styles/modulos/section4Lp.module.css';
+import styles from '../../styles/modulos/sectionLp4.module.css';
 
 import img1Section4 from '../../assets/images/landing/section4/img-section-4.1-lp.webp';
 import img2Section4 from '../../assets/images/landing/section4/img-section-4.2-lp.webp';
@@ -7,7 +7,7 @@ import img4Section4 from '../../assets/images/landing/section4/img-section-4.4-l
 
 import { Form } from './Form';
 
-export const Section4Lp = () => {
+export const SectionLp4 = () => {
     return (
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>

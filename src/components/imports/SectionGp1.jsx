@@ -1,20 +1,24 @@
-import styles from '../../styles/modulos/section1Gp.module.css';
+import styles from '../../styles/modulos/sectionGp1.module.css';
 
-import { categoriasSection1Gp } from '../utils/categoriasSection1Gp';
+import { categoriasSectionGp1 } from '../utils/categoriasSectionGp1';
 
 import { NavLink } from 'react-router-dom';
 
-export const Section1Gp = () => {
+export const SectionGp1 = () => {
     return (
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>
                 <h1 className="pacifico-text">Galería</h1>
-                <h2 className="light-text-montserrat-b">Sigue tus sueños</h2>
+                <h2 className="light-text-montserrat-b">Capturamos tu historia en cada imagen</h2>
+
+                <h3 className="light-text-montserrat-b">
+                    Los momentos, recuerdos y etapas más especiales inmortalizados con nuestras sesiones fotográficas
+                </h3>
             </header>
 
             {/* Categorías */}
             <section className={styles.sectionCategorias}>
-                {categoriasSection1Gp.map((categoria) => (
+                {categoriasSectionGp1.map((categoria) => (
                     <div className={styles.sectionCategoria} key={categoria.nombre}>
                         <NavLink to={`/galeria/${categoria.id}`} aria-label={`Ver todas la Galería de Fotos de ${categoria.nombre}`}>
                             <picture>
@@ -34,11 +38,14 @@ export const Section1Gp = () => {
                 ))}
             </section>
 
-            <hr />
+            <section className={styles.sectionTexto}>
+                <p className="light-text-montserrat-b">
+                    Cada imagen nos cuenta una historia, sesiones de fotos que realzan la emoción con nuestra galería de newborn, niños, embarazo,
+                    familia y mas, destacándonos por nuestro enfoque único y profesional.
+                </p>
+            </section>
 
-            <NavLink to="/contacto" aria-label="Ir a la página de contacto para agendar una Sesión de Fotos">
-                <button className="boton-1 bold-text-montserrat">AGENDAR SESIÓN</button>
-            </NavLink>
+            <hr />
         </section>
     );
 };

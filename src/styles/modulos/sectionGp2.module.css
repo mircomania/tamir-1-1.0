@@ -1,0 +1,14 @@
+.sectionContainer {
+    background-image: linear-gradient(to bottom, var(--background-color), rgba(248, 186, 186, 0.7));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 1700px) {
+    .sectionContainer {
+        padding-bottom: 100px;
+        padding-top: 20px;
+    }
+}

@@ -1,8 +1,8 @@
-import styles from '../../styles/modulos/section1Lp.module.css';
+import styles from '../../styles/modulos/sectionLp1.module.css';
 
 import { NavLink } from 'react-router-dom';
 
-export const Section1Lp = () => {
+export const SectionLp1 = () => {
     return (
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>

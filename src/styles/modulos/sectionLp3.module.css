@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: linear-gradient(to bottom, var(--background-color), rgba(248, 186, 186, 0.5));
+    background-image: linear-gradient(to bottom, var(--background-color), rgba(248, 186, 186, 0.7));
 }
 
 .sectionTitulo,

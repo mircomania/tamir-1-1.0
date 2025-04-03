@@ -3,7 +3,7 @@ import img2c1Section1Gp from '../../assets/images/galeria/categoria1/img-1-galer
 import img3c1Section1Gp from '../../assets/images/galeria/categoria1/img-1-galerias-1.3.webp';
 import img4c1Section1Gp from '../../assets/images/galeria/categoria1/img-1-galerias-1.4.webp';
 
-export const categoriasSection1Gp = [
+export const categoriasSectionGp1 = [
     {
         nombre: 'Newborn',
         id: 'newborn',

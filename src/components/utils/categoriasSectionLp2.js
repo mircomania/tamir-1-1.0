@@ -10,7 +10,7 @@ import img4c1Section2Lp from '../../assets/images/landing/section2/categoria1/fo
 
 import img5c1Section2Lp from '../../assets/images/landing/section2/categoria1/fondo-1-categoria-landing-2.5.webp';
 
-export const categoriasSection2Lp = [
+export const categoriasSectionLp2 = [
     {
         nombre: 'Bebés',
         id: 'newborn',

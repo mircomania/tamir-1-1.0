@@ -1,26 +1,26 @@
-import { Section1Lp } from '../imports/Section1Lp';
-import { Section2Lp } from '../imports/Section2Lp';
-import { Section3Lp } from '../imports/Section3Lp';
-import { Section4Lp } from '../imports/Section4Lp';
+import { SectionLp1 } from '../imports/SectionLp1';
+import { SectionLp2 } from '../imports/SectionLp2';
+import { SectionLp3 } from '../imports/SectionLp3';
+import { SectionLp4 } from '../imports/SectionLp4';
 
 const LandingPage = () => {
     return (
         <main className="fade-in">
             <section>
-                <Section1Lp />
+                <SectionLp1 />
             </section>
 
             <section className="fondo1">
                 <section>
-                    <Section2Lp />
+                    <SectionLp2 />
                 </section>
 
                 <section>
-                    <Section3Lp />
+                    <SectionLp3 />
                 </section>
 
                 <section>
-                    <Section4Lp />
+                    <SectionLp4 />
                 </section>
             </section>
         </main>
