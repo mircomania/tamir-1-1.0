@@ -1,6 +1,6 @@
 import styles from '../../styles/modulos/sectionLp1.module.css';
 
-import { NavLink } from 'react-router-dom';
+import { BotonAgendar } from '../utils/BotonAgendar';
 
 export const SectionLp1 = () => {
     return (
@@ -11,9 +11,7 @@ export const SectionLp1 = () => {
             </header>
 
             <div className={styles.sectionBoton}>
-                <NavLink to="/contacto" aria-label="Ir a la página de contacto para agendar una Sesión de Fotos">
-                    <button className="boton-1 bold-text-montserrat">AGENDAR SESIÓN</button>
-                </NavLink>
+                <BotonAgendar />
             </div>
 
             {/* Fondos animados */}

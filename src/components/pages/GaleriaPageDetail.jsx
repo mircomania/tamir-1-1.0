@@ -1,11 +1,11 @@
-import { SectionGp1 } from '../imports/SectionGp1';
+import { SectionGpd1 } from '../imports/SectionGpd1';
 import { BotonAgendar } from '../utils/BotonAgendar';
 
-const GaleriaPage = () => {
+const GaleriaPageDetail = () => {
     return (
         <main className="fade-in fondo1">
             <section>
-                <SectionGp1 />
+                <SectionGpd1 />
             </section>
 
             <section className="boton-container">
@@ -15,4 +15,4 @@ const GaleriaPage = () => {
     );
 };
 
-export default GaleriaPage;
+export default GaleriaPageDetail;

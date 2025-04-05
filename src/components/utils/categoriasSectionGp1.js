@@ -19,7 +19,7 @@ export const categoriasSectionGp1 = [
     },
     {
         nombre: 'Niños',
-        id: 'ninos',
+        id: 'niños',
         alt: 'Galería de Sesiones Niños: Que sean nuestros niños por siempre.',
         imagenes: {
             default: img1c1Section1Gp,

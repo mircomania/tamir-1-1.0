@@ -1,0 +1,12 @@
+.error-carga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.error-carga h3 {
+    font-size: 20px;
+}

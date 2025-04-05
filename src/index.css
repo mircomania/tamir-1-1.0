@@ -1,0 +1,38 @@
+@import url('../src/styles/global/fuentes.css');
+@import url('../src/styles/global/cargando.css');
+@import url('../src/styles/global/errorCarga.css');
+@import url('../src/styles/global/variables.css');
+@import url('../src/styles/global/navbar.css');
+@import url('../src/styles/global/footer.css');
+@import url('../src/styles/global/botones.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+
+.fondo1 {
+    background-image: url('/src/assets/images/general/watercolor.webp');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
