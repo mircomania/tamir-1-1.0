@@ -1,0 +1,1 @@
+import{j as a}from"./index-D4my82Dp.js";const s=()=>a.jsxs("div",{className:"error-carga",children:[a.jsx("h3",{className:"bold-text-montserrat",children:"Lo sentimos"}),a.jsxs("p",{className:"light-text-montserrat-b",children:["No se han podido cargar las imagenes",a.jsx("br",{}),"recarga la pagina o intentalo mas tarde"]})]});export{s as E};
