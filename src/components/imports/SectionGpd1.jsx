@@ -56,12 +56,12 @@ export const SectionGpd1 = () => {
                     imagenes.length > 0 &&
                     imagenes.map((url, index) => (
                         <div key={categoria + index} className={styles.imagenWrapper}>
-                            <img src={url} alt={`Imagen ${index + 1} de ${categoria}`} className={styles.imagenesCategoria} loading="lazy" />
+                            <img src={url} alt={`Imagen ${index + 1} de ${categoria}`} className={styles.imagenesCategoria} />
                         </div>
                     ))}
 
                 {!loading && !error && imagenes.length === 0 && (
-                    <div className={styles.contenidoAdicional}>
+                    <div className={styles.contenidoAdicional} aria-live="polite">
                         <p className="light-text-montserrat-b">No se encontraron imágenes para la categoría {categoria}</p>
                     </div>
                 )}

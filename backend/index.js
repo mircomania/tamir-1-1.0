@@ -55,6 +55,10 @@ app.post('/submit', async (req, res) => {
 const galeriaRoutes = require('./galeria');
 app.use('/api', galeriaRoutes);
 
+// Importar y usar la ruta de servicios
+const serviciosRoutes = require('./servicios');
+app.use('/api', serviciosRoutes);
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);

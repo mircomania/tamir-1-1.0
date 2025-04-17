@@ -1,7 +1,11 @@
+import { SectionSp1 } from '../imports/SectionSp1';
+
 const ServiciosPage = () => {
     return (
-        <main>
-            <h1>SERVICIOS PAGE</h1>
+        <main className="fade-in fondo1">
+            <section>
+                <SectionSp1 />
+            </section>
         </main>
     );
 };
