@@ -62,7 +62,7 @@ export const SectionGpd1 = () => {
 
                 {!loading && !error && imagenes.length === 0 && (
                     <div className={styles.contenidoAdicional} aria-live="polite">
-                        <p className="light-text-montserrat-b">No se encontraron imágenes para la categoría {categoria}</p>
+                        <p className="light-text-montserrat-b">No hay imágenes disponibles</p>
                     </div>
                 )}
             </section>

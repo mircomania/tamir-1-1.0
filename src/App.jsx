@@ -48,6 +48,7 @@ function App() {
                         <Route path="/galeria" element={<GaleriaPage />} />
                         <Route path="/galeria/:categoria" element={<GaleriaPageDetail />} />
                         <Route path="/servicios" element={<ServiciosPage />} />
+                        <Route path="/servicios/:servicio" element={<ServiciosPage />} />
                         <Route path="/contacto" element={<ContactoPage />} />
                     </Routes>
                 </Suspense>
