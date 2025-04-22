@@ -1,6 +1,7 @@
 import styles from '../../styles/modulos/sectionLp3.module.css';
 
 import { categoriasSectionLp3 } from '../utils/categoriasSectionLp3';
+import { BotonNav } from '../utils/BotonNav';
 
 import { NavLink } from 'react-router-dom';
 
@@ -37,9 +38,13 @@ export const SectionLp3 = () => {
             <div className={styles.sectionFinal}>
                 <p className="light-text-montserrat-b">Conoce nuestros servicios y encuentra la opción ideal para tus mejores momentos.</p>
 
-                <NavLink to="/servicios" aria-label="Ver todos los servicios de Fotografía Profesional">
-                    <button className="boton-1 bold-text-montserrat">VER SERVICIOS</button>
-                </NavLink>
+                <BotonNav
+                    to="/servicios"
+                    ariaLabel="Ver todos los servicios de Fotografía Profesional"
+                    title="Haz clic para ver todos los servicios de Fotografía"
+                >
+                    VER SERVICIOS
+                </BotonNav>
             </div>
 
             <hr />

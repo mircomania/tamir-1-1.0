@@ -1,6 +1,6 @@
 import styles from '../../styles/modulos/sectionLp1.module.css';
 
-import { BotonAgendar } from '../utils/BotonAgendar';
+import { BotonNav } from '../utils/BotonNav';
 
 export const SectionLp1 = () => {
     return (
@@ -11,7 +11,7 @@ export const SectionLp1 = () => {
             </header>
 
             <div className={styles.sectionBoton}>
-                <BotonAgendar />
+                <BotonNav />
             </div>
 
             {/* Fondos animados */}

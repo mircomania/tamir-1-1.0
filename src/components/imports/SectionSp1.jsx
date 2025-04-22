@@ -2,7 +2,7 @@ import styles from '../../styles/modulos/sectionSp1.module.css';
 
 import { Cargando } from '../utils/Cargando';
 import { ErrorCarga } from '../utils/ErrorCarga';
-import { BotonAgendar } from '../utils/BotonAgendar';
+import { BotonNav } from '../utils/BotonNav';
 
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -284,7 +284,7 @@ export const SectionSp1 = () => {
                                                         )}
 
                                                         <div className={styles.botonAgendar}>
-                                                            <BotonAgendar />
+                                                            <BotonNav />
                                                         </div>
 
                                                         <div className={styles.cerrarDetalle}>

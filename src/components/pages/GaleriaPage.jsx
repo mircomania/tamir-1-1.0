@@ -1,5 +1,5 @@
 import { SectionGp1 } from '../imports/SectionGp1';
-import { BotonAgendar } from '../utils/BotonAgendar';
+import { BotonNav } from '../utils/BotonNav';
 
 const GaleriaPage = () => {
     return (
@@ -9,7 +9,7 @@ const GaleriaPage = () => {
             </section>
 
             <section className="boton-container">
-                <BotonAgendar />
+                <BotonNav />
             </section>
         </main>
     );

@@ -1,6 +1,7 @@
 import styles from '../../styles/modulos/sectionLp2.module.css';
 
 import { categoriasSectionLp2 } from '../utils/categoriasSectionLp2';
+import { BotonNav } from '../utils/BotonNav';
 
 import { NavLink } from 'react-router-dom';
 
@@ -37,9 +38,13 @@ export const SectionLp2 = () => {
                     ¡Inspírate con nuestra galería! <br /> Haz clic para ver todas las sesiones de fotos
                 </p>
 
-                <NavLink to="/galeria" aria-label="Ver todas las Sesiones de Fotos en nuestra galería">
-                    <button className="boton-1 bold-text-montserrat">VER GALERÍA</button>
-                </NavLink>
+                <BotonNav
+                    to="/galeria"
+                    ariaLabel="Ver todas las Sesiones de Fotos en nuestra galería"
+                    title="Haz clic para ver todas la Galería de Fotos"
+                >
+                    VER GALERÍA
+                </BotonNav>
             </div>
 
             <hr />
