@@ -1,1 +1,0 @@
-import{j as a,N as t}from"./index-CTSCflMP.js";const n=()=>a.jsx(t,{to:"/contacto","aria-label":"Ir a la página de contacto para agendar una Sesión de Fotos",children:a.jsx("button",{className:"boton-1 bold-text-montserrat",children:"AGENDAR SESIÓN"})});export{n as B};
