@@ -37,22 +37,6 @@
     min-height: calc(100vh - 452px);
 }
 
-.sectionTabla {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.sectionCards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
 .filterContainer {
     display: flex;
     align-items: center;
@@ -81,12 +65,27 @@
     color: var(--background-color);
 }
 
+.sectionTabla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.sectionCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 .cardContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 360px;
 }
 
 .serviceButton {
@@ -194,10 +193,6 @@
     padding-bottom: 10px;
 }
 
-.detailCard hr {
-    margin: 10px 0;
-}
-
 .botonAgendar {
     padding: 20px 0;
 }
@@ -220,7 +215,8 @@
     color: var(--secondary-color);
 }
 
-.sectionContainer hr {
+.sectionContainer hr,
+.detailCard hr {
     width: 90%;
     border: none;
     border-radius: 10px;
@@ -229,21 +225,122 @@
     margin: 20px 0;
 }
 
+.detailCard hr {
+    width: 100%;
+}
+
 @media (min-width: 576px) {
+    .sectionTitulo h2 {
+        font-size: 20px;
+    }
+
+    .sectionTitulo h3 {
+        width: 527px;
+    }
+
     .contenidoAdicional {
         min-height: calc(100vh - 473px);
+    }
+
+    .filterSelect {
+        width: 360px;
+    }
+
+    .sectionTabla {
+        padding: 30px 0;
+    }
+
+    .serviceButton {
+        width: 450px;
+    }
+
+    .serviceButton::after {
+        width: 446px;
+    }
+
+    .detailCard {
+        width: 450px;
+    }
+
+    .paquetesContainer div {
+        width: 350px;
     }
 }
 
 @media (min-width: 768px) {
+    .sectionContainer {
+        padding-top: 80px;
+    }
+
+    .sectionTitulo h3 {
+        width: 570px;
+    }
+
     .contenidoAdicional {
         min-height: calc(100vh - 491px);
+    }
+
+    .filterSelect {
+        width: 510px;
+    }
+
+    .sectionCards {
+        gap: 30px;
+    }
+
+    .serviceButton {
+        width: 700px;
+    }
+
+    .serviceButton::after {
+        width: 696px;
+    }
+
+    .detailCard {
+        padding: 20px;
+        width: 700px;
+    }
+
+    .paquetesContainer {
+        gap: 0px 20px;
+    }
+
+    .paquetesContainer div {
+        width: 200px;
     }
 }
 
 @media (min-width: 992px) {
+    .sectionContainer {
+        padding-top: 90px;
+    }
+
     .contenidoAdicional {
         min-height: calc(100vh - 503px);
+    }
+
+    .serviceButton {
+        width: 800px;
+    }
+
+    .serviceButton::after {
+        width: 796px;
+    }
+
+    .detailCard {
+        width: 800px;
+    }
+
+    .detailCard li {
+        margin-left: 60px;
+    }
+
+    .paquetesContainer {
+        padding: 30px 0;
+    }
+
+    .paquetesContainer div {
+        width: 230px;
     }
 }
 
@@ -254,13 +351,111 @@
 }
 
 @media (min-width: 1400px) {
+    .sectionContainer {
+        padding-top: 100px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 55px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 22px;
+    }
+
+    .sectionTitulo h3 {
+        font-size: 18px;
+    }
+
     .contenidoAdicional {
         min-height: calc(100vh - 559px);
+    }
+
+    .cardContainer h3 {
+        font-size: 20px;
+    }
+
+    .serviceButton {
+        width: 1000px;
+        height: 150px;
+    }
+
+    .serviceButton::after {
+        width: 996px;
+    }
+
+    .detailCard {
+        width: 1000px;
+    }
+
+    .detailCard p {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .detailCard ul {
+        padding-bottom: 20px;
+    }
+
+    .detailCard li {
+        margin-left: 150px;
+        font-size: 18px;
+    }
+
+    .paquetesContainer {
+        gap: 0px 40px;
+    }
+
+    .paquetesContainer div {
+        width: 280px;
     }
 }
 
 @media (min-width: 1700px) {
+    .sectionContainer {
+        padding-top: 120px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 65px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 26px;
+    }
+
+    .sectionTitulo h3 {
+        font-size: 20px;
+    }
+
     .contenidoAdicional {
         min-height: calc(100vh - 672px);
+    }
+
+    .filterContainer,
+    .filterSelect {
+        font-size: 18px;
+    }
+
+    .serviceButton {
+        width: 1350px;
+        height: 200px;
+    }
+
+    .serviceButton::after {
+        width: 1346px;
+    }
+
+    .detailCard {
+        width: 1350px;
+        padding: 30px 100px;
+    }
+
+    .detailCard li {
+        margin-left: 100px;
+    }
+
+    .paquetesContainer div {
+        width: 340px;
     }
 }
