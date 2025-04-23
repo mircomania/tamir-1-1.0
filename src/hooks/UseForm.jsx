@@ -8,6 +8,8 @@ export const useForm = (initialState, submitCallback) => {
 
     const sesiones = ['Tipo de Sesión', 'Newborn', 'Niños', 'Embarazo', 'Familia'];
 
+    const planes = ['Tipo de Plan', 'Básico', 'Full', 'Premium'];
+
     const showAlert = (title, message, icon, color) => {
         Swal.fire({
             title,
@@ -77,7 +79,7 @@ export const useForm = (initialState, submitCallback) => {
 
     const validateSesion = (newErrors) => {
         if (!formData.sesion.trim() || formData.sesion === 'Tipo de Sesión') {
-            newErrors.sesion = 'Selecciona un tipo de Sesión válido.';
+            newErrors.sesion = 'Elige un tipo de sesión.';
         }
     };
 
@@ -93,6 +95,7 @@ export const useForm = (initialState, submitCallback) => {
                 telefono: formData.telefono,
                 email: formData.email,
                 sesion: formData.sesion,
+                plan: formData.plan,
                 mensaje: formData.mensaje,
             };
 
@@ -121,5 +124,5 @@ export const useForm = (initialState, submitCallback) => {
         setFormData(initialState);
     };
 
-    return { formData, errors, loading, handleChange, handleSubmit, sesiones, showAlert };
+    return { formData, errors, loading, handleChange, handleSubmit, sesiones, planes, showAlert };
 };

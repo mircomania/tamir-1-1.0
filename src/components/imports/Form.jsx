@@ -6,12 +6,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 export const Form = () => {
-    const { formData, errors, loading, handleChange, handleSubmit, sesiones, showAlert } = useForm(
+    const { formData, errors, loading, handleChange, handleSubmit, sesiones, planes, showAlert } = useForm(
         {
             nombre: '',
             telefono: '+56',
             email: '',
             sesion: '',
+            plan: '',
             mensaje: '',
         },
         (success, data) => {
@@ -77,22 +78,38 @@ export const Form = () => {
             </div>
 
             {/* TIPOS DE SESION */}
-            <div className={styles.campoPrecalificarForm}>
-                <label htmlFor="sesion" className="light-text-montserrat" aria-label="Tipo de sesión de fotos que quiere el usuario">
-                    *Tipo de sesión:
-                </label>
-                <select className={styles.formControl} id="sesion" name="sesion" value={formData.sesion} onChange={handleChange}>
-                    {sesiones.map((sesion) => (
-                        <option key={sesion} value={sesion}>
-                            {sesion}
-                        </option>
-                    ))}
-                </select>
-                {errors.sesion && (
-                    <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
-                        {errors.sesion}
-                    </small>
-                )}
+            <div className={styles.camposSelect}>
+                <div className={styles.campoPrecalificarForm}>
+                    <label htmlFor="sesion" className="light-text-montserrat" aria-label="Tipo de sesión de fotos que quiere el usuario">
+                        *Tipo de sesión:
+                    </label>
+                    <select className={styles.formControl} id="sesion" name="sesion" value={formData.sesion} onChange={handleChange}>
+                        {sesiones.map((sesion) => (
+                            <option key={sesion} value={sesion}>
+                                {sesion}
+                            </option>
+                        ))}
+                    </select>
+                    {errors.sesion && (
+                        <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
+                            {errors.sesion}
+                        </small>
+                    )}
+                </div>
+
+                {/* TIPOS DE PLANES */}
+                <div className={styles.campoPrecalificarForm}>
+                    <label htmlFor="plan" className="light-text-montserrat" aria-label="Tipo de plan de sesión de fotos">
+                        Tipo de plan:
+                    </label>
+                    <select className={styles.formControl} id="plan" name="plan" value={formData.plan} onChange={handleChange}>
+                        {planes.map((plan) => (
+                            <option key={plan} value={plan}>
+                                {plan}
+                            </option>
+                        ))}
+                    </select>
+                </div>
             </div>
 
             {/* MENSAJE */}

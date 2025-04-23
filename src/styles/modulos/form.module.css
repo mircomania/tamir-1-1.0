@@ -60,6 +60,35 @@
     padding-top: 5px;
 }
 
+@media (min-width: 576px) {
+    .camposSelect {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .camposSelect select {
+        width: 210px;
+    }
+}
+
+@media (min-width: 768px) {
+    .camposSelect select {
+        width: 160px;
+    }
+}
+
+@media (min-width: 768px) {
+    .camposSelect select {
+        width: 190px;
+    }
+}
+
+@media (min-width: 768px) {
+    .camposSelect select {
+        width: 240px;
+    }
+}
+
 @media (min-width: 1400px) {
     .formControl {
         padding: 5px 0;
@@ -70,5 +99,9 @@
     .campoPrecalificarForm,
     .formControl {
         font-size: 20px;
+    }
+
+    .camposSelect select {
+        width: 290px;
     }
 }
