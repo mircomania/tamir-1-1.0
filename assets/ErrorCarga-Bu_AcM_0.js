@@ -1,1 +1,0 @@
-import{j as r}from"./index-Db9tlOTJ.js";const s=()=>r.jsxs("div",{className:"error-carga",children:[r.jsx("h3",{className:"bold-text-montserrat",children:"Lo sentimos"}),r.jsxs("p",{className:"light-text-montserrat-b",children:["No se ha podido cargar el contenido",r.jsx("br",{}),"recarga la pagina o intentalo mas tarde"]})]});export{s as E};
