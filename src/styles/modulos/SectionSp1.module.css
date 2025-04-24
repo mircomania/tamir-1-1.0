@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: calc(100vh - 452px);
+    min-height: calc(100vh - 450px);
 }
 
 .filterContainer {
@@ -238,10 +238,6 @@
         width: 527px;
     }
 
-    .contenidoAdicional {
-        min-height: calc(100vh - 473px);
-    }
-
     .filterSelect {
         width: 360px;
     }
@@ -274,10 +270,6 @@
 
     .sectionTitulo h3 {
         width: 570px;
-    }
-
-    .contenidoAdicional {
-        min-height: calc(100vh - 491px);
     }
 
     .filterSelect {
@@ -315,10 +307,6 @@
         padding-top: 90px;
     }
 
-    .contenidoAdicional {
-        min-height: calc(100vh - 503px);
-    }
-
     .serviceButton {
         width: 800px;
     }
@@ -344,12 +332,6 @@
     }
 }
 
-@media (min-width: 1200px) {
-    .contenidoAdicional {
-        min-height: calc(100vh - 506px);
-    }
-}
-
 @media (min-width: 1400px) {
     .sectionContainer {
         padding-top: 100px;
@@ -365,10 +347,7 @@
 
     .sectionTitulo h3 {
         font-size: 18px;
-    }
-
-    .contenidoAdicional {
-        min-height: calc(100vh - 559px);
+        width: 760px;
     }
 
     .cardContainer h3 {
@@ -426,10 +405,7 @@
 
     .sectionTitulo h3 {
         font-size: 20px;
-    }
-
-    .contenidoAdicional {
-        min-height: calc(100vh - 672px);
+        width: 840px;
     }
 
     .filterContainer,
@@ -438,16 +414,15 @@
     }
 
     .serviceButton {
-        width: 1350px;
-        height: 200px;
+        width: 1300px;
     }
 
     .serviceButton::after {
-        width: 1346px;
+        width: 1296px;
     }
 
     .detailCard {
-        width: 1350px;
+        width: 1300px;
         padding: 30px 100px;
     }
 
@@ -456,6 +431,6 @@
     }
 
     .paquetesContainer div {
-        width: 340px;
+        width: 320px;
     }
 }

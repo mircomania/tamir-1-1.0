@@ -1,7 +1,11 @@
+import { SectionCp1 } from '../imports/SectionCp1';
+
 const ContactoPage = () => {
     return (
-        <main>
-            <h1>CONTACTO PAGE</h1>
+        <main className="fade-in fondo1">
+            <section>
+                <SectionCp1 />
+            </section>
         </main>
     );
 };

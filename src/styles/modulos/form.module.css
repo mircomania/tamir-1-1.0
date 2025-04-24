@@ -77,13 +77,13 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .camposSelect select {
         width: 190px;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .camposSelect select {
         width: 240px;
     }

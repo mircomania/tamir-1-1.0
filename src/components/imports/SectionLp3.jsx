@@ -36,7 +36,7 @@ export const SectionLp3 = () => {
             </div>
 
             <div className={styles.sectionFinal}>
-                <p className="light-text-montserrat-b">Conoce nuestros servicios y encuentra la opción ideal para tus mejores momentos.</p>
+                <p className="light-text-montserrat-b">Conoce nuestros servicios y encuentra la opción ideal para tus mejores momentos</p>
 
                 <BotonNav
                     to="/servicios"
