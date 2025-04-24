@@ -46,6 +46,17 @@
     color: var(--background-color);
 }
 
+.campoCheckboxForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.checkBox {
+    margin-right: 10px;
+}
+
 .textDanger {
     color: red;
     padding: 0;
@@ -97,7 +108,8 @@
 
 @media (min-width: 1700px) {
     .campoPrecalificarForm,
-    .formControl {
+    .formControl,
+    .campoCheckboxForm {
         font-size: 20px;
     }
 

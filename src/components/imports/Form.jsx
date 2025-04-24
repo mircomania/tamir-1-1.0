@@ -14,6 +14,7 @@ export const Form = () => {
             sesion: '',
             plan: '',
             mensaje: '',
+            novedades: false,
         },
         (success, data) => {
             if (success) {
@@ -35,7 +36,16 @@ export const Form = () => {
                 <label htmlFor="nombre" className="light-text-montserrat" aria-label="Nombre del usuario">
                     *Nombre Completo:
                 </label>
-                <input type="text" className={styles.formControl} id="nombre" name="nombre" value={formData.nombre} onChange={handleChange} />
+                <input
+                    type="text"
+                    className={styles.formControl}
+                    id="nombre"
+                    name="nombre"
+                    value={formData.nombre}
+                    onChange={handleChange}
+                    required
+                    aria-invalid={!!errors.nombre}
+                />
                 {errors.nombre && (
                     <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
                         {errors.nombre}
@@ -49,12 +59,15 @@ export const Form = () => {
                     *Teléfono:
                 </label>
                 <input
-                    type="text"
+                    type="tel"
                     className={styles.formControl}
                     id="telefono"
                     name="telefono"
                     value={formData.telefono}
                     onChange={handleChange}
+                    autoComplete="tel-national"
+                    required
+                    aria-invalid={!!errors.telefono}
                     maxLength="13"
                 />
                 {errors.telefono && (
@@ -69,7 +82,17 @@ export const Form = () => {
                 <label htmlFor="email" className="light-text-montserrat" aria-label="email del usuario">
                     *Correo Electrónico :
                 </label>
-                <input type="text" className={styles.formControl} id="email" name="email" value={formData.email} onChange={handleChange} />
+                <input
+                    type="email"
+                    className={styles.formControl}
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    autoComplete="email"
+                    required
+                    aria-invalid={!!errors.email}
+                />
                 {errors.email && (
                     <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
                         {errors.email}
@@ -83,7 +106,15 @@ export const Form = () => {
                     <label htmlFor="sesion" className="light-text-montserrat" aria-label="Tipo de sesión de fotos que quiere el usuario">
                         *Tipo de sesión:
                     </label>
-                    <select className={styles.formControl} id="sesion" name="sesion" value={formData.sesion} onChange={handleChange}>
+                    <select
+                        className={styles.formControl}
+                        id="sesion"
+                        name="sesion"
+                        value={formData.sesion}
+                        onChange={handleChange}
+                        required
+                        aria-invalid={!!errors.sesion}
+                    >
                         {sesiones.map((sesion) => (
                             <option key={sesion} value={sesion}>
                                 {sesion}
@@ -118,6 +149,22 @@ export const Form = () => {
                     ¿Que tienes en mente? (opcional):
                 </label>
                 <textarea className={styles.formControl} name="mensaje" id="mensaje" value={formData.mensaje} onChange={handleChange} rows="5" />
+            </div>
+
+            {/* NOVEDADES*/}
+            <div className={styles.campoCheckboxForm}>
+                <input
+                    type="checkbox"
+                    className={styles.checkBox}
+                    name="novedades"
+                    id="novedades"
+                    checked={formData.novedades}
+                    onChange={handleChange}
+                />
+
+                <label htmlFor="novedades" className="light-text-montserrat" aria-label="Marca si quieres recibir novedades y promociones">
+                    Recibir novedades y promociones
+                </label>
             </div>
 
             {/* Contenedor para el botón y spinner */}

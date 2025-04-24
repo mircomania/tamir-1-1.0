@@ -22,15 +22,17 @@ const auth = new google.auth.GoogleAuth({
 
 // Ruta para recibir los datos del formulario
 app.post('/submit', async (req, res) => {
-    const { nombre, telefono, email, sesion, plan, mensaje } = req.body;
+    const { nombre, telefono, email, sesion, plan, mensaje, novedades } = req.body;
 
     try {
+        const novedadesStr = novedades ? 'si' : 'no';
+
         // Obtener cliente autenticado
         const client = await auth.getClient();
         const sheets = google.sheets({ version: 'v4', auth: client });
 
         // Preparar la fila a agregar
-        const values = [[nombre, telefono, email, sesion, plan, mensaje, new Date().toLocaleString(), 'En espera']];
+        const values = [[nombre, telefono, email, sesion, plan, mensaje, new Date().toLocaleString(), 'En espera', novedadesStr]];
 
         const resource = {
             values,

@@ -30,16 +30,16 @@ export const useForm = (initialState, submitCallback) => {
     };
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
+        const { name, type, checked, value } = e.target;
+        const fieldValue = type === 'checkbox' ? checked : value;
 
         if (name === 'telefono') {
-            const cleanValue = value.replace(/\D/g, '');
-            const formattedValue = cleanValue.startsWith('56') ? '+' + cleanValue : '+56' + cleanValue;
-            setFormData((prev) => ({ ...prev, telefono: formattedValue }));
+            const clean = fieldValue.replace(/\D/g, '');
+            const formatted = clean.startsWith('56') ? '+' + clean : '+56' + clean;
+            setFormData((prev) => ({ ...prev, telefono: formatted }));
         } else {
-            setFormData((prev) => ({ ...prev, [name]: value }));
+            setFormData((prev) => ({ ...prev, [name]: fieldValue }));
         }
-
         setErrors((prev) => ({ ...prev, [name]: '' }));
     };
 
@@ -97,6 +97,7 @@ export const useForm = (initialState, submitCallback) => {
                 sesion: formData.sesion,
                 plan: formData.plan,
                 mensaje: formData.mensaje,
+                novedades: formData.novedades,
             };
 
             const response = await fetch('http://localhost:5000/submit', {
@@ -122,6 +123,7 @@ export const useForm = (initialState, submitCallback) => {
 
     const resetForm = () => {
         setFormData(initialState);
+        setErrors({});
     };
 
     return { formData, errors, loading, handleChange, handleSubmit, sesiones, planes, showAlert };
