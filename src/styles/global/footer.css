@@ -4,7 +4,7 @@
     justify-content: center;
     text-align: center;
     position: relative;
-    height: 150px;
+    height: 170px;
     background: linear-gradient(95deg, #ca8892, var(--primary-color) 80%);
     box-shadow: 0px -4px 10px var(--shadow-color);
     color: var(--background-color);
@@ -23,17 +23,45 @@
     user-select: none;
 }
 
-.poli-copy {
+.utiles-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding-top: 5px;
 }
 
-.poli-copy a {
+.links-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 360px;
+    gap: 10px 20px;
+}
+
+.links-footer a {
     text-decoration: none;
     color: var(--text-color);
     user-select: none;
+    font-size: 14px;
 }
 
 .tamir-2025 {
     user-select: none;
     pointer-events: none;
+}
+
+@media (min-width: 576px) {
+    .footer {
+        height: 150px;
+    }
+
+    .links-footer {
+        width: 576px;
+    }
+
+    .links-footer a {
+        font-size: 16px;
+    }
 }

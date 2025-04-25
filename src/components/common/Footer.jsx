@@ -34,14 +34,24 @@ export const Footer = () => {
                 </section>
 
                 {/* Copyright */}
-                <section className="poli-copy light-text-montserrat">
+                <section className="utiles-footer light-text-montserrat">
                     <p>
                         <span className="tamir-2025">© TAMIR 2025 | </span>contacto@tamir.cl
                     </p>
 
-                    <NavLink to="/politica-privacidad" title="Ver la política de privacidad">
-                        Política de privacidad
-                    </NavLink>
+                    <div className="links-footer">
+                        <NavLink to="/politica-privacidad" title="Ver la política de privacidad">
+                            Política de privacidad
+                        </NavLink>
+
+                        <NavLink to="/terminos-condiciones" title="Ver los términos y condiciones">
+                            Términos y condiciones
+                        </NavLink>
+
+                        <NavLink to="/faq" title="Ver las preguntas preguntas frecuentes">
+                            FAQ
+                        </NavLink>
+                    </div>
                 </section>
             </div>
         </footer>

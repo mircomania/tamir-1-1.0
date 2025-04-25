@@ -12,6 +12,9 @@ const GaleriaPage = lazy(() => import('./components/pages/GaleriaPage'));
 const GaleriaPageDetail = lazy(() => import('./components/pages/GaleriaPageDetail'));
 const ServiciosPage = lazy(() => import('./components/pages/ServiciosPage'));
 const ContactoPage = lazy(() => import('./components/pages/ContactoPage'));
+const PoliticaPage = lazy(() => import('./components/pages/PoliticaPage'));
+const TerminosPage = lazy(() => import('./components/pages/TerminosPage'));
+const FaqPage = lazy(() => import('./components/pages/FaqPage'));
 
 function App() {
     UseDisableImg();
@@ -50,6 +53,9 @@ function App() {
                         <Route path="/servicios" element={<ServiciosPage />} />
                         <Route path="/servicios/:servicio" element={<ServiciosPage />} />
                         <Route path="/contacto" element={<ContactoPage />} />
+                        <Route path="/politica-privacidad" element={<PoliticaPage />} />
+                        <Route path="/terminos-condiciones" element={<TerminosPage />} />
+                        <Route path="/faq" element={<FaqPage />} />
                     </Routes>
                 </Suspense>
             )}

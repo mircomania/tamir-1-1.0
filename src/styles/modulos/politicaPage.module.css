@@ -1,0 +1,105 @@
+.sectionContainer {
+    background-image: linear-gradient(to bottom, rgba(248, 186, 186, 0.7), var(--background-color));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 100dvh;
+}
+
+.sectionTitulo {
+    color: var(--text-color);
+    user-select: none;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sectionTitulo h1 {
+    font-size: 26px;
+}
+
+.sectionContainer img {
+    user-select: none;
+    margin-bottom: 20px;
+}
+
+.sectionContenido {
+    color: var(--text-color);
+    width: 320px;
+}
+
+.sectionContenido a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.sectionContenido h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+.sectionContenido ul {
+    padding-bottom: 10px;
+}
+
+.sectionContenido li {
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+@media (min-width: 576px) {
+    .sectionContenido {
+        width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionContainer {
+        padding-top: 110px;
+    }
+
+    .sectionContenido {
+        width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionContainer {
+        padding-top: 120px;
+    }
+
+    .sectionContenido {
+        width: 800px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        padding-top: 130px;
+    }
+
+    .sectionContenido {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sectionContainer {
+        padding-top: 150px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 32px;
+    }
+
+    .sectionContenido p,
+    .sectionContenido li {
+        font-size: 18px;
+    }
+
+    .sectionContenido h3 {
+        font-size: 22px;
+    }
+}

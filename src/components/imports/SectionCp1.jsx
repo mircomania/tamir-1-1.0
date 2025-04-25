@@ -15,7 +15,7 @@ export const SectionCp1 = () => {
             <header className={styles.sectionTitulo}>
                 <h1 className="pacifico-text">Contacto</h1>
                 <h2 className="light-text-montserrat-b">Es momento de crear algo especial</h2>
-                <h3 className="light-text-montserrat-b">
+                <h3 className="light-text-montserrat">
                     Déjanos tu mensaje y nosotros nos encargaremos de ofrecerte la sesión que mereces, cuidando cada imagen con profesionalismo y
                     pasión
                 </h3>

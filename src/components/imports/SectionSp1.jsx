@@ -95,7 +95,7 @@ export const SectionSp1 = () => {
 
                 <h2 className="light-text-montserrat-b">Inmortaliza tus mejores recuerdos</h2>
 
-                <h3 className="light-text-montserrat-b">
+                <h3 className="light-text-montserrat">
                     Vive un servicio fotográfico profesional, cercano y adaptado a ti, donde cada imagen nace del cuidado, el amor y la dedicación
                 </h3>
             </header>
@@ -161,10 +161,10 @@ export const SectionSp1 = () => {
                                             {activeService === service.servicio && (
                                                 <div className={styles.detailCard}>
                                                     <div className="fade-in">
-                                                        {service.intro && <p className="light-text-montserrat-b">{service.intro}</p>}
+                                                        {service.intro && <p className="light-text-montserrat">{service.intro}</p>}
 
                                                         <h4 className="bold-text-montserrat">ESTUDIO</h4>
-                                                        {service.estudio && <p className="light-text-montserrat-b">{service.estudio}</p>}
+                                                        {service.estudio && <p className="light-text-montserrat">{service.estudio}</p>}
 
                                                         <div className={styles.paquetesContainer}>
                                                             <div>
@@ -225,7 +225,7 @@ export const SectionSp1 = () => {
                                                         <hr />
 
                                                         <h4 className="bold-text-montserrat">EXTERIOR</h4>
-                                                        {service.exterior && <p className="light-text-montserrat-b">{service.exterior}</p>}
+                                                        {service.exterior && <p className="light-text-montserrat">{service.exterior}</p>}
 
                                                         <div className={styles.paquetesContainer}>
                                                             <div>

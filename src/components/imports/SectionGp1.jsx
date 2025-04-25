@@ -11,7 +11,7 @@ export const SectionGp1 = () => {
                 <h1 className="pacifico-text">Galería</h1>
                 <h2 className="light-text-montserrat-b">Capturamos tu historia en cada imagen</h2>
 
-                <h3 className="light-text-montserrat-b">
+                <h3 className="light-text-montserrat">
                     Los momentos, recuerdos y etapas más especiales inmortalizados con nuestras sesiones fotográficas
                 </h3>
             </header>
@@ -39,7 +39,7 @@ export const SectionGp1 = () => {
             </section>
 
             <section className={styles.sectionTexto}>
-                <p className="light-text-montserrat-b">
+                <p className="light-text-montserrat">
                     Cada imagen nos cuenta una historia, sesiones de fotos que realzan la emoción con nuestra galería de newborn, niños, embarazo,
                     familia y mas, destacándonos por nuestro enfoque único y profesional
                 </p>
