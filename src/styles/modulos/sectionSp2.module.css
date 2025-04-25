@@ -4,5 +4,84 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.sectionTitulo {
+    color: var(--text-color);
+    user-select: none;
     text-align: center;
+    padding-bottom: 20px;
+}
+
+.sectionTitulo h2 {
+    font-size: 25px;
+}
+
+.sectionContenido {
+    color: var(--text-color);
+    width: 320px;
+}
+
+.sectionContenido li {
+    padding-bottom: 15px;
+    margin-left: 20px;
+}
+
+.sectionContenido p {
+    text-align: center;
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+@media (min-width: 576px) {
+    .sectionContenido {
+        width: 420px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionContenido {
+        width: 620px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionContenido {
+        width: 800px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionTitulo h2 {
+        font-size: 45px;
+        padding-bottom: 30px;
+    }
+
+    .sectionContenido {
+        width: 1000px;
+    }
+
+    .sectionContenido li {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .sectionContenido p {
+        font-size: 22px;
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sectionContenido {
+        width: 1100px;
+    }
+
+    .sectionContenido li {
+        font-size: 20px;
+    }
+
+    .sectionContenido p {
+        font-size: 26px;
+    }
 }
