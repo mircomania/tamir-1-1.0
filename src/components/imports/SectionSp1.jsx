@@ -1,92 +1,13 @@
 import styles from '../../styles/modulos/sectionSp1.module.css';
 
+import { useSectionSp1 } from '../../hooks/UseSectionSp1';
+
 import { Cargando } from '../utils/Cargando';
 import { ErrorCarga } from '../utils/ErrorCarga';
 import { BotonNav } from '../utils/BotonNav';
 
-import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-
 export const SectionSp1 = () => {
-    const location = useLocation();
-    const [services, setServices] = useState([]);
-    const [activeService, setActiveService] = useState(null);
-    const [filter, setFilter] = useState('');
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-
-    useEffect(() => {
-        if (filter) {
-            setActiveService(filter);
-            setTimeout(() => {
-                const cardEl = document.getElementById(`servicio-${filter.replace(/\s+/g, '-').toLowerCase()}`);
-                if (cardEl) {
-                    const yOffset = -130;
-                    const y = cardEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                }
-            }, 150);
-        } else {
-            setActiveService(null);
-        }
-    }, [filter]);
-
-    useEffect(() => {
-        const path = location.pathname;
-        const parts = path.split('/');
-        const last = parts[parts.length - 1];
-
-        const mapFallbacks = {
-            ninos: 'niños',
-        };
-
-        if (last && last !== 'servicios') {
-            setFilter(mapFallbacks[last] || last);
-        }
-    }, [location.pathname]);
-
-    useEffect(() => {
-        const fetchServices = async () => {
-            try {
-                const res = await fetch('http://localhost:5000/api/servicios');
-                const data = await res.json();
-                if (data?.services) {
-                    setServices(data.services);
-                } else {
-                    throw new Error('No se encontraron servicios');
-                }
-            } catch (err) {
-                console.error('Error fetching services:', err);
-                setError(err);
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchServices();
-    }, []);
-
-    const handleClick = (serviceId) => {
-        const newActive = activeService === serviceId ? null : serviceId;
-        setActiveService(newActive);
-
-        if (newActive) {
-            setTimeout(() => {
-                const cardEl = document.getElementById(`servicio-${serviceId.replace(/\s+/g, '-').toLowerCase()}`);
-                if (cardEl) {
-                    const yOffset = -110;
-                    const y = cardEl.getBoundingClientRect().top + window.pageYOffset + yOffset;
-
-                    window.scrollTo({ top: y, behavior: 'smooth' });
-                }
-            }, 100);
-        }
-    };
-
-    // Después de tu lógica de filter/useEffects:
-    const filteredServices = filter ? services.filter((svc) => svc.servicio.toLowerCase() === filter.toLowerCase()) : services;
-
-    // ** Nuevo paso **: si no hay coincidencias, mostramos todos
-    const servicesToDisplay = filteredServices.length > 0 ? filteredServices : services;
+    const { services, servicesToDisplay, activeService, filter, setFilter, handleClick, handleClose, loading, error } = useSectionSp1();
 
     return (
         <section className={styles.sectionContainer}>
@@ -141,6 +62,8 @@ export const SectionSp1 = () => {
                                     </select>
                                 </div>
 
+                                {/* CARDS */}
+
                                 {servicesToDisplay.map((service) => {
                                     const cardId = `servicio-${service.servicio.replace(/\s+/g, '-').toLowerCase()}`;
                                     return (
@@ -157,6 +80,8 @@ export const SectionSp1 = () => {
                                                     {service.servicio.charAt(0).toUpperCase() + service.servicio.slice(1)}
                                                 </h3>
                                             </button>
+
+                                            {/* CONTENIDO CARDS */}
 
                                             {activeService === service.servicio && (
                                                 <div className={styles.detailCard}>
@@ -289,7 +214,7 @@ export const SectionSp1 = () => {
 
                                                         <div className={styles.cerrarDetalle}>
                                                             <button
-                                                                onClick={() => setActiveService(null)}
+                                                                onClick={() => handleClose(service.servicio)}
                                                                 className={`${styles.botonCerrar} bold-text-montserrat`}
                                                             >
                                                                 ✕

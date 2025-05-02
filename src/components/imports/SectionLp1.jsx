@@ -14,7 +14,7 @@ export const SectionLp1 = () => {
                 <BotonNav />
             </div>
 
-            {/* Fondos animados */}
+            {/* FONDOS ANIMADOS */}
             <div className={`${styles.bg} ${styles.bg1}`}></div>
             <div className={`${styles.bg} ${styles.bg2}`}></div>
             <div className={`${styles.bg} ${styles.bg3}`}></div>

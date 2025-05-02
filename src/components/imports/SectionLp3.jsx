@@ -13,7 +13,7 @@ export const SectionLp3 = () => {
                 <h3 className="light-text-montserrat-b">Elige la sesión perfecta para cada ocasión</h3>
             </header>
 
-            {/* Categorías */}
+            {/* CATEGORIAS */}
             <div className={styles.sectionCategorias}>
                 {categoriasSectionLp3.map((categoria) => (
                     <div className={styles.sectionCategoria} key={categoria.nombre}>

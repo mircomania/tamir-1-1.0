@@ -51,6 +51,8 @@ export const SectionGpd1 = () => {
                     </div>
                 )}
 
+                {/* IMAGENES */}
+
                 {!loading &&
                     !error &&
                     imagenes.length > 0 &&

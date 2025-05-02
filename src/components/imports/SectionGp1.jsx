@@ -16,7 +16,7 @@ export const SectionGp1 = () => {
                 </h3>
             </header>
 
-            {/* Categorías */}
+            {/* CATEGORIAS */}
             <section className={styles.sectionCategorias}>
                 {categoriasSectionGp1.map((categoria) => (
                     <div className={styles.sectionCategoria} key={categoria.nombre}>

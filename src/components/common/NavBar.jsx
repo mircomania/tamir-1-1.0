@@ -13,11 +13,15 @@ export const NavBar = () => {
     return (
         <header>
             <nav className="navbar" aria-label="Menú de navegación principal">
+                {/* LOGO  */}
+
                 <div className="logo-container">
                     <NavLink to="/" aria-label="Ir a la página principal">
                         <img src={LogoNavbar} alt="Logotipo de Tamir" className="logo-navbar" />
                     </NavLink>
                 </div>
+
+                {/* LISTA  */}
 
                 <ul className="menu-nav light-text-montserrat">
                     {navLinks.map((item, index) => (
@@ -29,6 +33,8 @@ export const NavBar = () => {
                         </li>
                     ))}
                 </ul>
+
+                {/* REDES SOCIALES */}
 
                 <div className="redes-container-navbar">
                     <a href="https://www.instagram.com/tamirfotografias/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -43,6 +49,8 @@ export const NavBar = () => {
                         <img src={LogoFacebook1} alt="Facebook" />
                     </a>
                 </div>
+
+                {/* BURGERMENU */}
 
                 <BurgerMenu />
             </nav>

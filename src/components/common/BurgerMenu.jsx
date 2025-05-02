@@ -20,11 +20,15 @@ export const BurgerMenu = () => {
 
     return (
         <div className="burger-menu">
+            {/* ICONO  */}
+
             <FontAwesomeIcon icon={faBars} className="burger-menu-icon" aria-label="Abrir o cerrar menú" onClick={toggleMenu} />
 
-            {/* Contenedor del menú móvil */}
+            {/* CONTENEDOR LISTA */}
+
             <div className={`mobile-nav-menu ${isOpen ? 'open' : ''}`}>
-                {/* Opciones del menú */}
+                {/* LISTA  */}
+
                 <ul className="burger-menu-nav light-text-montserrat">
                     {navLinks.map((link) => (
                         <div className="link-container" key={link.id}>
@@ -38,9 +42,13 @@ export const BurgerMenu = () => {
                 </ul>
 
                 <div className="container-bajo-mobile">
+                    {/* LOGO  */}
+
                     <div className="logo-mobile-menu">
                         <img src={LogoBurger} alt="Logotipo de Tamir" loading="lazy" decoding="async" />
                     </div>
+
+                    {/* REDES SOCIALES */}
 
                     <div className="redes-container">
                         <a href="https://www.instagram.com/tamirfotografias/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

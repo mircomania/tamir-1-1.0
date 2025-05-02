@@ -9,15 +9,15 @@ export const Footer = () => {
     return (
         <footer className="footer">
             <div>
-                {/* Logo y Redes Sociales */}
                 <section>
+                    {/* LOGO  */}
                     <div className="img-logo-footer">
                         <NavLink to="/" aria-label="Ir a la página de inicio">
                             <img src={LogoNavbar} alt="Logo de Tamir en el pie de página" loading="lazy" decoding="async" />
                         </NavLink>
                     </div>
 
-                    {/* Redes Sociales */}
+                    {/* REDES SOCIALES */}
                     <div className="redes-container">
                         <a href="https://www.instagram.com/tamirfotografias/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <img src={LogoInstagram1} alt="Instagram" loading="lazy" decoding="async" />
@@ -33,7 +33,7 @@ export const Footer = () => {
                     </div>
                 </section>
 
-                {/* Copyright */}
+                {/* COPYRIGHT */}
                 <section className="utiles-footer light-text-montserrat">
                     <p>
                         <span className="tamir-2025">© TAMIR 2025 | </span>contacto@tamir.cl
