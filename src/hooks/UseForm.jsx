@@ -54,32 +54,40 @@ export const useForm = (initialState, submitCallback) => {
 
         validateSesion(newErrors);
 
+        ValidatePolitica(newErrors);
+
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
 
     const validateNombre = (newErrors) => {
         if (!formData.nombre.trim()) {
-            newErrors.nombre = 'Completa este campo.';
+            newErrors.nombre = true;
         }
     };
 
     const validateTelefono = (newErrors) => {
         if (!formData.telefono.match(/^\+56\d{10}$/)) {
-            newErrors.telefono = 'Ingresa un número de teléfono válido.';
+            newErrors.telefono = true;
         }
     };
 
     const validateEmail = (newErrors) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!formData.email.trim() || !emailRegex.test(formData.email)) {
-            newErrors.email = 'Ingresa un correo electrónico válido.';
+            newErrors.email = true;
         }
     };
 
     const validateSesion = (newErrors) => {
         if (!formData.sesion.trim() || formData.sesion === 'Tipo de Sesión') {
-            newErrors.sesion = 'Elige un tipo de sesión.';
+            newErrors.sesion = true;
+        }
+    };
+
+    const ValidatePolitica = (newErrors) => {
+        if (!formData.politicas) {
+            newErrors.politicas = true;
         }
     };
 

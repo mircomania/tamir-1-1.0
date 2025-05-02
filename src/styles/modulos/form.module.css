@@ -49,19 +49,18 @@
 .campoCheckboxForm {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    text-align: start;
     padding-bottom: 10px;
+    font-size: 14px;
 }
 
 .checkBox {
     margin-right: 10px;
 }
 
-.textDanger {
+.labelError {
     color: red;
-    padding: 0;
-    margin: 0;
-    margin-top: -16px;
 }
 
 .contentEnvio {
@@ -69,6 +68,18 @@
     justify-content: center;
     align-items: center;
     padding-top: 5px;
+}
+
+.mensajeErrorGeneral {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.mensajeErrorGeneral p {
+    position: absolute;
+    color: rgb(224, 52, 52);
+    margin-top: 5px;
 }
 
 @media (min-width: 576px) {
@@ -80,17 +91,29 @@
     .camposSelect select {
         width: 210px;
     }
+
+    .campoCheckboxForm {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 768px) {
     .camposSelect select {
         width: 160px;
     }
+
+    .campoCheckboxForm {
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 992px) {
     .camposSelect select {
         width: 190px;
+    }
+
+    .campoCheckboxForm {
+        font-size: 16px;
     }
 }
 

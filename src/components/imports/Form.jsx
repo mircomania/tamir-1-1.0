@@ -15,6 +15,7 @@ export const Form = () => {
             plan: '',
             mensaje: '',
             novedades: false,
+            politicas: false,
         },
         (success, data) => {
             if (success) {
@@ -33,7 +34,7 @@ export const Form = () => {
 
             {/* NOMBRE */}
             <div className={styles.campoPrecalificarForm}>
-                <label htmlFor="nombre" className="light-text-montserrat" aria-label="Nombre del usuario">
+                <label htmlFor="nombre" className={`light-text-montserrat ${errors.nombre ? styles.labelError : ''}`} aria-label="Nombre del usuario">
                     *Nombre Completo:
                 </label>
                 <input
@@ -46,16 +47,15 @@ export const Form = () => {
                     required
                     aria-invalid={!!errors.nombre}
                 />
-                {errors.nombre && (
-                    <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
-                        {errors.nombre}
-                    </small>
-                )}
             </div>
 
             {/* TELEFONO */}
             <div className={styles.campoPrecalificarForm}>
-                <label htmlFor="telefono" className="light-text-montserrat" aria-label="Telefono del usuario">
+                <label
+                    htmlFor="telefono"
+                    className={`light-text-montserrat ${errors.telefono ? styles.labelError : ''}`}
+                    aria-label="Telefono del usuario"
+                >
                     *Teléfono:
                 </label>
                 <input
@@ -70,16 +70,11 @@ export const Form = () => {
                     aria-invalid={!!errors.telefono}
                     maxLength="13"
                 />
-                {errors.telefono && (
-                    <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
-                        {errors.telefono}
-                    </small>
-                )}
             </div>
 
             {/* EMAIL */}
             <div className={styles.campoPrecalificarForm}>
-                <label htmlFor="email" className="light-text-montserrat" aria-label="email del usuario">
+                <label htmlFor="email" className={`light-text-montserrat ${errors.email ? styles.labelError : ''}`} aria-label="email del usuario">
                     *Correo Electrónico :
                 </label>
                 <input
@@ -93,17 +88,16 @@ export const Form = () => {
                     required
                     aria-invalid={!!errors.email}
                 />
-                {errors.email && (
-                    <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
-                        {errors.email}
-                    </small>
-                )}
             </div>
 
             {/* TIPOS DE SESION */}
             <div className={styles.camposSelect}>
                 <div className={styles.campoPrecalificarForm}>
-                    <label htmlFor="sesion" className="light-text-montserrat" aria-label="Tipo de sesión de fotos que quiere el usuario">
+                    <label
+                        htmlFor="sesion"
+                        className={`light-text-montserrat ${errors.sesion ? styles.labelError : ''}`}
+                        aria-label="Tipo de sesión de fotos que quiere el usuario"
+                    >
                         *Tipo de sesión:
                     </label>
                     <select
@@ -121,11 +115,6 @@ export const Form = () => {
                             </option>
                         ))}
                     </select>
-                    {errors.sesion && (
-                        <small className={`${styles.textDanger} light-text-montserrat`} aria-live="assertive">
-                            {errors.sesion}
-                        </small>
-                    )}
                 </div>
 
                 {/* TIPOS DE PLANES */}
@@ -167,12 +156,43 @@ export const Form = () => {
                 </label>
             </div>
 
+            {/* POLITICAS */}
+            <div className={styles.campoCheckboxForm}>
+                <input
+                    type="checkbox"
+                    className={styles.checkBox}
+                    name="politicas"
+                    id="politicas"
+                    checked={formData.politicas}
+                    onChange={handleChange}
+                    required
+                    aria-invalid={!!errors.politicas}
+                />
+
+                <label
+                    htmlFor="politicas"
+                    className={`light-text-montserrat ${errors.politicas ? styles.labelError : ''}`}
+                    aria-label="Marca para aceptar las políticas de privacidad"
+                >
+                    He leído y acepto la{' '}
+                    <a href="/politica-privacidad" target="_blank" rel="noopener noreferrer">
+                        Política de Privacidad
+                    </a>
+                </label>
+            </div>
+
             {/* Contenedor para el botón y spinner */}
             <div className={styles.contentEnvio}>
                 <button type="submit" className="boton-1 bold-text-montserrat" title="Haz clic para enviarnos tus datos" disabled={loading}>
                     {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : 'ENVIAR'}
                 </button>
             </div>
+
+            {Object.keys(errors).length > 0 && (
+                <div className={styles.mensajeErrorGeneral}>
+                    <p className={`bold-text-montserrat`}>Por favor completa el formulario</p>
+                </div>
+            )}
         </form>
     );
 };
