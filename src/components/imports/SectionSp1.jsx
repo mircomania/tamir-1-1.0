@@ -67,16 +67,25 @@ export const SectionSp1 = () => {
                                 {servicesToDisplay.map((service) => {
                                     const cardId = `servicio-${service.servicio.replace(/\s+/g, '-').toLowerCase()}`;
                                     return (
-                                        <div key={service.servicio} id={cardId} className={styles.cardContainer}>
+                                        <div
+                                            key={service.servicio}
+                                            id={cardId}
+                                            className={styles.cardContainer}
+                                            itemScope
+                                            itemType="https://schema.org/Service"
+                                        >
                                             <button
                                                 onClick={() => handleClick(service.servicio)}
                                                 className={`${styles.serviceButton} ${activeService !== service.servicio ? styles.hoverActivo : ''}`}
                                                 title={`Ver detalles de ${service.servicio}`}
+                                                aria-label={`Ver detalles de ${service.servicio}`}
                                                 style={{
                                                     backgroundImage: `url(${service.imagen})`,
                                                 }}
+                                                itemProp="url"
                                             >
-                                                <h3 className="bold-text-montserrat">
+                                                <meta itemProp="image" content={service.imagen} />
+                                                <h3 className="bold-text-montserrat" itemProp="name">
                                                     {service.servicio.charAt(0).toUpperCase() + service.servicio.slice(1)}
                                                 </h3>
                                             </button>
@@ -86,13 +95,17 @@ export const SectionSp1 = () => {
                                             {activeService === service.servicio && (
                                                 <div className={styles.detailCard}>
                                                     <div className="fade-in">
-                                                        {service.intro && <p className="light-text-montserrat">{service.intro}</p>}
+                                                        {service.intro && (
+                                                            <p className="light-text-montserrat" itemProp="description">
+                                                                {service.intro}
+                                                            </p>
+                                                        )}
 
                                                         <h4 className="bold-text-montserrat">ESTUDIO</h4>
                                                         {service.estudio && <p className="light-text-montserrat">{service.estudio}</p>}
 
                                                         <div className={styles.paquetesContainer}>
-                                                            <div>
+                                                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
                                                                 <h5 className="bold-text-montserrat">BÁSICO</h5>
 
                                                                 <p className="light-text-montserrat">
@@ -101,14 +114,18 @@ export const SectionSp1 = () => {
                                                                 </p>
 
                                                                 {service.valorest1 && (
-                                                                    <p className="light-text-montserrat">
-                                                                        $ <strong>{Number(service.valorest1).toLocaleString('es-CL')}</strong> <br />
-                                                                        iva incluido
-                                                                    </p>
+                                                                    <>
+                                                                        <meta itemProp="price" content={service.valorest1} />
+                                                                        <p className="light-text-montserrat">
+                                                                            $ <strong>{Number(service.valorest1).toLocaleString('es-CL')}</strong>{' '}
+                                                                            <br />
+                                                                            iva incluido
+                                                                        </p>
+                                                                    </>
                                                                 )}
                                                             </div>
 
-                                                            <div>
+                                                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
                                                                 <h5 className="bold-text-montserrat">FULL</h5>
 
                                                                 <p className="light-text-montserrat">
@@ -116,14 +133,18 @@ export const SectionSp1 = () => {
                                                                 </p>
 
                                                                 {service.valorest2 && (
-                                                                    <p className="light-text-montserrat">
-                                                                        $ <strong>{Number(service.valorest2).toLocaleString('es-CL')}</strong> <br />
-                                                                        iva incluido
-                                                                    </p>
+                                                                    <>
+                                                                        <meta itemProp="price" content={service.valorest2} />
+                                                                        <p className="light-text-montserrat">
+                                                                            $ <strong>{Number(service.valorest2).toLocaleString('es-CL')}</strong>{' '}
+                                                                            <br />
+                                                                            iva incluido
+                                                                        </p>
+                                                                    </>
                                                                 )}
                                                             </div>
 
-                                                            <div>
+                                                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
                                                                 <h5 className="bold-text-montserrat">PREMIUM</h5>
 
                                                                 <p className="light-text-montserrat">
@@ -131,10 +152,14 @@ export const SectionSp1 = () => {
                                                                 </p>
 
                                                                 {service.valorest3 && (
-                                                                    <p className="light-text-montserrat">
-                                                                        $ <strong>{Number(service.valorest3).toLocaleString('es-CL')}</strong> <br />
-                                                                        iva incluido
-                                                                    </p>
+                                                                    <>
+                                                                        <meta itemProp="price" content={service.valorest3} />
+                                                                        <p className="light-text-montserrat">
+                                                                            $ <strong>{Number(service.valorest3).toLocaleString('es-CL')}</strong>{' '}
+                                                                            <br />
+                                                                            iva incluido
+                                                                        </p>
+                                                                    </>
                                                                 )}
                                                             </div>
                                                         </div>
@@ -153,7 +178,7 @@ export const SectionSp1 = () => {
                                                         {service.exterior && <p className="light-text-montserrat">{service.exterior}</p>}
 
                                                         <div className={styles.paquetesContainer}>
-                                                            <div>
+                                                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
                                                                 <h5 className="bold-text-montserrat">BÁSICO</h5>
 
                                                                 <p className="light-text-montserrat">
@@ -162,14 +187,18 @@ export const SectionSp1 = () => {
                                                                 </p>
 
                                                                 {service.valorext1 && (
-                                                                    <p className="light-text-montserrat">
-                                                                        $ <strong>{Number(service.valorext1).toLocaleString('es-CL')}</strong> <br />
-                                                                        iva incluido
-                                                                    </p>
+                                                                    <>
+                                                                        <meta itemProp="price" content={service.valorext1} />
+                                                                        <p className="light-text-montserrat">
+                                                                            $ <strong>{Number(service.valorext1).toLocaleString('es-CL')}</strong>{' '}
+                                                                            <br />
+                                                                            iva incluido
+                                                                        </p>
+                                                                    </>
                                                                 )}
                                                             </div>
 
-                                                            <div>
+                                                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
                                                                 <h5 className="bold-text-montserrat">FULL</h5>
 
                                                                 <p className="light-text-montserrat">
@@ -177,14 +206,18 @@ export const SectionSp1 = () => {
                                                                 </p>
 
                                                                 {service.valorext2 && (
-                                                                    <p className="light-text-montserrat">
-                                                                        $ <strong>{Number(service.valorext2).toLocaleString('es-CL')}</strong> <br />
-                                                                        iva incluido
-                                                                    </p>
+                                                                    <>
+                                                                        <meta itemProp="price" content={service.valorext2} />
+                                                                        <p className="light-text-montserrat">
+                                                                            $ <strong>{Number(service.valorext2).toLocaleString('es-CL')}</strong>{' '}
+                                                                            <br />
+                                                                            iva incluido
+                                                                        </p>
+                                                                    </>
                                                                 )}
                                                             </div>
 
-                                                            <div>
+                                                            <div itemProp="offers" itemScope itemType="https://schema.org/Offer">
                                                                 <h5 className="bold-text-montserrat">PREMIUM</h5>
 
                                                                 <p className="light-text-montserrat">
@@ -192,10 +225,14 @@ export const SectionSp1 = () => {
                                                                 </p>
 
                                                                 {service.valorext3 && (
-                                                                    <p className="light-text-montserrat">
-                                                                        $ <strong>{Number(service.valorext3).toLocaleString('es-CL')}</strong> <br />
-                                                                        iva incluido
-                                                                    </p>
+                                                                    <>
+                                                                        <meta itemProp="price" content={service.valorext3} />
+                                                                        <p className="light-text-montserrat">
+                                                                            $ <strong>{Number(service.valorext3).toLocaleString('es-CL')}</strong>{' '}
+                                                                            <br />
+                                                                            iva incluido
+                                                                        </p>
+                                                                    </>
                                                                 )}
                                                             </div>
                                                         </div>

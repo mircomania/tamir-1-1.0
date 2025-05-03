@@ -1,5 +1,6 @@
 import styles from '../../styles/modulos/politicaPage.module.css';
 
+import { Breadcrumbs } from '../utils/Breadcrumbs';
 import { BotonNav } from '../utils/BotonNav';
 
 import LogoBurger from '../../assets/images/logos/logo-tamir-mobile-1.webp';
@@ -15,6 +16,7 @@ const URL_LINK = (
 const PoliticaPage = () => {
     return (
         <main className="fade-in fondo1">
+            <Breadcrumbs />
             <section className={styles.sectionContainer}>
                 <header className={styles.sectionTitulo}>
                     <h1 className="bold-text-montserrat">Politicas de Privacidad</h1>

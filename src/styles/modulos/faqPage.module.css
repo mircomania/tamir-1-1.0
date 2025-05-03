@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 50px;
     min-height: 100dvh;
 }
@@ -65,16 +65,16 @@
 }
 
 @media (min-width: 576px) {
+    .sectionContainer {
+        padding-top: 120px;
+    }
+
     .sectionContenido {
         width: 500px;
     }
 }
 
 @media (min-width: 768px) {
-    .sectionContainer {
-        padding-top: 110px;
-    }
-
     .sectionContenido {
         width: 650px;
     }

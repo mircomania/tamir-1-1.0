@@ -4,6 +4,7 @@
 @import url('../src/styles/global/variables.css');
 @import url('../src/styles/global/navbar.css');
 @import url('../src/styles/global/footer.css');
+@import url('../src/styles/global/breadcrumbs.css');
 @import url('../src/styles/global/botones.css');
 
 * {

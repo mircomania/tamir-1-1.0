@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 100px;
     padding-bottom: 20px;
 }
 
@@ -83,7 +83,7 @@
 
 @media (min-width: 768px) {
     .sectionContainer {
-        padding-top: 80px;
+        padding-top: 110px;
     }
 
     .contenidoAdicional {
@@ -102,10 +102,6 @@
 }
 
 @media (min-width: 992px) {
-    .sectionContainer {
-        padding-top: 90px;
-    }
-
     .contenidoAdicional {
         min-height: calc(100vh - 503px);
     }
@@ -128,10 +124,6 @@
 }
 
 @media (min-width: 1400px) {
-    .sectionContainer {
-        padding-top: 100px;
-    }
-
     .sectionTitulo {
         font-size: 55px;
     }
