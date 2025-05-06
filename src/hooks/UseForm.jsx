@@ -1,33 +1,16 @@
 import { useState } from 'react';
-import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
-export const useForm = (initialState, submitCallback) => {
+export const useForm = (initialState) => {
     const [formData, setFormData] = useState(initialState);
     const [errors, setErrors] = useState({});
     const [loading, setLoading] = useState(false);
 
+    const navigate = useNavigate();
+
     const sesiones = ['Tipo de Sesión', 'Newborn', 'Niños', 'Embarazo', 'Familia'];
 
     const planes = ['Tipo de Plan', 'Básico', 'Full', 'Premium'];
-
-    const showAlert = (title, message, icon, color) => {
-        Swal.fire({
-            title,
-            html: `<div class="light-text-montserrat"><p>${message}</p></div>`,
-            icon,
-            confirmButtonColor: color,
-            scrollbarPadding: false,
-            customClass: {
-                title: 'bold-text-montserrat',
-            },
-            willOpen: () => {
-                document.body.style.overflow = 'auto';
-            },
-            willClose: () => {
-                document.body.style.overflow = 'auto';
-            },
-        });
-    };
 
     const handleChange = (e) => {
         const { name, type, checked, value } = e.target;
@@ -40,7 +23,9 @@ export const useForm = (initialState, submitCallback) => {
         } else {
             setFormData((prev) => ({ ...prev, [name]: fieldValue }));
         }
-        setErrors((prev) => ({ ...prev, [name]: '' }));
+        setErrors((prev) => {
+            return Object.fromEntries(Object.entries(prev).filter(([key]) => key !== name));
+        });
     };
 
     const validateForm = () => {
@@ -114,16 +99,14 @@ export const useForm = (initialState, submitCallback) => {
                 body: JSON.stringify(formDataToSend),
             });
 
-            const data = await response.json();
-
             if (response.ok) {
-                submitCallback(true, data);
+                navigate('/formulario-enviado');
                 resetForm();
             } else {
-                submitCallback(false, data);
+                console.error('Error al enviar el formulario');
             }
         } catch (error) {
-            submitCallback(false, error);
+            console.error('Error de red:', error);
         } finally {
             setLoading(false);
         }
@@ -134,5 +117,5 @@ export const useForm = (initialState, submitCallback) => {
         setErrors({});
     };
 
-    return { formData, errors, loading, handleChange, handleSubmit, sesiones, planes, showAlert };
+    return { formData, errors, loading, handleChange, handleSubmit, sesiones, planes };
 };

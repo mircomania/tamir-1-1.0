@@ -6,25 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 export const Form = () => {
-    const { formData, errors, loading, handleChange, handleSubmit, sesiones, planes, showAlert } = useForm(
-        {
-            nombre: '',
-            telefono: '+56',
-            email: '',
-            sesion: '',
-            plan: '',
-            mensaje: '',
-            novedades: false,
-            politicas: false,
-        },
-        (success, data) => {
-            if (success) {
-                showAlert('Excelente', 'Datos enviados correctamente.<br>Pronto nos pondremos en contacto contigo.', 'success', '#9fc750');
-            } else {
-                showAlert('Ups', 'Hubo un error al enviar los datos.', 'error', '#1497ee');
-            }
-        }
-    );
+    const { formData, errors, loading, handleChange, handleSubmit, sesiones, planes } = useForm({
+        nombre: '',
+        telefono: '+56',
+        email: '',
+        sesion: '',
+        plan: '',
+        mensaje: '',
+        novedades: false,
+        politicas: false,
+    });
 
     return (
         <form onSubmit={handleSubmit} className={styles.form} noValidate>

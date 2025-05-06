@@ -22,9 +22,11 @@ const auth = new google.auth.GoogleAuth({
 
 // Ruta para recibir los datos del formulario
 app.post('/submit', async (req, res) => {
-    const { nombre, telefono, email, sesion, plan, mensaje, novedades } = req.body;
+    const { nombre, telefono, email, sesion, plan: rawPlan, mensaje, novedades } = req.body;
 
     try {
+        const plan = rawPlan === 'Tipo de Plan' ? '' : rawPlan;
+
         const novedadesStr = novedades ? 'si' : 'no';
 
         // Obtener cliente autenticado
