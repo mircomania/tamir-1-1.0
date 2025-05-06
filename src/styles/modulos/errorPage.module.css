@@ -17,68 +17,31 @@
 }
 
 .sectionTitulo h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 32px;
 }
 
 .sectionTitulo h2 {
-    font-size: 16px;
-    margin-bottom: 40px;
-}
-
-.sectionContenido {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    width: 360px;
-}
-
-.sectionContenido h3 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 22px;
-}
-
-.sectionContenido p {
+    font-size: 24px;
     margin-bottom: 20px;
+}
+
+.sectionTitulo p {
+    margin-bottom: 40px;
 }
 
 @media (min-width: 576px) {
     .sectionContainer {
         min-height: calc(100dvh - 150px);
     }
+
+    .sectionTitulo {
+        width: 576px;
+    }
 }
 
 @media (min-width: 768px) {
     .sectionContainer {
         padding-top: 130px;
-    }
-
-    .sectionTitulo {
-        width: 450px;
-    }
-
-    .sectionTitulo h1 {
-        font-size: 32px;
-    }
-
-    .sectionTitulo h2 {
-        font-size: 18px;
-    }
-
-    .sectionContenido {
-        width: 650px;
-    }
-
-    .sectionContenido h3 {
-        font-size: 24px;
-    }
-
-    .sectionContenido p {
-        font-size: 18px;
-        margin-bottom: 40px;
     }
 }
 
@@ -94,27 +57,19 @@
     }
 
     .sectionTitulo {
-        width: 550px;
+        width: 1400px;
     }
 
     .sectionTitulo h1 {
-        font-size: 45px;
+        font-size: 48px;
     }
 
     .sectionTitulo h2 {
-        font-size: 22px;
+        font-size: 32px;
     }
 
-    .sectionContenido {
-        width: 700px;
-    }
-
-    .sectionContenido h3 {
-        font-size: 26px;
-    }
-
-    .sectionContenido p {
-        font-size: 22px;
+    .sectionTitulo p {
+        font-size: 24px;
     }
 }
 

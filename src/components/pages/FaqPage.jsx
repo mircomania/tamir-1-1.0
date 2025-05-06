@@ -1,3 +1,5 @@
+import { TitleSEO } from '../utils/TitleSEO';
+
 import styles from '../../styles/modulos/faqPage.module.css';
 
 import { Breadcrumbs } from '../utils/Breadcrumbs';
@@ -39,6 +41,12 @@ const LINK_CONTACTO = (
 const FaqPage = () => {
     return (
         <main className="fade-in fondo1">
+            <TitleSEO
+                title="FAQ | TAMIR"
+                description="Resolvemos tus dudas sobre nuestras sesiones de fotos en Santiago: preparación, duración, vestuario, y más. Todo lo que necesitas saber antes de tu sesión."
+                canonical="https://www.tamir.cl/faq"
+            />
+
             <HelmetProvider>
                 <script type="application/ld+json">{JSON.stringify(faqStructuredData)}</script>
             </HelmetProvider>

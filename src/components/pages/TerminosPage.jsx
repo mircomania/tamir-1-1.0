@@ -1,3 +1,5 @@
+import { TitleSEO } from '../utils/TitleSEO';
+
 import styles from '../../styles/modulos/terminosPage.module.css';
 
 import { Breadcrumbs } from '../utils/Breadcrumbs';
@@ -16,10 +18,18 @@ const URL_LINK = (
 const TerminosPage = () => {
     return (
         <main className="fade-in fondo1">
+            <TitleSEO
+                title="Términos y Condiciones | TAMIR"
+                description="Consulta los términos y condiciones de nuestras sesiones fotográficas en Santiago. Aquí encontrarás información importante sobre reservas, pagos y uso de imágenes."
+                canonical="https://www.tamir.cl/terminos-condiciones"
+            />
+
             <Breadcrumbs />
+
             <section className={styles.sectionContainer}>
                 <header className={styles.sectionTitulo}>
                     <h1 className="bold-text-montserrat">TÉRMINOS Y CONDICIONES</h1>
+
                     <h2 className="light-text-montserrat">Fecha de entrada en vigor: Mayo 2025</h2>
                 </header>
 

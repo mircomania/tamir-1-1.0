@@ -16,6 +16,7 @@ const FormSendPage = lazy(() => import('./components/pages/FormSendPage'));
 const PoliticaPage = lazy(() => import('./components/pages/PoliticaPage'));
 const TerminosPage = lazy(() => import('./components/pages/TerminosPage'));
 const FaqPage = lazy(() => import('./components/pages/FaqPage'));
+const ErrorPage = lazy(() => import('./components/pages/ErrorPage'));
 
 function App() {
     UseDisableImg();
@@ -55,9 +56,10 @@ function App() {
                         <Route path="/servicios/:servicio" element={<ServiciosPage />} />
                         <Route path="/contacto" element={<ContactoPage />} />
                         <Route path="/formulario-enviado" element={<FormSendPage />} />
+                        <Route path="/faq" element={<FaqPage />} />
                         <Route path="/politica-privacidad" element={<PoliticaPage />} />
                         <Route path="/terminos-condiciones" element={<TerminosPage />} />
-                        <Route path="/faq" element={<FaqPage />} />
+                        <Route path="*" element={<ErrorPage />} />
                     </Routes>
                 </Suspense>
             )}

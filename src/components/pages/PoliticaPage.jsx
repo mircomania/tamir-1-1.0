@@ -1,3 +1,5 @@
+import { TitleSEO } from '../utils/TitleSEO';
+
 import styles from '../../styles/modulos/politicaPage.module.css';
 
 import { Breadcrumbs } from '../utils/Breadcrumbs';
@@ -16,10 +18,18 @@ const URL_LINK = (
 const PoliticaPage = () => {
     return (
         <main className="fade-in fondo1">
+            <TitleSEO
+                title="Política de Privacidad | TAMIR"
+                description="Valoramos tu privacidad. Revisa cómo protegemos tus datos personales al agendar una sesión de fotos con nosotros y cómo usamos la información en nuestro sitio web."
+                canonical="https://www.tamir.cl/politica-privacidad"
+            />
+
             <Breadcrumbs />
+
             <section className={styles.sectionContainer}>
                 <header className={styles.sectionTitulo}>
                     <h1 className="bold-text-montserrat">Politicas de Privacidad</h1>
+
                     <p className="light-text-montserrat small-text">Última actualización: Mayo 2025</p>
 
                     <h2 className="light-text-montserrat-b">TAMIR 2025</h2>
