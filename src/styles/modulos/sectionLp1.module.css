@@ -83,7 +83,7 @@
         background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.2.webp');
     }
     .bg3 {
-        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.2.webp');
     }
 
     .sectionTitulo,
@@ -105,7 +105,7 @@
         background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.3.webp');
     }
     .bg3 {
-        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.3.webp');
     }
 
     .sectionTitulo,
@@ -135,7 +135,7 @@
         background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.4.webp');
     }
     .bg3 {
-        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.4.webp');
     }
 
     .sectionTitulo,
@@ -160,7 +160,7 @@
         background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.5.webp');
     }
     .bg3 {
-        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.5.webp');
     }
 
     .sectionTitulo,
@@ -189,7 +189,7 @@
         background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.6.webp');
     }
     .bg3 {
-        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.1.webp');
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.6.webp');
     }
 
     .sectionTitulo h1 {
@@ -198,5 +198,17 @@
 
     .sectionTitulo h2 {
         font-size: 28px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .bg1 {
+        background-image: url('/src/assets/images/landing/section1/fondo1/fondo-1-landing-1.7.webp');
+    }
+    .bg2 {
+        background-image: url('/src/assets/images/landing/section1/fondo2/fondo-2-landing-1.7.webp');
+    }
+    .bg3 {
+        background-image: url('/src/assets/images/landing/section1/fondo3/fondo-3-landing-1.7.webp');
     }
 }
