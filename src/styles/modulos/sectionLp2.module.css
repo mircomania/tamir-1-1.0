@@ -9,6 +9,7 @@
 
 .sectionTitulo {
     padding: 20px 0;
+    width: 340px;
 }
 
 .sectionTitulo,
@@ -26,39 +27,52 @@
     font-size: 18px;
 }
 
-.sectionCategoria {
-    position: relative;
-    display: inline-block;
-    width: 320px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease-in-out;
+.sectionCategorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 20px;
+    padding-bottom: 20px;
 }
 
-.categoriaOverlay {
-    position: absolute;
-    top: 5%;
-    left: 2%;
-    z-index: 1;
-}
-
-.sectionCategoria a {
+.sectionCategorias a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 30px;
-}
-
-.sectionCategoria img {
-    width: 100%;
-    display: block;
-    border: 2px solid var(--text-color);
-    border-radius: 10px;
+    width: 320px;
+    border: solid 2px var(--text-color);
     box-shadow: 0px 4px 10px var(--secondary-color);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
     transition: all 0.3s ease-in-out;
-    user-select: none;
 }
 
-.sectionCategoria:hover {
+.sectionCategorias a:nth-child(1) {
+    background-image: url('/src/assets/images/landing/section2/categoria1/fondo-1-categoria-landing-2.1.webp');
+}
+
+.sectionCategorias a:nth-child(2) {
+    background-image: url('/src/assets/images/landing/section2/categoria2/fondo-2-categoria-landing-2.1.webp');
+}
+
+.sectionCategorias a:nth-child(3) {
+    background-image: url('/src/assets/images/landing/section2/categoria3/fondo-3-categoria-landing-2.1.webp');
+}
+
+.sectionCategorias a:hover {
     transform: scale(0.95);
+}
+
+.categoriaOverlay {
+    width: 60%;
+    height: 100%;
+    border-radius: 7px;
+    background: linear-gradient(to right, rgba(254, 228, 197, 0.8), rgba(254, 228, 197, 0.5), rgba(254, 228, 197, 0));
+    padding-left: 10px;
 }
 
 .sectionFinal,
@@ -76,28 +90,17 @@
 
 @media (min-width: 576px) {
     .sectionTitulo {
-        width: 420px;
-    }
-
-    .sectionTitulo h2 {
-        font-size: 30px;
+        width: 400px;
     }
 
     .sectionTitulo h3 {
         font-size: 20px;
     }
 
-    .sectionCategoria {
-        width: 450px;
-    }
-
-    .categoriaOverlay {
-        top: 10%;
-        left: 5%;
-    }
-
-    .sectionCategoria a {
+    .sectionCategorias a {
         font-size: 35px;
+        width: 450px;
+        height: 80px;
     }
 
     .sectionFinal {
@@ -110,30 +113,40 @@
 }
 
 @media (min-width: 768px) {
-    .sectionTitulo {
-        width: 400px;
-    }
-
     .sectionCategorias {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        flex-direction: row;
         gap: 80px;
+        padding-bottom: 0px;
     }
 
-    .sectionCategoria {
+    .sectionCategorias a {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        font-size: 20px;
         width: 150px;
-        margin-bottom: 0px;
+        height: 200px;
+    }
+
+    .sectionCategorias a:nth-child(1) {
+        background-image: url('/src/assets/images/landing/section2/categoria1/fondo-1-categoria-landing-2.2.webp');
+    }
+
+    .sectionCategorias a:nth-child(2) {
+        background-image: url('/src/assets/images/landing/section2/categoria2/fondo-2-categoria-landing-2.2.webp');
+    }
+
+    .sectionCategorias a:nth-child(3) {
+        background-image: url('/src/assets/images/landing/section2/categoria3/fondo-3-categoria-landing-2.2.webp');
     }
 
     .categoriaOverlay {
-        top: 80%;
-        left: 7%;
-    }
-
-    .sectionCategoria a {
-        font-size: 20px;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(to top, rgba(254, 228, 197, 0.7), rgba(254, 228, 197, 0.2), rgba(254, 228, 197, 0));
     }
 
     .sectionFinal p {
@@ -172,12 +185,22 @@
         gap: 120px;
     }
 
-    .sectionCategoria {
+    .sectionCategorias a {
+        font-size: 22px;
         width: 200px;
+        height: 220px;
     }
 
-    .sectionCategoria a {
-        font-size: 22px;
+    .sectionCategorias a:nth-child(1) {
+        background-image: url('/src/assets/images/landing/section2/categoria1/fondo-1-categoria-landing-2.3.webp');
+    }
+
+    .sectionCategorias a:nth-child(2) {
+        background-image: url('/src/assets/images/landing/section2/categoria2/fondo-2-categoria-landing-2.3.webp');
+    }
+
+    .sectionCategorias a:nth-child(3) {
+        background-image: url('/src/assets/images/landing/section2/categoria3/fondo-3-categoria-landing-2.3.webp');
     }
 
     .sectionFinal {
@@ -194,12 +217,21 @@
         gap: 140px;
     }
 
-    .categoriaOverlay {
-        top: 82%;
+    .sectionCategorias a {
+        font-size: 28px;
+        height: 300px;
     }
 
-    .sectionCategoria a {
-        font-size: 28px;
+    .sectionCategorias a:nth-child(1) {
+        background-image: url('/src/assets/images/landing/section2/categoria1/fondo-1-categoria-landing-2.4.webp');
+    }
+
+    .sectionCategorias a:nth-child(2) {
+        background-image: url('/src/assets/images/landing/section2/categoria2/fondo-2-categoria-landing-2.4.webp');
+    }
+
+    .sectionCategorias a:nth-child(3) {
+        background-image: url('/src/assets/images/landing/section2/categoria3/fondo-3-categoria-landing-2.4.webp');
     }
 }
 
@@ -210,23 +242,35 @@
     }
 
     .sectionTitulo h2 {
-        font-size: 65px;
+        font-size: 55px;
     }
 
     .sectionTitulo h3 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .sectionCategorias {
         gap: 160px;
-        padding: 30px 0;
     }
 
-    .sectionCategoria {
+    .sectionCategorias a {
         width: 250px;
+        height: 350px;
+    }
+
+    .sectionCategorias a:nth-child(1) {
+        background-image: url('/src/assets/images/landing/section2/categoria1/fondo-1-categoria-landing-2.5.webp');
+    }
+
+    .sectionCategorias a:nth-child(2) {
+        background-image: url('/src/assets/images/landing/section2/categoria2/fondo-2-categoria-landing-2.5.webp');
+    }
+
+    .sectionCategorias a:nth-child(3) {
+        background-image: url('/src/assets/images/landing/section2/categoria3/fondo-3-categoria-landing-2.5.webp');
     }
 
     .sectionFinal p {
-        font-size: 28px;
+        font-size: 22px;
     }
 }

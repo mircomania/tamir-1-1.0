@@ -16,20 +16,14 @@ export const SectionLp2 = () => {
             {/* CATEGORIAS */}
             <div className={styles.sectionCategorias}>
                 {categoriasSectionLp2.map((categoria) => (
-                    <div className={styles.sectionCategoria} key={categoria.nombre}>
-                        <NavLink to={`/galeria/${categoria.id}`} aria-label={`Ver todas las Sesiones de Fotos de ${categoria.nombre}`}>
-                            <div className={styles.categoriaOverlay}>
-                                <p className="pacifico-text">{categoria.nombre}</p>
-                            </div>
-                            <picture>
-                                <source srcSet={categoria.imagenes.xl} media="(min-width: 1700px)" />
-                                <source srcSet={categoria.imagenes.lg} media="(min-width: 1400px)" />
-                                <source srcSet={categoria.imagenes.md} media="(min-width: 1200px)" />
-                                <source srcSet={categoria.imagenes.sm} media="(min-width: 768px)" />
-                                <img src={categoria.imagenes.default} alt={categoria.alt} loading="lazy" decoding="async" />
-                            </picture>
-                        </NavLink>
-                    </div>
+                    <NavLink
+                        to={`/galeria/${categoria.id}`}
+                        aria-label={`Ver todas las Sesiones de Fotos de ${categoria.nombre}`}
+                        key={categoria.nombre}
+                        className="pacifico-text"
+                    >
+                        <div className={styles.categoriaOverlay}>{categoria.nombre}</div>
+                    </NavLink>
                 ))}
             </div>
 
