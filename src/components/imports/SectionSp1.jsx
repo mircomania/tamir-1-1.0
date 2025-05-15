@@ -85,9 +85,11 @@ export const SectionSp1 = () => {
                                                 itemProp="url"
                                             >
                                                 <meta itemProp="image" content={service.imagen} />
-                                                <h3 className="bold-text-montserrat" itemProp="name">
-                                                    {service.servicio.charAt(0).toUpperCase() + service.servicio.slice(1)}
-                                                </h3>
+                                                <div className={styles.overlay}>
+                                                    <h3 className="bold-text-montserrat" itemProp="name">
+                                                        {service.servicio.charAt(0).toUpperCase() + service.servicio.slice(1)}
+                                                    </h3>
+                                                </div>
                                             </button>
 
                                             {/* CONTENIDO CARDS */}

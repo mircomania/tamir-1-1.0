@@ -22,6 +22,14 @@
     margin-bottom: 20px;
 }
 
+.overlay {
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    background: linear-gradient(to right, rgba(254, 228, 197, 0.8), rgba(254, 228, 197, 0.5), rgba(254, 228, 197, 0));
+    padding: 10px;
+}
+
 .sectionTitulo h3 {
     text-align: justify;
     width: 320px;
@@ -105,7 +113,6 @@
     border-top-right-radius: 12px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    padding: 10px;
     width: 320px;
     height: 100px;
 }
