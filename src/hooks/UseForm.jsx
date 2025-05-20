@@ -93,7 +93,7 @@ export const useForm = (initialState) => {
                 novedades: formData.novedades,
             };
 
-            const response = await fetch('http://localhost:5000/submit', {
+            const response = await fetch('http://localhost:5000/api/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formDataToSend),
