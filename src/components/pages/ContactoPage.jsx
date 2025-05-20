@@ -10,7 +10,7 @@ const ContactoPage = () => {
             <TitleSEO
                 title="Contacto | TAMIR"
                 description="¿Listo para agendar tu sesión de fotos? Contáctanos y te ayudaremos a planificar la experiencia perfecta para capturar tus mejores momentos en Santiago."
-                canonical="https://www.tamir.cl/contacto"
+                canonical="https://tamir.cl/contacto"
             />
 
             <Breadcrumbs />

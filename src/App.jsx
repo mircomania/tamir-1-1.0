@@ -31,7 +31,7 @@ function App() {
     }, []);
 
     return (
-        <BrowserRouter basename="/tamir-1-1.0">
+        <BrowserRouter>
             <ScrollToTop />
 
             <NavBar />

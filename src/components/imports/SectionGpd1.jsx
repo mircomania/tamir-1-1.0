@@ -16,7 +16,7 @@ export const SectionGpd1 = () => {
     useEffect(() => {
         const fetchImages = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/api/galeria?categoria=${categoria}`);
+                const response = await fetch(`/api/galeria?categoria=${categoria}`);
                 if (!response.ok) {
                     throw new Error('Error al obtener las imágenes');
                 }

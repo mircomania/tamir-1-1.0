@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://www.tamir.cl/</loc>
-        <lastmod>2025-05-14</lastmod>
+        <loc>https://tamir.cl/</loc>
+        <lastmod>2025-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://www.tamir.cl/galeria</loc>
-        <lastmod>2025-05-14</lastmod>
+        <loc>https://tamir.cl/galeria</loc>
+        <lastmod>2025-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://www.tamir.cl/servicios</loc>
-        <lastmod>2025-05-14</lastmod>
+        <loc>https://tamir.cl/servicios</loc>
+        <lastmod>2025-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://www.tamir.cl/contacto</loc>
-        <lastmod>2025-05-14</lastmod>
+        <loc>https://tamir.cl/contacto</loc>
+        <lastmod>2025-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
-        <loc>https://www.tamir.cl/faq</loc>
-        <lastmod>2025-05-14</lastmod>
+        <loc>https://tamir.cl/faq</loc>
+        <lastmod>2025-05-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://www.tamir.cl/terminos-condiciones</loc>
-        <lastmod>2025-05-14</lastmod>
+        <loc>https://tamir.cl/terminos-condiciones</loc>
+        <lastmod>2025-05-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
 
     <url>
-        <loc>https://www.tamir.cl/politica-privacidad</loc>
-        <lastmod>2025-05-14</lastmod>
+        <loc>https://tamir.cl/politica-privacidad</loc>
+        <lastmod>2025-05-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>

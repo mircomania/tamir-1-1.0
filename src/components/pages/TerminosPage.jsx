@@ -10,7 +10,7 @@ import LogoBurger from '../../assets/images/logos/logo-tamir-mobile-1.webp';
 import { NavLink } from 'react-router-dom';
 
 const URL_LINK = (
-    <NavLink to="/" title="ir a www.tamir.cl">
+    <NavLink to="/" title="ir a tamir.cl">
         TAMIR
     </NavLink>
 );
@@ -21,7 +21,7 @@ const TerminosPage = () => {
             <TitleSEO
                 title="Términos y Condiciones | TAMIR"
                 description="Consulta los términos y condiciones de nuestras sesiones fotográficas en Santiago. Aquí encontrarás información importante sobre reservas, pagos y uso de imágenes."
-                canonical="https://www.tamir.cl/terminos-condiciones"
+                canonical="https://tamir.cl/terminos-condiciones"
             />
 
             <Breadcrumbs />

@@ -17,7 +17,7 @@ const GaleriaPageDetail = () => {
 
     const title = `Galería ${prettyName} | TAMIR`;
     const description = `Explora nuestra galería de ${prettyName}. Sesiones profesionales de fotografía en Santiago.`;
-    const canonical = `https://www.tamir.cl/galeria/${categoria}`;
+    const canonical = `https://tamir.cl/galeria/${categoria}`;
 
     return (
         <main className="fade-in fondo1">

@@ -11,7 +11,7 @@ const LandingPage = () => {
             <TitleSEO
                 title="Inicio | TAMIR"
                 description="Captura tus mejores momentos: sesiones de fotografía newborn, niños, embarazos y familia en Santiago. Deja tus datos y te contactaremos para crear recuerdos inolvidables."
-                canonical="https://www.tamir.cl/"
+                canonical="https://tamir.cl/"
             />
 
             <section>

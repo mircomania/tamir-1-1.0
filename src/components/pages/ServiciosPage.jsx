@@ -12,7 +12,7 @@ const ServiciosPage = () => {
             <TitleSEO
                 title="Servicios | TAMIR"
                 description="Conoce nuestros servicios de fotografía profesional en Santiago: sesiones personalizadas para newborn, niños, embarazos y familias. Creamos recuerdos únicos que duran toda la vida."
-                canonical="https://www.tamir.cl/servicios"
+                canonical="https://tamir.cl/servicios"
             />
 
             <Breadcrumbs />

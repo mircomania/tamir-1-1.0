@@ -27,7 +27,7 @@ const replaceWithJSX = (text, faqId) => {
 };
 
 const URL_LINK = (
-    <NavLink to="/" title="ir a www.tamir.cl" className="bold-text-montserrat">
+    <NavLink to="/" title="ir a tamir.cl" className="bold-text-montserrat">
         TAMIR
     </NavLink>
 );
@@ -44,7 +44,7 @@ const FaqPage = () => {
             <TitleSEO
                 title="FAQ | TAMIR"
                 description="Resolvemos tus dudas sobre nuestras sesiones de fotos en Santiago: preparación, duración, vestuario, y más. Todo lo que necesitas saber antes de tu sesión."
-                canonical="https://www.tamir.cl/faq"
+                canonical="https://tamir.cl/faq"
             />
 
             <HelmetProvider>

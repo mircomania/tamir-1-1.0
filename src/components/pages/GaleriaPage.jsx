@@ -11,7 +11,7 @@ const GaleriaPage = () => {
             <TitleSEO
                 title="Galeía | TAMIR"
                 description="Descubre nuestras sesiones de fotos en Santiago: newborn, niños, embarazo y familia. Inspírate con nuestro trabajo profesional y encuentra la sesión perfecta para ti."
-                canonical="https://www.tamir.cl/galeria"
+                canonical="https://tamir.cl/galeria"
             />
 
             <Breadcrumbs />

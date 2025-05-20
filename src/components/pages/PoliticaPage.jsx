@@ -10,7 +10,7 @@ import LogoBurger from '../../assets/images/logos/logo-tamir-mobile-1.webp';
 import { NavLink } from 'react-router-dom';
 
 const URL_LINK = (
-    <NavLink to="/" title="ir a www.tamir.cl">
+    <NavLink to="/" title="ir a tamir.cl">
         TAMIR
     </NavLink>
 );
@@ -21,7 +21,7 @@ const PoliticaPage = () => {
             <TitleSEO
                 title="Política de Privacidad | TAMIR"
                 description="Valoramos tu privacidad. Revisa cómo protegemos tus datos personales al agendar una sesión de fotos con nosotros y cómo usamos la información en nuestro sitio web."
-                canonical="https://www.tamir.cl/politica-privacidad"
+                canonical="https://tamir.cl/politica-privacidad"
             />
 
             <Breadcrumbs />
