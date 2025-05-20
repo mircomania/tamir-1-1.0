@@ -19,6 +19,7 @@
 
 .sectionContenido {
     color: var(--text-color);
+    user-select: none;
     width: 320px;
 }
 

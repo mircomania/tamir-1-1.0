@@ -52,7 +52,7 @@ const PoliticaPage = () => {
                             Responsable: <strong>{URL_LINK}</strong>
                         </li>
                         <li>
-                            Correo electrónico de contacto: <strong>contacto@tamir.cl</strong>
+                            Correo electrónico de contacto: <strong className="selectable">contacto@tamir.cl</strong>
                         </li>
                     </ul>
 
@@ -164,7 +164,8 @@ const PoliticaPage = () => {
                     </ul>
 
                     <p className="light-text-montserrat">
-                        Para ejercer estos derechos, diríjase a <strong>contacto@tamir.cl</strong> o a nuestro contacto telefónico.
+                        Para ejercer estos derechos, diríjase a <strong className="selectable">contacto@tamir.cl</strong> o a nuestro contacto
+                        telefónico.
                     </p>
 
                     <h3 className="bold-text-montserrat">9. Cambios en la Política</h3>

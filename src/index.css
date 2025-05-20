@@ -18,6 +18,10 @@ body {
     overflow-x: hidden;
 }
 
+.selectable {
+    user-select: text;
+}
+
 .fondo1 {
     background-image: url('/src/assets/images/general/watercolor.webp');
     background-repeat: repeat;

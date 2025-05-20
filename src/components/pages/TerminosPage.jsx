@@ -70,8 +70,8 @@ const TerminosPage = () => {
                     <h3 className="bold-text-montserrat">3. Modificaciones y Reagendamientos</h3>
 
                     <ul className="light-text-montserrat">
-                        <li>Se permiten cambios de fecha con al menos 72 horas de anticipación, sujetos a disponibilidad.</li>
-                        <li>Reagendamientos realizados con menos de 72 horas podrán implicar costos adicionales o pérdida del abono.</li>
+                        <li>Se permiten cambios de fecha con al menos 48 horas de anticipación, sujetos a disponibilidad.</li>
+                        <li>Reagendamientos realizados con menos de 48 horas podrán implicar costos adicionales o pérdida del abono.</li>
                     </ul>
 
                     <h3 className="bold-text-montserrat">4. Derechos de Autor y uso de imagen</h3>
@@ -144,8 +144,8 @@ const TerminosPage = () => {
                     <h3 className="bold-text-montserrat">9. Contacto y Consultas</h3>
 
                     <p className="light-text-montserrat">
-                        Para cualquier duda o requerimiento, contáctenos a través del correo electrónico <strong>contacto@tamir.cl</strong> o por
-                        medio de nuestros servicio telefónico
+                        Para cualquier duda o requerimiento, contáctenos a través del correo electrónico{' '}
+                        <strong className="selectable">contacto@tamir.cl</strong> o por medio de nuestros servicio telefónico
                     </p>
 
                     <h4 className="bold-text-montserrat">

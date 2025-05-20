@@ -27,13 +27,13 @@ const replaceWithJSX = (text, faqId) => {
 };
 
 const URL_LINK = (
-    <NavLink to="/" title="ir a www.tamir.cl">
+    <NavLink to="/" title="ir a www.tamir.cl" className="bold-text-montserrat">
         TAMIR
     </NavLink>
 );
 
 const LINK_CONTACTO = (
-    <NavLink to="/contacto" title="ir al formulario de contacto">
+    <NavLink to="/contacto" title="ir al formulario de contacto" className="bold-text-montserrat">
         formulario de contacto
     </NavLink>
 );
@@ -75,7 +75,8 @@ const FaqPage = () => {
                         <h4 className="bold-text-montserrat">¿Tienes otra pregunta?</h4>
 
                         <p className="light-text-montserrat">
-                            Escríbenos a <strong>contacto@tamir.cl</strong> o por WhatsApp al número que aparece en nuestra página.
+                            Escríbenos a <strong className="selectable">contacto@tamir.cl</strong> o por WhatsApp al número que aparece en nuestra
+                            página.
                         </p>
 
                         <p className="light-text-montserrat">¡Estaremos encantados de ayudarte!</p>
