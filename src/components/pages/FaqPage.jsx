@@ -85,7 +85,7 @@ const FaqPage = () => {
             </section>
 
             <section className="boton-container">
-                <BotonNav />
+                <BotonNav id="cta-faq-contacto" data-cta="faq-nav" />
             </section>
         </main>
     );

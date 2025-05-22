@@ -11,7 +11,7 @@ export const SectionLp1 = () => {
             </header>
 
             <div className={styles.sectionBoton}>
-                <BotonNav />
+                <BotonNav id="cta-home-contacto" data-cta="home-nav" />
             </div>
 
             {/* FONDOS ANIMADOS */}

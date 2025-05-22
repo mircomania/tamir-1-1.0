@@ -100,7 +100,17 @@ export const useForm = (initialState) => {
             });
 
             if (response.ok) {
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({
+                    event: 'formulario_enviado',
+                    origen_formulario: window.location.pathname,
+                    sesion: formData.sesion,
+                    plan: formData.plan,
+                });
+                console.log('Evento formulario_enviado enviado');
+
                 navigate('/formulario-enviado');
+
                 resetForm();
             } else {
                 console.error('Error al enviar el formulario');

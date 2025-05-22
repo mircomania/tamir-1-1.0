@@ -26,7 +26,7 @@ const ServiciosPage = () => {
             </section>
 
             <section className="boton-container-2">
-                <BotonNav />
+                <BotonNav id="cta-servicios-contacto" data-cta="servicios-nav" />
             </section>
         </main>
     );
