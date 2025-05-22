@@ -30,7 +30,7 @@ const GaleriaPageDetail = () => {
             </section>
 
             <section className="boton-container">
-                <BotonNav id={`cta-galeria-${categoria}`} data-cta={`galeria-${categoria}`} />
+                <BotonNav id={`cta-galeria-${categoria}-contacto`} dataCta={`galeria-${categoria}`} />
             </section>
         </main>
     );

@@ -7,10 +7,12 @@ export const BotonNav = ({
     className = 'boton-1 bold-text-montserrat',
     title = 'Haz clic para ir a la página de contacto',
     children = 'AGENDAR SESIÓN',
+    id,
+    dataCta,
 }) => {
     return (
         <NavLink to={to} aria-label={ariaLabel}>
-            <button className={className} title={title}>
+            <button className={className} title={title} id={id} data-cta={dataCta}>
                 {children}
             </button>
         </NavLink>
@@ -23,4 +25,6 @@ BotonNav.propTypes = {
     className: PropTypes.string,
     title: PropTypes.string,
     children: PropTypes.node,
+    id: PropTypes.string,
+    dataCta: PropTypes.any,
 };

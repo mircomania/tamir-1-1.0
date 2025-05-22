@@ -20,7 +20,7 @@ const GaleriaPage = () => {
             </section>
 
             <section className="boton-container">
-                <BotonNav id="cta-galeria-contacto" data-cta="galeria-nav" />
+                <BotonNav id="cta-galeria-contacto" dataCta="galeria-nav" />
             </section>
         </main>
     );

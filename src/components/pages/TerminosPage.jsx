@@ -155,7 +155,7 @@ const TerminosPage = () => {
             </section>
 
             <section className="boton-container">
-                <BotonNav id="cta-terminos-contacto" data-cta="terminos-nav" />
+                <BotonNav id="cta-terminos-contacto" dataCta="terminos-nav" />
             </section>
         </main>
     );
