@@ -21,6 +21,7 @@ export const SectionLp3 = () => {
                             to={categoria.ruta}
                             aria-label={`Ver todas las caracteristicas de las Sesiones de Fotos de ${categoria.nombre}`}
                             itemProp="url"
+                            data-link={categoria.dataLink}
                         >
                             <picture itemProp="image">
                                 <source srcSet={categoria.imagenes.xl} media="(min-width: 1700px)" />
@@ -51,6 +52,7 @@ export const SectionLp3 = () => {
                     to="/servicios"
                     ariaLabel="Ver todos los servicios de Fotografía Profesional"
                     title="Haz clic para ver todos los servicios de Fotografía"
+                    dataLink="home-servicios-btn"
                 >
                     VER SERVICIOS
                 </BotonNav>

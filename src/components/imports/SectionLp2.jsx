@@ -21,6 +21,7 @@ export const SectionLp2 = () => {
                         aria-label={`Ver todas las Sesiones de Fotos de ${categoria.nombre}`}
                         key={categoria.nombre}
                         className="pacifico-text"
+                        data-link={categoria.dataLink}
                     >
                         <div className={styles.categoriaOverlay}>{categoria.nombre}</div>
                     </NavLink>
@@ -36,6 +37,7 @@ export const SectionLp2 = () => {
                     to="/galeria"
                     ariaLabel="Ver todas las Sesiones de Fotos en nuestra galería"
                     title="Haz clic para ver todas la Galería de Fotos"
+                    dataLink="home-galeria-btn"
                 >
                     VER GALERÍA
                 </BotonNav>

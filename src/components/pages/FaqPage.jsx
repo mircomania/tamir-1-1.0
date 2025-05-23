@@ -27,13 +27,13 @@ const replaceWithJSX = (text, faqId) => {
 };
 
 const URL_LINK = (
-    <NavLink to="/" title="ir a tamir.cl" className="bold-text-montserrat">
+    <NavLink to="/" title="ir a tamir.cl" className="bold-text-montserrat" data-link="faq-home">
         TAMIR
     </NavLink>
 );
 
 const LINK_CONTACTO = (
-    <NavLink to="/contacto" title="ir al formulario de contacto" className="bold-text-montserrat">
+    <NavLink to="/contacto" title="ir al formulario de contacto" className="bold-text-montserrat" data-cta="faq-link">
         formulario de contacto
     </NavLink>
 );
@@ -85,7 +85,7 @@ const FaqPage = () => {
             </section>
 
             <section className="boton-container">
-                <BotonNav id="cta-faq-contacto" dataCta="faq-nav" />
+                <BotonNav dataCta="faq-btn" />
             </section>
         </main>
     );

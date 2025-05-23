@@ -166,7 +166,7 @@ export const Form = () => {
                     aria-label="Marca para aceptar las políticas de privacidad"
                 >
                     He leído y acepto la{' '}
-                    <a href="/politica-privacidad" target="_blank" rel="noopener noreferrer">
+                    <a href="/politica-privacidad" target="_blank" rel="noopener noreferrer" data-link="form-politicas-link">
                         Política de Privacidad
                     </a>
                 </label>

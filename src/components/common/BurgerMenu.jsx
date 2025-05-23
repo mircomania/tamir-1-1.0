@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,16 +13,37 @@ import { navLinks } from '../utils/navBarMenu';
 
 export const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const menuRef = useRef(null);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            // si está abierto y el click NO es dentro de menuRef...
+            if (isOpen && menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isOpen]);
+
     return (
-        <div className="burger-menu">
+        <div className="burger-menu" ref={menuRef}>
             {/* ICONO  */}
 
-            <FontAwesomeIcon icon={faBars} className="burger-menu-icon" aria-label="Abrir o cerrar menú" onClick={toggleMenu} />
+            <FontAwesomeIcon
+                icon={faBars}
+                className="burger-menu-icon"
+                aria-label="Abrir o cerrar menú"
+                onClick={toggleMenu}
+                data-link="burgermenu-btn"
+            />
 
             {/* CONTENEDOR LISTA */}
 
@@ -33,7 +54,7 @@ export const BurgerMenu = () => {
                     {navLinks.map((link) => (
                         <div className="link-container" key={link.id}>
                             <li>
-                                <NavLink to={link.to} onClick={toggleMenu} title={link.title}>
+                                <NavLink to={link.to} onClick={toggleMenu} title={link.title} data-link={link.dataLink}>
                                     {link.label}
                                 </NavLink>
                             </li>
@@ -51,15 +72,33 @@ export const BurgerMenu = () => {
                     {/* REDES SOCIALES */}
 
                     <div className="redes-container">
-                        <a href="https://www.instagram.com/tamirfotografias/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a
+                            href="https://www.instagram.com/tamirfotografias/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            data-link="navbar-instagram-btn"
+                        >
                             <img src={LogoInstagram2} alt="Instagram" loading="lazy" decoding="async" />
                         </a>
 
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <a
+                            href="https://www.youtube.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="YouTube"
+                            data-link="navbar-youtube-btn"
+                        >
                             <img src={LogoYoutube2} alt="Youtube" loading="lazy" decoding="async" />
                         </a>
 
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                            data-link="navbar-facebook-btn"
+                        >
                             <img src={LogoFacebook2} alt="Facebook" loading="lazy" decoding="async" />
                         </a>
                     </div>

@@ -12,22 +12,40 @@ export const Footer = () => {
                 <section>
                     {/* LOGO  */}
                     <div className="img-logo-footer">
-                        <NavLink to="/" aria-label="Ir a la página de inicio">
+                        <NavLink to="/" aria-label="Ir a la página de inicio" data-link="footer-logo-btn">
                             <img src={LogoNavbar} alt="Logo de Tamir en el pie de página" loading="lazy" decoding="async" />
                         </NavLink>
                     </div>
 
                     {/* REDES SOCIALES */}
                     <div className="redes-container">
-                        <a href="https://www.instagram.com/tamirfotografias/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <a
+                            href="https://www.instagram.com/tamirfotografias/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            data-link="footer-instagram-btn"
+                        >
                             <img src={LogoInstagram1} alt="Instagram" loading="lazy" decoding="async" />
                         </a>
 
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <a
+                            href="https://www.youtube.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="YouTube"
+                            data-link="footer-youtube-btn"
+                        >
                             <img src={LogoYoutube1} alt="Youtube" loading="lazy" decoding="async" />
                         </a>
 
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                            data-link="footer-facebook-btn"
+                        >
                             <img src={LogoFacebook1} alt="Facebook" loading="lazy" decoding="async" />
                         </a>
                     </div>
@@ -40,15 +58,15 @@ export const Footer = () => {
                     </p>
 
                     <div className="links-footer">
-                        <NavLink to="/politica-privacidad" title="Ver la política de privacidad">
+                        <NavLink to="/politica-privacidad" title="Ver la política de privacidad" data-link="footer-politica-link">
                             Política de privacidad
                         </NavLink>
 
-                        <NavLink to="/terminos-condiciones" title="Ver los términos y condiciones">
+                        <NavLink to="/terminos-condiciones" title="Ver los términos y condiciones" data-link="footer-terminos-link">
                             Términos y condiciones
                         </NavLink>
 
-                        <NavLink to="/faq" title="Ver las preguntas preguntas frecuentes">
+                        <NavLink to="/faq" title="Ver las preguntas preguntas frecuentes" data-link="footer-faq-link">
                             FAQ
                         </NavLink>
                     </div>

@@ -1,6 +1,7 @@
 import styles from '../../styles/modulos/sectionGp1.module.css';
 
 import { categoriasSectionGp1 } from '../utils/categoriasSectionGp1';
+import { BotonNav } from '../utils/BotonNav';
 
 import { NavLink } from 'react-router-dom';
 
@@ -20,7 +21,11 @@ export const SectionGp1 = () => {
             <section className={styles.sectionCategorias}>
                 {categoriasSectionGp1.map((categoria) => (
                     <div className={styles.sectionCategoria} key={categoria.nombre}>
-                        <NavLink to={`/galeria/${categoria.id}`} aria-label={`Ver todas la Galería de Fotos de ${categoria.nombre}`}>
+                        <NavLink
+                            to={`/galeria/${categoria.id}`}
+                            aria-label={`Ver todas la Galería de Fotos de ${categoria.nombre}`}
+                            data-link={categoria.dataLink}
+                        >
                             <picture>
                                 <source srcSet={categoria.imagenes.xl} media="(min-width: 1700px)" />
                                 <source srcSet={categoria.imagenes.lg} media="(min-width: 1400px)" />
@@ -46,6 +51,10 @@ export const SectionGp1 = () => {
             </section>
 
             <hr />
+
+            <section className="boton-container-3">
+                <BotonNav dataCta="galeria-btn" />
+            </section>
         </section>
     );
 };

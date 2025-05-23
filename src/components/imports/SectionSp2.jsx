@@ -40,7 +40,7 @@ export const SectionSp2 = () => {
 
                 <p className="light-text-montserrat">
                     Para más detalles o consultas, visita nuestras{' '}
-                    <NavLink to="/faq" title="ir a las preguntas frecuentes">
+                    <NavLink to="/faq" title="ir a las preguntas frecuentes" data-link="servicios-faq-link">
                         Preguntas Frecuentes
                     </NavLink>{' '}
                     o escribenos a <strong className="selectable">contacto@tamir.cl</strong>

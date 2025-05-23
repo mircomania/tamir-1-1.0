@@ -5,7 +5,6 @@ import { TitleSEO } from '../utils/TitleSEO';
 import { SectionGpd1 } from '../imports/SectionGpd1';
 
 import { Breadcrumbs } from '../utils/Breadcrumbs';
-import { BotonNav } from '../utils/BotonNav';
 
 const GaleriaPageDetail = () => {
     const { categoria } = useParams();
@@ -27,10 +26,6 @@ const GaleriaPageDetail = () => {
 
             <section>
                 <SectionGpd1 />
-            </section>
-
-            <section className="boton-container">
-                <BotonNav id={`cta-galeria-${categoria}-contacto`} dataCta={`galeria-${categoria}`} />
             </section>
         </main>
     );

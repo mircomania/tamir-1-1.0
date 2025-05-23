@@ -41,15 +41,15 @@ export const SectionCp1 = () => {
                     En Tamir Fotografía valoramos mucho tu confianza y protegemos tu privacidad, tus datos se usan principalmente para coordinar tu
                     sesión de fotos. Ofrecemos un servicio profesional y cercano, ideal para capturar la ternura de los primeros días, la magia de la
                     maternidad y el amor familiar. Si tienes alguna consulta, puedes visitar nuestras{' '}
-                    <NavLink to="/faq" title="Ver las preguntas frecuentes">
+                    <NavLink to="/faq" title="Ver las preguntas frecuentes" data-link="contacto-faq-link">
                         Preguntas Frecuentes
                     </NavLink>
                     , como nuestros{' '}
-                    <NavLink to="/terminos-condiciones" title="Ver los términos y condiciones">
+                    <NavLink to="/terminos-condiciones" title="Ver los términos y condiciones" data-link="contacto-terminos-link">
                         Términos y Condiciones
                     </NavLink>{' '}
                     o{' '}
-                    <NavLink to="/politica-privacidad" title="Ver la política de privacidad">
+                    <NavLink to="/politica-privacidad" title="Ver la política de privacidad" data-link="contacto-politica-link">
                         Política de Privacidad
                     </NavLink>
                     .

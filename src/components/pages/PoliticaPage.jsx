@@ -10,7 +10,7 @@ import LogoBurger from '../../assets/images/logos/logo-tamir-mobile-1.webp';
 import { NavLink } from 'react-router-dom';
 
 const URL_LINK = (
-    <NavLink to="/" title="ir a tamir.cl">
+    <NavLink to="/" title="ir a tamir.cl" data-link="politicas-home-link">
         TAMIR
     </NavLink>
 );
@@ -184,7 +184,7 @@ const PoliticaPage = () => {
             </section>
 
             <section className="boton-container">
-                <BotonNav to="/" ariaLabel="Ir a la pagina de inicio" title="Haz clic para ir a la pagina de inicio">
+                <BotonNav to="/" ariaLabel="Ir a la pagina de inicio" title="Haz clic para ir a la pagina de inicio" dataLink="politicas-home-btn">
                     IR AL INICIO
                 </BotonNav>
             </section>

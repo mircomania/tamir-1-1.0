@@ -33,6 +33,7 @@ const FormSendPage = () => {
                         to="/galeria"
                         ariaLabel="Ver todas las Sesiones de Fotos en nuestra galería"
                         title="Haz clic para ver todas la Galería de Fotos"
+                        dataLink="enviado-galeria-btn"
                     >
                         VER GALERÍA
                     </BotonNav>

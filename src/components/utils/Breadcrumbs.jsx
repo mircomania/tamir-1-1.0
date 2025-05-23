@@ -20,7 +20,7 @@ export const Breadcrumbs = () => {
         <nav aria-label="breadcrumb" className="breadcrumb-container" itemScope itemType="https://schema.org/BreadcrumbList">
             <ol className="breadcrumb light-text-montserrat">
                 <li className="breadcrumb-item" itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-                    <Link to="/" itemProp="item">
+                    <Link to="/" itemProp="item" data-link="bread-home-link">
                         <span itemProp="name">Inicio</span>
                     </Link>
                     <meta itemProp="position" content="1" />
@@ -42,7 +42,7 @@ export const Breadcrumbs = () => {
                             {isLast ? (
                                 <span itemProp="name">{name}</span>
                             ) : (
-                                <Link to={to} itemProp="item">
+                                <Link to={to} itemProp="item" data-link="bread-back-link">
                                     <span itemProp="name">{name}</span>
                                 </Link>
                             )}

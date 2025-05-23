@@ -19,7 +19,7 @@ const ErrorPage = () => {
                 </header>
 
                 <div className={styles.sectionContenido}>
-                    <BotonNav to="/" ariaLabel="Ir a la página de inicio" title="Haz clic para ir a la página de inicio">
+                    <BotonNav to="/" ariaLabel="Ir a la página de inicio" title="Haz clic para ir a la página de inicio" dataLink="error-home-btn">
                         IR AL INICIO
                     </BotonNav>
                 </div>

@@ -79,6 +79,7 @@ export const SectionSp1 = () => {
                                                 className={`${styles.serviceButton} ${activeService !== service.servicio ? styles.hoverActivo : ''}`}
                                                 title={`Ver detalles de ${service.servicio}`}
                                                 aria-label={`Ver detalles de ${service.servicio}`}
+                                                data-link={`servicio-${service.servicio}-card-btn`}
                                                 style={{
                                                     backgroundImage: `url(${service.imagen})`,
                                                 }}
@@ -248,7 +249,7 @@ export const SectionSp1 = () => {
                                                         )}
 
                                                         <div className={styles.botonAgendar}>
-                                                            <BotonNav />
+                                                            <BotonNav dataCta="servicios-detail-btn" />
                                                         </div>
 
                                                         <div className={styles.cerrarDetalle}>

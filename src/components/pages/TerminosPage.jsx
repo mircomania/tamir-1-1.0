@@ -10,7 +10,7 @@ import LogoBurger from '../../assets/images/logos/logo-tamir-mobile-1.webp';
 import { NavLink } from 'react-router-dom';
 
 const URL_LINK = (
-    <NavLink to="/" title="ir a tamir.cl">
+    <NavLink to="/" title="ir a tamir.cl" data-link="terminos-home">
         TAMIR
     </NavLink>
 );
@@ -155,7 +155,7 @@ const TerminosPage = () => {
             </section>
 
             <section className="boton-container">
-                <BotonNav id="cta-terminos-contacto" dataCta="terminos-nav" />
+                <BotonNav dataCta="terminos-btn" />
             </section>
         </main>
     );

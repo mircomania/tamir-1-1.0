@@ -2,6 +2,7 @@ import styles from '../../styles/modulos/sectionGpd1.module.css';
 
 import { Cargando } from '../utils/Cargando';
 import { ErrorCarga } from '../utils/ErrorCarga';
+import { BotonNav } from '../utils/BotonNav';
 
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
@@ -70,6 +71,10 @@ export const SectionGpd1 = () => {
             </section>
 
             <hr />
+
+            <section className="boton-container-3">
+                <BotonNav dataCta={`galeria-${categoria}-btn`} />
+            </section>
         </section>
     );
 };

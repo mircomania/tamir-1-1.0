@@ -28,6 +28,7 @@ export const categoriasSectionLp3 = [
         precio: 'desde $120.000',
         ruta: '/servicios/newborn',
         alt: 'Servicio de retratos Newborn: Captura sus primeros momentos a tu lado.',
+        dataLink: 'home-servicios-newborn-btn',
         imagenes: {
             default: img1c1Section3Lp,
             xs: img2c1Section3Lp,
@@ -41,6 +42,7 @@ export const categoriasSectionLp3 = [
         precio: 'desde $80.000',
         ruta: '/servicios/ninos',
         alt: 'Servicio de retratos Niños: Por que siempre seran nuestros Bebés.',
+        dataLink: 'home-servicios-ninos-btn',
         imagenes: {
             default: img1c2Section3Lp,
             xs: img2c2Section3Lp,
@@ -54,6 +56,7 @@ export const categoriasSectionLp3 = [
         precio: 'desde $80.000',
         ruta: '/servicios/embarazo',
         alt: 'Servicio de retratos Embarazo: Inmortaliza la belleza y emoción de la dulce espera.',
+        dataLink: 'home-servicios-embarazo-btn',
         imagenes: {
             default: img1c3Section3Lp,
             xs: img2c3Section3Lp,
@@ -67,6 +70,7 @@ export const categoriasSectionLp3 = [
         precio: 'desde $100.000',
         ruta: '/servicios/familia',
         alt: 'Servicio de retratos Familia: Conexión, calidez y amor que trasciende',
+        dataLink: 'home-servicios-familia-btn',
         imagenes: {
             default: img1c4Section3Lp,
             xs: img2c4Section3Lp,

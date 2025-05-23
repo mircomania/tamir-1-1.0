@@ -16,7 +16,7 @@ export const NavBar = () => {
                 {/* LOGO  */}
 
                 <div className="logo-container">
-                    <NavLink to="/" aria-label="Ir a la página principal">
+                    <NavLink to="/" aria-label="Ir a la página principal" data-link="navbar-logo-btn">
                         <img src={LogoNavbar} alt="Logotipo de Tamir" className="logo-navbar" />
                     </NavLink>
                 </div>
@@ -26,7 +26,12 @@ export const NavBar = () => {
                 <ul className="menu-nav light-text-montserrat">
                     {navLinks.map((item, index) => (
                         <li key={item.id}>
-                            <NavLink to={item.to} title={item.title} className={({ isActive }) => (isActive ? 'active' : '')}>
+                            <NavLink
+                                to={item.to}
+                                title={item.title}
+                                className={({ isActive }) => (isActive ? 'active' : '')}
+                                data-link={item.dataLink}
+                            >
                                 {item.label}
                             </NavLink>
                             {index < navLinks.length - 1 && <span className="linea-separadora">|</span>}
@@ -37,15 +42,27 @@ export const NavBar = () => {
                 {/* REDES SOCIALES */}
 
                 <div className="redes-container-navbar">
-                    <a href="https://www.instagram.com/tamirfotografias/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <a
+                        href="https://www.instagram.com/tamirfotografias/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        data-link="navbar-instagram-btn"
+                    >
                         <img src={LogoInstagram1} alt="Instagram" />
                     </a>
 
-                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" data-link="navbar-youtube-btn">
                         <img src={LogoYoutube1} alt="Youtube" />
                     </a>
 
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <a
+                        href="https://www.facebook.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        data-link="navbar-facebook-btn"
+                    >
                         <img src={LogoFacebook1} alt="Facebook" />
                     </a>
                 </div>

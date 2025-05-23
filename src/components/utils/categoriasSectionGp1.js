@@ -23,6 +23,7 @@ export const categoriasSectionGp1 = [
         nombre: 'Newborn',
         id: 'newborn',
         alt: 'Galería de Sesiones Newborn: Sus primeros momentos para siempre.',
+        dataLink: 'galeria-newborn-galeria-btn',
         imagenes: {
             default: img1c1Section1Gp,
             xs: img2c1Section1Gp,
@@ -36,6 +37,7 @@ export const categoriasSectionGp1 = [
         nombre: 'Niños',
         id: 'niños',
         alt: 'Galería de Sesiones Niños: Que sean nuestros niños por siempre.',
+        dataLink: 'galeria-ninos-galeria-btn',
         imagenes: {
             default: img1c2Section1Gp,
             xs: img2c2Section1Gp,
@@ -49,6 +51,7 @@ export const categoriasSectionGp1 = [
         nombre: 'Embarazo',
         id: 'embarazo',
         alt: 'Galería de Sesiones Embarazo: La belleza y calidez esperando su llegada.',
+        dataLink: 'galeria-embarazo-galeria-btn',
         imagenes: {
             default: img1c3Section1Gp,
             xs: img2c3Section1Gp,
@@ -62,6 +65,7 @@ export const categoriasSectionGp1 = [
         nombre: 'Familia',
         id: 'familia',
         alt: 'Galería de Sesiones Familia: Complicidad y amor incondicional',
+        dataLink: 'galeria-familia-galeria-btn',
         imagenes: {
             default: img1c4Section1Gp,
             xs: img2c4Section1Gp,
