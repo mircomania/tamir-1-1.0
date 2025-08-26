@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState, useEffect } from 'react';
+import { lazy, Suspense, useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { UseDisableImg } from './hooks/UseDisableImg';
@@ -20,6 +20,7 @@ const ErrorPage = lazy(() => import('./components/pages/ErrorPage'));
 
 function App() {
     UseDisableImg();
+
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -28,6 +29,13 @@ function App() {
         }, 2000);
 
         return () => clearTimeout(timer);
+    }, []);
+
+    useEffect(() => {
+        fetch('/api/warmup')
+            .then((res) => res.json())
+            .then((data) => console.log('Warmup desde frontend:', data))
+            .catch((err) => console.warn('Warmup falló:', err.message));
     }, []);
 
     return (

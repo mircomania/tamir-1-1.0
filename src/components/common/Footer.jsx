@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import LogoNavbar from '../../assets/images/logos/logo-tamir-footer-1.webp';
+import LogoFooter from '../../assets/images/logos/logo-tamir-footer-1.webp';
 import LogoFacebook1 from '../../assets/images/logos/logo-fb-1.webp';
 import LogoYoutube1 from '../../assets/images/logos/logo-yt-1.webp';
 import LogoInstagram1 from '../../assets/images/logos/logo-ig-1.webp';
@@ -13,7 +13,7 @@ export const Footer = () => {
                     {/* LOGO  */}
                     <div className="img-logo-footer">
                         <NavLink to="/" aria-label="Ir a la página de inicio" data-link="footer-logo-btn">
-                            <img src={LogoNavbar} alt="Logo de Tamir en el pie de página" loading="lazy" decoding="async" />
+                            <img src={LogoFooter} alt="Logo de Tamir en el pie de página" loading="lazy" decoding="async" />
                         </NavLink>
                     </div>
 

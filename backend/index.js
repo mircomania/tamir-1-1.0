@@ -5,6 +5,7 @@ const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const { body, validationResult } = require('express-validator');
 const { postSubmit } = require('./controllers/submitController');
+const { warmUpSheets } = require('./utils/warmup');
 const app = express();
 
 // 1) Cabeceras de seguridad
@@ -66,6 +67,17 @@ app.post(
 app.use('/api', require('./routes/galeria'));
 app.use('/api', require('./routes/servicios'));
 
+app.get('/api/warmup', async (req, res) => {
+    console.log('📡 Llamada a /api/warmup desde frontend');
+    try {
+        await warmUpSheets();
+        res.json({ status: 'ok', message: 'Warm-up ejecutado' });
+    } catch (err) {
+        console.error('❌ Error en /api/warmup:', err.message);
+        res.status(500).json({ status: 'error', message: err.message });
+    }
+});
+
 // 6) Manejador de errores genérico
 app.use((err, req, res, next) => {
     console.error(err);
@@ -74,4 +86,7 @@ app.use((err, req, res, next) => {
 
 // 7) Arranque
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Servidor corriendo en puerto ${PORT}`));
+app.listen(PORT, async () => {
+    console.log(`Servidor corriendo en puerto ${PORT}`);
+    await warmUpSheets(); // 👈 se ejecuta al arrancar el server
+});

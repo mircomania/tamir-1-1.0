@@ -1,3 +1,4 @@
+// evita que se pueda hacer clic derecho en las imágenes
 import { useEffect } from 'react';
 
 export const UseDisableImg = () => {
