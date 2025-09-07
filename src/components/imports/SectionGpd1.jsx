@@ -14,9 +14,13 @@ export const SectionGpd1 = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    const [isOpen, setIsOpen] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
     useEffect(() => {
         const fetchImages = async () => {
             try {
+                // http://localhost:5000
                 const response = await fetch(`/api/galeria?categoria=${categoria}`);
                 if (!response.ok) {
                     throw new Error('Error al obtener las imágenes');
@@ -32,6 +36,22 @@ export const SectionGpd1 = () => {
 
         fetchImages();
     }, [categoria]);
+
+    // Funciones para el modal
+    const openModal = (index) => {
+        setCurrentIndex(index);
+        setIsOpen(true);
+    };
+
+    const closeModal = () => setIsOpen(false);
+
+    const prevImage = () => {
+        setCurrentIndex((prev) => (prev === 0 ? imagenes.length - 1 : prev - 1));
+    };
+
+    const nextImage = () => {
+        setCurrentIndex((prev) => (prev === imagenes.length - 1 ? 0 : prev + 1));
+    };
 
     return (
         <section className={styles.sectionContainer}>
@@ -53,12 +73,11 @@ export const SectionGpd1 = () => {
                 )}
 
                 {/* IMAGENES */}
-
                 {!loading &&
                     !error &&
                     imagenes.length > 0 &&
                     imagenes.map((url, index) => (
-                        <div key={categoria + index} className={styles.imagenWrapper}>
+                        <div key={categoria + index} className={styles.imagenWrapper} onClick={() => openModal(index)}>
                             <img src={url} alt={`Imagen ${index + 1} de ${categoria}`} className={styles.imagenesCategoria} />
                         </div>
                     ))}
@@ -75,6 +94,21 @@ export const SectionGpd1 = () => {
             <section className="boton-container-3">
                 <BotonNav dataCta={`galeria-${categoria}-btn`} />
             </section>
+
+            {/* MODAL */}
+            {isOpen && (
+                <div className={styles.modalOverlay} onClick={closeModal}>
+                    <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+                        <button className={styles.prevBtn} onClick={prevImage}>
+                            ‹
+                        </button>
+                        <img src={imagenes[currentIndex]} alt={`Imagen ${currentIndex + 1} de ${categoria}`} className={styles.modalImage} />
+                        <button className={styles.nextBtn} onClick={nextImage}>
+                            ›
+                        </button>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };

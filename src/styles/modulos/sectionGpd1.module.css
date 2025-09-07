@@ -12,6 +12,7 @@
     text-align: center;
     color: var(--text-color);
     user-select: none;
+    line-height: 1.4;
     margin-bottom: 20px;
     font-size: 25px;
 }
@@ -42,6 +43,7 @@
 }
 
 .imagenesCategoria {
+    cursor: pointer;
     -webkit-user-drag: none;
     transition: all 0.3s ease-in-out;
     width: 150px;
@@ -59,6 +61,52 @@
     height: 2px;
     background-color: var(--text-color);
     margin: 20px 0;
+}
+
+.modalOverlay {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modalContent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+    max-height: 90%;
+    margin-bottom: 40px;
+}
+
+.modalImage {
+    box-shadow: 0 0 20px var(--text-color);
+    border-radius: 8px;
+    width: 250px;
+}
+
+.prevBtn,
+.nextBtn {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 36px;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.prevBtn {
+    left: -30px;
+}
+
+.nextBtn {
+    right: -30px;
 }
 
 @media (min-width: 576px) {
@@ -80,6 +128,14 @@
         width: 200px;
         height: 230px;
     }
+
+    .modalContent {
+        margin-bottom: 80px;
+    }
+
+    .modalImage {
+        width: 100px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -99,6 +155,27 @@
     .imagenesCategoria {
         width: 150px;
         height: 180px;
+    }
+
+    .modalContent {
+        margin-bottom: 60px;
+    }
+
+    .modalImage {
+        width: 300px;
+    }
+
+    .prevBtn,
+    .nextBtn {
+        font-size: 56px;
+    }
+
+    .prevBtn {
+        left: -60px;
+    }
+
+    .nextBtn {
+        right: -60px;
     }
 }
 
@@ -141,6 +218,11 @@
     .imagenesCategoria {
         width: 250px;
         height: 300px;
+    }
+
+    .prevBtn,
+    .nextBtn {
+        font-size: 76px;
     }
 }
 
