@@ -1,7 +1,7 @@
 import { TitleSEO } from '../utils/TitleSEO';
 
-import { SectionSp1 } from '../imports/SectionSp1';
-import { SectionSp2 } from '../imports/SectionSp2';
+import { SectionSp1 } from '../exports/SectionSp1';
+import { SectionSp2 } from '../exports/SectionSp2';
 
 import { Breadcrumbs } from '../utils/Breadcrumbs';
 import { BotonNav } from '../utils/BotonNav';

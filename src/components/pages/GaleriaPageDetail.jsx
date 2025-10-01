@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 
 import { TitleSEO } from '../utils/TitleSEO';
 
-import { SectionGpd1 } from '../imports/SectionGpd1';
+import { SectionGpd1 } from '../exports/SectionGpd1';
 
 import { Breadcrumbs } from '../utils/Breadcrumbs';
 

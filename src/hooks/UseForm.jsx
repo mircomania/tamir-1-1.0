@@ -52,7 +52,7 @@ export const useForm = (initialState) => {
     };
 
     const validateTelefono = (newErrors) => {
-        if (!formData.telefono.match(/^\+56\d{10}$/)) {
+        if (!formData.telefono.match(/^\+56\d{9}$/)) {
             newErrors.telefono = true;
         }
     };
@@ -93,7 +93,8 @@ export const useForm = (initialState) => {
                 novedades: formData.novedades,
             };
 
-            const response = await fetch('/api/submit', {
+            // http://localhost:5000
+            const response = await fetch('http://localhost:5000/api/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formDataToSend),

@@ -1,6 +1,6 @@
 import { TitleSEO } from '../utils/TitleSEO';
 
-import { SectionGp1 } from '../imports/SectionGp1';
+import { SectionGp1 } from '../exports/SectionGp1';
 
 import { Breadcrumbs } from '../utils/Breadcrumbs';
 

@@ -66,6 +66,7 @@ export const useSectionSp1 = () => {
     useEffect(() => {
         const fetchServices = async () => {
             try {
+                // http://localhost:5000
                 const res = await fetch('/api/servicios');
                 const data = await res.json();
                 if (data?.services) {

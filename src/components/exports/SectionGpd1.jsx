@@ -26,7 +26,7 @@ export const SectionGpd1 = () => {
                     throw new Error('Error al obtener las imágenes');
                 }
                 const data = await response.json();
-                setImagenes(data.images);
+                setImagenes(data.galeria);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -76,9 +76,9 @@ export const SectionGpd1 = () => {
                 {!loading &&
                     !error &&
                     imagenes.length > 0 &&
-                    imagenes.map((url, index) => (
+                    imagenes.map((img, index) => (
                         <div key={categoria + index} className={styles.imagenWrapper} onClick={() => openModal(index)}>
-                            <img src={url} alt={`Imagen ${index + 1} de ${categoria}`} className={styles.imagenesCategoria} />
+                            <img src={img.url} alt={`Imagen ${index + 1} de ${categoria}`} className={styles.imagenesCategoria} />
                         </div>
                     ))}
 
@@ -102,7 +102,7 @@ export const SectionGpd1 = () => {
                         <button className={styles.prevBtn} onClick={prevImage}>
                             ‹
                         </button>
-                        <img src={imagenes[currentIndex]} alt={`Imagen ${currentIndex + 1} de ${categoria}`} className={styles.modalImage} />
+                        <img src={imagenes[currentIndex].url} alt={`Imagen ${currentIndex + 1} de ${categoria}`} className={styles.modalImage} />
                         <button className={styles.nextBtn} onClick={nextImage}>
                             ›
                         </button>

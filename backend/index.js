@@ -7,6 +7,11 @@ const { body, validationResult } = require('express-validator');
 const { postSubmit } = require('./controllers/submitController');
 const { warmUpSheets } = require('./utils/warmup');
 const app = express();
+const fs = require('fs-extra');
+const path = require('path');
+
+const tmpDir = path.join(__dirname, 'tmp');
+fs.ensureDirSync(tmpDir);
 
 // 1) Cabeceras de seguridad
 app.use(helmet());
@@ -39,7 +44,7 @@ app.post(
         body('mensaje').optional({ checkFalsy: true }).trim().escape(),
 
         body('telefono')
-            .matches(/^\+56\d{10}$/)
+            .matches(/^\+56\d{9}$/)
             .withMessage('Formato de teléfono inválido. Debe ser +56XXXXXXXX.'),
 
         body('sesion').custom((value) => {

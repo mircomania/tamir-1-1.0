@@ -59,7 +59,7 @@ export const Form = () => {
                     autoComplete="tel-national"
                     required
                     aria-invalid={!!errors.telefono}
-                    maxLength="13"
+                    maxLength="12"
                 />
             </div>
 

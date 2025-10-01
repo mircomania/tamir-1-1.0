@@ -1,0 +1,96 @@
+[
+  {
+    "servicio": "newborn",
+    "intro": "Queremos inmortalizar esos primeros días de tu bebé, cuando todo es ternura y asombro. La sesión Newborn se realiza idealmente entre el día 5 y 15 de vida, momento en que tu pequeño duerme profundamente y podemos lograr poses seguras y dulces. El encuentro dura en promedio 2 a 3 horas, incluyendo pausas para descanso, alimentación y algunas fotos junto a los familiares.",
+    "estudio": "En estudio disponemos de un espacio cálido, acolchado y silencioso, con mantas, gorritos y props suaves diseñados para la comodidad y seguridad del bebé. Contamos con fondos neutros y bajos niveles de iluminación para recrear ambientes delicados, sin causar molestias al recién nacido.",
+    "valorest1": "300000",
+    "valorest2": "350000",
+    "valorest3": "400000",
+    "instruest": [
+      "Trae pañales extra y ropa de recambio para el bebé y tú, por si hay derrames o cambios inesperados.",
+      "Asegúrate de alimentar al bebé justo antes de llegar: un bebé lleno tiende a dormir mejor.",
+      "Ven con el mínimo de acompañantes (idealmente mamá y papá) para mantener el espacio tranquilo."
+    ],
+    "exterior": "Llevamos el estudio a tu hogar, donde tu bebé se siente más cómodo. Aprovechamos la luz natural que entra por la ventana y armamos un set portátil con todos nuestros props, sin exponerlo a cambios bruscos de temperatura.",
+    "valorext1": "120000",
+    "valorext2": "150000",
+    "valorext3": "180000",
+    "instruext": [
+      "Despeja un área junto a una ventana grande: debe ser tranquila y sin corrientes de aire.",
+      "Mantén la habitación a mínimo 22 °C y ten mantas o abrigos extras.",
+      "Asegura un espacio libre de obstáculos para montar el equipo con seguridad.",
+      "Considera 15–20 min adicionales para montaje y desmontaje, más pausas para alimentar o acomodar al bebé."
+    ],
+    "imagen": "https://i.ibb.co/3YG855fs/servicios-newborn-3.webp"
+  },
+  {
+    "servicio": "niños",
+    "intro": "Las sesiones de niños están diseñadas para capturar la espontaneidad, alegría y personalidad de cada pequeño. Pueden realizarse en cualquier momento del año, tienen una duración aproximada de 1 a 1,5 horas y se adaptan a las edades desde 1 año hasta preadolescentes. El tiempo incluye poses con familiares.",
+    "estudio": "En el estudio contamos con fondos de colores, juguetes pequeños, cajones y bancos para sentar o apoyar a los niños, además de iluminación continua que les otorga un ambiente divertido y relajado.",
+    "valorest1": "250000",
+    "valorest2": "300000",
+    "valorest3": "350000",
+    "instruest": [
+      "Asegura que el niño llegue descansado y con ropa cómoda (y lleva una muda extra).",
+      "Trae algún snack ligero y bebida para mantenerlo con energía.",
+      "Si tu hijo o hija tiene un juguete favorito, llévalo."
+    ],
+    "exterior": "La sesión infantil al aire libre aprovecha parques, plazas o plazas de juegos como escenario para capturar momentos de juego natural. La duración suele ser similar al estudio, pero incluyendo pausas para explorar el entorno.",
+    "valorext1": "80000",
+    "valorext2": "110000",
+    "valorext3": "140000",
+    "instruext": [
+      "Asegura que el niño llegue descansado y lleva calzado y ropa adecuada para el terreno.",
+      "Trae algún snack ligero y bebida para mantenerlo con energía.",
+      "Si tu hijo o hija tiene un juguete favorito, llévalo."
+    ],
+    "imagen": "https://i.ibb.co/FLzz4b5Q/servicios-ninos-1.webp"
+  },
+  {
+    "servicio": "embarazo",
+    "intro": "La sesión de maternidad está pensada para retratar ese estado lleno de expectación y ternura. Se recomienda entre la semana 28 y 36 de gestación, cuando la panza ya es visible pero aún te sientes cómoda. Tiene una duración de 1 a 2 horas, incluyendo tiempo para cambios de vestuario, retocar iluminaciones y poses con familiares.",
+    "estudio": "Nuestro espacio cuenta con fondos neutros y telas ligeras que realzan la silueta de la embarazada. Disponemos de tocadores y espejos para retocar maquillaje y peinado, y sillas o bancos para poses cómodas.",
+    "valorest1": "250000",
+    "valorest2": "300000",
+    "valorest3": "350000",
+    "instruest": [
+      "Usa ropa interior neutra (blanco, negro o nude) que no interrumpa la línea de tu cuerpo.",
+      "Hidrátate bien y descansa la noche anterior.",
+      "Considera venir con el cabello seco y peinado para agilizar la sesión.",
+      "La sesión no incluye peinado y maquillaje."
+    ],
+    "exterior": "El contacto con la naturaleza, la luz natural y la libertad de moverse sin prisa. Son perfectas para reflejar la conexión con tu guatita en un ambiente relajado, capturando momentos espontáneos y cotidianos donde puedes disfrutar del entorno, relajarte y olvidarte de la cámara.",
+    "valorext1": "80000",
+    "valorext2": "110000",
+    "valorext3": "140000",
+    "instruext": [
+      "Lleva una muda de ropa de abrigo para después de la sesión; puede refrescar al terminar.",
+      "Hidrátate bien y descansa la noche anterior.",
+      "La sesión no incluye peinado y maquillaje."
+    ],
+    "imagen": "https://i.ibb.co/Q34Q1SM7/servicios-embarazo.webp"
+  },
+  {
+    "servicio": "familia",
+    "intro": "La sesión familiar busca capturar la dinámica, el cariño y las risas compartidas. Puede incluir a todos los miembros (desde bebés hasta abuelos) y dura entre 1 y 1,5 horas, con un máximo de 5 personas, adaptando el ritmo a la edad más pequeña.",
+    "estudio": "Ofrecemos sofás, pufs, mantas y cojines para acomodar a los grupos familiares. Contamos con fondos personalizables (blancos, grises, colores suaves) y juguetes o libros para involucrar a los niños.",
+    "valorest1": "280000",
+    "valorest2": "330000",
+    "valorest3": "380000",
+    "instruest": [
+      "Trae snacks para los niños.",
+      "Si hay bebés, considera llevar coche o portabebés para su comodidad."
+    ],
+    "exterior": "Las sesiones familiares al aire libre en parques, áreas urbanas o en tu propio hogar generan imágenes espontáneas de juego y convivencia. La luz natural y los espacios amplios invitan a la familia a moverse y olvidarse de la cámara.",
+    "valorext1": "100000",
+    "valorext2": "130000",
+    "valorext3": "160000",
+    "instruext": [
+      "Elige un lugar familiar para la familia: plaza, parque o tu hogar.",
+      "Ten en cuenta la logística de estacionamiento y traslado de todos los integrantes.",
+      "Trae snacks para los niños.",
+      "Si hay bebés, considera llevar coche o portabebés para su comodidad."
+    ],
+    "imagen": "https://i.ibb.co/DPyyyKqd/servicios-familia.webp"
+  }
+]
